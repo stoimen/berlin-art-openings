@@ -241,9 +241,8 @@ button {
 
 .chip-button,
 .ghost-button,
-.map-circle-button,
+.icon-circle-button,
 .primary-button,
-.favorite-button,
 .refresh-button {
   min-height: 44px;
   border-radius: 999px;
@@ -257,9 +256,8 @@ button {
 
 .chip-button:hover,
 .ghost-button:hover,
-.map-circle-button:hover,
+.icon-circle-button:hover,
 .primary-button:hover,
-.favorite-button:hover,
 .refresh-button:hover {
   transform: translateY(-1px);
 }
@@ -270,7 +268,7 @@ button {
   border-color: var(--line);
 }
 
-.map-circle-button {
+.icon-circle-button {
   display: inline-grid;
   place-items: center;
   width: 44px;
@@ -282,10 +280,20 @@ button {
   color: var(--accent-cool);
 }
 
-.map-circle-button svg {
+.icon-circle-button svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.icon-circle-button.active {
+  background: var(--accent-warm);
+  border-color: rgba(138, 60, 2, 0.22);
+  color: white;
+}
+
+.source-circle-button {
+  margin-left: auto;
 }
 
 .chip-button.active,
@@ -298,11 +306,6 @@ button {
 .primary-button,
 .refresh-button {
   justify-self: start;
-}
-
-.favorite-button.active {
-  background: var(--accent-warm);
-  color: white;
 }
 
 .event-groups {
@@ -332,10 +335,14 @@ button {
 .event-card-header,
 .event-actions {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.event-card-header {
+  justify-content: space-between;
 }
 
 .event-card-body {
