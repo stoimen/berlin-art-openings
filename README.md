@@ -107,7 +107,12 @@ Use Nominatim sparingly and only for small, local import batches. For production
 1. Push this repository to the `main` branch.
 2. In GitHub, open `Settings` → `Pages`.
 3. Set the source to `GitHub Actions`.
-4. Push to `main` or run the workflow manually.
+4. Push to `main` to deploy the current repo state.
+5. Optionally run the workflow manually from the `Actions` tab to refresh event data and redeploy immediately.
+
+The Pages workflow also runs automatically once a week on Monday, refreshes `public/data/events.json` and `public/data/venues.json`, commits those generated data files back to `main`, then redeploys the site.
+
+If you use the geocoding step in GitHub Actions, add a `NOMINATIM_EMAIL` repository secret so requests include a contact email. If branch protection blocks direct pushes from `github-actions[bot]`, allow that bot to push to `main` or the scheduled refresh commit will fail.
 
 The Vite base path is configured for GitHub Pages:
 
