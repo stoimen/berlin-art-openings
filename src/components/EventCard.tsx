@@ -59,10 +59,12 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
             <dt>Venue</dt>
             <dd>{event.venue}</dd>
           </div>
-          <div>
-            <dt>Address</dt>
-            <dd>{event.address ?? 'Address TBA'}</dd>
-          </div>
+          {event.address ? (
+            <div>
+              <dt>Address</dt>
+              <dd>{event.address}</dd>
+            </div>
+          ) : null}
           <div>
             <dt>Opening</dt>
             <dd>{formatOpeningWindow(event)}</dd>
