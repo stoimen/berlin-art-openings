@@ -11,7 +11,7 @@ function getCopy(status: LocationPermissionStatus, errorMessage?: string) {
     case 'granted':
       return 'Nearby ranking is active. Events with coordinates are sorted by date first, then by distance.';
     case 'loading':
-      return 'Checking your position to prioritize nearby galleries.';
+      return 'Checking your position. Your browser should show a location prompt if permission has not been decided yet.';
     case 'denied':
       return 'Location access is off, so ranking falls back to date only. You can re-enable it in your browser settings.';
     case 'error':
@@ -21,7 +21,7 @@ function getCopy(status: LocationPermissionStatus, errorMessage?: string) {
     case 'prompt':
     case 'idle':
     default:
-      return 'Share your location to emphasize nearby openings and enable distance filtering.';
+      return 'The app will ask for your location to emphasize nearby openings and enable distance filtering.';
   }
 }
 

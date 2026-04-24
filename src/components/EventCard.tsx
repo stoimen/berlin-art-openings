@@ -6,6 +6,7 @@ import { downloadEventIcs } from '../utils/ics';
 
 type EventCardProps = {
   event: DisplayEvent;
+  locationEnabled: boolean;
   onToggleFavorite: (eventId: string) => void;
 };
 
@@ -14,7 +15,7 @@ function buildMapsUrl(event: DisplayEvent) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(locationQuery)}`;
 }
 
-export function EventCard({ event, onToggleFavorite }: EventCardProps) {
+export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCardProps) {
   const tagList = event.tags?.length ? event.tags : [event.eventType];
 
   return (
@@ -65,7 +66,12 @@ export function EventCard({ event, onToggleFavorite }: EventCardProps) {
           </div>
           <div>
             <dt>Distance</dt>
-            <dd>{formatDistance(event.distanceKm)}</dd>
+            <dd>
+              {formatDistance(event.distanceKm, {
+                locationEnabled,
+                hasCoordinates: typeof event.latitude === 'number' && typeof event.longitude === 'number',
+              })}
+            </dd>
           </div>
         </dl>
 

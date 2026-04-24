@@ -4,10 +4,11 @@ import { EventCard } from './EventCard';
 
 type EventListProps = {
   events: DisplayEvent[];
+  locationEnabled: boolean;
   onToggleFavorite: (eventId: string) => void;
 };
 
-export function EventList({ events, onToggleFavorite }: EventListProps) {
+export function EventList({ events, locationEnabled, onToggleFavorite }: EventListProps) {
   const groups = groupEventsByDate(events);
 
   return (
@@ -20,7 +21,12 @@ export function EventList({ events, onToggleFavorite }: EventListProps) {
           </div>
           <div className="event-stack">
             {group.events.map((event) => (
-              <EventCard key={event.id} event={event} onToggleFavorite={onToggleFavorite} />
+              <EventCard
+                key={event.id}
+                event={event}
+                locationEnabled={locationEnabled}
+                onToggleFavorite={onToggleFavorite}
+              />
             ))}
           </div>
         </section>

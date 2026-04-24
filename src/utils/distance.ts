@@ -26,8 +26,21 @@ export function haversineDistanceKm(
   return EARTH_RADIUS_KM * c;
 }
 
-export function formatDistance(distanceKm?: number) {
+type FormatDistanceOptions = {
+  locationEnabled: boolean;
+  hasCoordinates: boolean;
+};
+
+export function formatDistance(distanceKm: number | undefined, options: FormatDistanceOptions) {
   if (distanceKm === undefined) {
+    if (!options.locationEnabled) {
+      return 'Share location to calculate distance';
+    }
+
+    if (!options.hasCoordinates) {
+      return 'Venue coordinates unavailable';
+    }
+
     return 'Distance unavailable';
   }
 

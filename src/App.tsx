@@ -1,4 +1,4 @@
-import { startTransition, useDeferredValue, useEffect, useState } from 'react';
+import { startTransition, useDeferredValue, useEffect, useRef, useState } from 'react';
 import { loadEvents, sourceReliability } from './api/events';
 import { EmptyState } from './components/EmptyState';
 import { ErrorState } from './components/ErrorState';
@@ -74,6 +74,8 @@ export default function App() {
   const [filters, setFilters] = useState<FilterState>(defaultFilters);
   const [favoriteIds, setFavoriteIds] = useState<string[]>(readFavoriteIds);
   const [locationState, setLocationState] = useState<LocationState>({ status: 'idle' });
+  const autoLocationAttemptedRef = useRef(false);
+  const locationRequestInFlightRef = useRef(false);
 
   const deferredSearch = useDeferredValue(filters.search.trim().toLowerCase());
 
@@ -164,11 +166,21 @@ export default function App() {
     window.localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(favoriteIds));
   }, [favoriteIds]);
 
-  function requestLocation() {
+  function requestLocation(mode: 'auto' | 'manual' = 'manual') {
     if (!('geolocation' in navigator)) {
       setLocationState({ status: 'unsupported' });
       return;
     }
+
+    if (locationRequestInFlightRef.current) {
+      return;
+    }
+
+    if (mode === 'auto') {
+      autoLocationAttemptedRef.current = true;
+    }
+
+    locationRequestInFlightRef.current = true;
 
     setLocationState((current) => ({
       ...current,
@@ -178,6 +190,7 @@ export default function App() {
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
+        locationRequestInFlightRef.current = false;
         setLocationState({
           status: 'granted',
           latitude: position.coords.latitude,
@@ -185,6 +198,7 @@ export default function App() {
         });
       },
       (error) => {
+        locationRequestInFlightRef.current = false;
         setLocationState({
           status: error.code === error.PERMISSION_DENIED ? 'denied' : 'error',
           errorMessage: error.message,
@@ -199,8 +213,12 @@ export default function App() {
   }
 
   useEffect(() => {
-    if (locationState.status === 'granted' && locationState.latitude === undefined) {
-      requestLocation();
+    if (
+      !autoLocationAttemptedRef.current &&
+      (locationState.status === 'prompt' || locationState.status === 'granted') &&
+      locationState.latitude === undefined
+    ) {
+      requestLocation('auto');
     }
   }, [locationState.status, locationState.latitude]);
 
@@ -281,7 +299,11 @@ export default function App() {
     <Layout
       totalEvents={events.length}
       nearbyCount={nearbyCount}
-      locationEnabled={locationState.status === 'granted'}
+      locationEnabled={
+        locationState.status === 'granted' &&
+        locationState.latitude !== undefined &&
+        locationState.longitude !== undefined
+      }
       lastUpdated={lastUpdated}
       isRefreshing={loading && events.length > 0}
       onRefresh={handleRefresh}
@@ -311,7 +333,15 @@ export default function App() {
       {!errorMessage && !loading && displayedEvents.length === 0 ? <EmptyState hasFilters={hasFiltersApplied} /> : null}
 
       {!errorMessage && displayedEvents.length > 0 ? (
-        <EventList events={displayedEvents} onToggleFavorite={handleToggleFavorite} />
+        <EventList
+          events={displayedEvents}
+          locationEnabled={
+            locationState.status === 'granted' &&
+            locationState.latitude !== undefined &&
+            locationState.longitude !== undefined
+          }
+          onToggleFavorite={handleToggleFavorite}
+        />
       ) : null}
     </Layout>
   );
