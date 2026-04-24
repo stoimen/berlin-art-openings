@@ -241,6 +241,7 @@ button {
 
 .chip-button,
 .ghost-button,
+.map-circle-button,
 .primary-button,
 .favorite-button,
 .refresh-button {
@@ -256,6 +257,7 @@ button {
 
 .chip-button:hover,
 .ghost-button:hover,
+.map-circle-button:hover,
 .primary-button:hover,
 .favorite-button:hover,
 .refresh-button:hover {
@@ -266,6 +268,24 @@ button {
 .ghost-button {
   background: rgba(255, 255, 255, 0.68);
   border-color: var(--line);
+}
+
+.map-circle-button {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  min-width: 44px;
+  padding: 0;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.1);
+  border-color: rgba(15, 118, 110, 0.18);
+  color: var(--accent-cool);
+}
+
+.map-circle-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .chip-button.active,
@@ -322,6 +342,10 @@ button {
   display: grid;
   gap: 16px;
   margin: 16px 0;
+}
+
+.event-actions {
+  align-items: center;
 }
 
 .event-source {

@@ -25,10 +25,10 @@ export function Layout({
       <header className="app-header">
         <div className="brand-block">
           <p className="eyebrow">Berlin Art Calendar</p>
-          <h1>Berlin Art Openings</h1>
+          <h1>Berlin Art</h1>
           <p className="lead">
-            Upcoming exhibition openings, talks, screenings, and museum nights. The app stays static-hosting
-            friendly and still ranks nearby galleries when you share location.
+            Upcoming exhibition openings, talks, screenings, and museum nights. Share your location to prioritize
+            nearby galleries.
           </p>
         </div>
 
