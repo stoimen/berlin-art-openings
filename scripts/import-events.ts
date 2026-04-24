@@ -54,6 +54,139 @@ function normalizeDate(value?: string) {
   return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString().slice(0, 10);
 }
 
+function parseCalendarDate(value?: string) {
+  const text = normalizeText(value);
+  if (!text) {
+    return undefined;
+  }
+
+  const parsed = new Date(text);
+  if (Number.isNaN(parsed.getTime())) {
+    return undefined;
+  }
+
+  return new Date(parsed.getFullYear(), parsed.getMonth(), parsed.getDate());
+}
+
+function formatLocalDateKey(date: Date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+const monthIndexesByName: Record<string, number> = {
+  january: 0,
+  february: 1,
+  march: 2,
+  april: 3,
+  may: 4,
+  june: 5,
+  july: 6,
+  august: 7,
+  september: 8,
+  october: 9,
+  november: 10,
+  december: 11,
+};
+
+function parseIndexBerlinGroupDate(value?: string, now = new Date()) {
+  const text = normalizeText(value);
+  if (!text) {
+    return undefined;
+  }
+
+  const match = text.match(/^(?:[A-Za-z]+,\s+)?([A-Za-z]+)\s+(\d{1,2})$/);
+  if (!match) {
+    return undefined;
+  }
+
+  const monthIndex = monthIndexesByName[match[1].toLowerCase()];
+  const day = Number(match[2]);
+  if (monthIndex === undefined || Number.isNaN(day)) {
+    return undefined;
+  }
+
+  const currentDay = new Date(now);
+  currentDay.setHours(0, 0, 0, 0);
+
+  const candidate = new Date(currentDay.getFullYear(), monthIndex, day);
+  const oneHundredTwentyDays = 120 * 24 * 60 * 60 * 1000;
+
+  if (candidate.getTime() < currentDay.getTime() - oneHundredTwentyDays) {
+    candidate.setFullYear(candidate.getFullYear() + 1);
+  }
+
+  return candidate;
+}
+
+function parseClockValue(rawValue: string, meridiem: string) {
+  const [hoursText, minutesText = '0'] = rawValue.split(':');
+  const inputHours = Number(hoursText);
+  const minutes = Number(minutesText);
+
+  if (Number.isNaN(inputHours) || Number.isNaN(minutes)) {
+    return undefined;
+  }
+
+  let hours = inputHours % 12;
+  if (meridiem.toLowerCase() === 'pm') {
+    hours += 12;
+  }
+
+  return { hours, minutes };
+}
+
+function buildLocalDateTime(baseDate: Date, hours: number, minutes: number) {
+  const date = new Date(baseDate);
+  date.setHours(hours, minutes, 0, 0);
+  return date.toISOString();
+}
+
+function buildIndexBerlinDateTime(baseDate: Date, rawValue: string, meridiem: string) {
+  const clock = parseClockValue(rawValue, meridiem);
+  if (!clock) {
+    return undefined;
+  }
+
+  return buildLocalDateTime(baseDate, clock.hours, clock.minutes);
+}
+
+function parseIndexBerlinTimeWindow(baseDate: Date, rawValue?: string) {
+  const text = normalizeText(rawValue)?.replace(/[–—]/g, '-').replace(/\s+/g, '');
+  if (!text) {
+    return {};
+  }
+
+  const rangeMatch = text.match(/^(\d{1,2}(?::\d{2})?)(am|pm)?-(\d{1,2}(?::\d{2})?)(am|pm)?$/i);
+  if (rangeMatch) {
+    const startMeridiem = rangeMatch[2] ?? rangeMatch[4];
+    const endMeridiem = rangeMatch[4] ?? rangeMatch[2];
+
+    if (!startMeridiem || !endMeridiem) {
+      return {};
+    }
+
+    return {
+      openingStart: buildIndexBerlinDateTime(baseDate, rangeMatch[1], startMeridiem),
+      openingEnd: buildIndexBerlinDateTime(baseDate, rangeMatch[3], endMeridiem),
+    };
+  }
+
+  const singleMatch = text.match(/^(\d{1,2}(?::\d{2})?)(am|pm)$/i);
+  if (singleMatch) {
+    return {
+      openingStart: buildIndexBerlinDateTime(baseDate, singleMatch[1], singleMatch[2]),
+    };
+  }
+
+  return {};
+}
+
 function inferEventType(...values: Array<string | undefined>) {
   const haystack = values.filter(Boolean).join(' ').toLowerCase();
 
@@ -235,6 +368,169 @@ function extractGenericCards(html: string, source: EventSource, listUrl: string)
     .filter((event): event is ArtEvent => event !== undefined);
 }
 
+function extractIndexBerlinEvents(html: string, listUrl: string, now = new Date()) {
+  const $ = load(html);
+  const events: ArtEvent[] = [];
+
+  for (const group of $('.events.js-search-group').toArray()) {
+    const groupRoot = $(group);
+    const groupDate = parseIndexBerlinGroupDate(groupRoot.find('.events__group-title').first().text(), now);
+
+    if (!groupDate) {
+      continue;
+    }
+
+    for (const card of groupRoot.find('article.event.js-search-item').toArray()) {
+      const root = $(card);
+      const title = normalizeText(root.find('.event__title').first().text());
+      const sourcePath =
+        normalizeText(root.attr('data-href')) ??
+        normalizeText(root.find('a.event__title[href], a.event__authors[href]').first().attr('href'));
+
+      if (!title || !sourcePath) {
+        continue;
+      }
+
+      const artist = normalizeText(root.find('.event__authors').first().text());
+      const venue =
+        normalizeText(
+          root
+            .find('.event__location > span')
+            .not('.event__location-bullet, .event__location-address')
+            .first()
+            .text(),
+        ) ?? 'Berlin venue';
+      const address = normalizeText(root.find('.event__location-address').first().text());
+      const eventLabel = normalizeText(root.find('.event__date span span').first().text());
+      const fullDateText = normalizeText(root.find('.event__date').first().text());
+      const timeText =
+        fullDateText && eventLabel
+          ? normalizeText(fullDateText.replace(new RegExp(`^${escapeRegExp(eventLabel)}`, 'i'), ''))
+          : fullDateText;
+      const { openingStart, openingEnd } = parseIndexBerlinTimeWindow(groupDate, timeText);
+      const latitude = Number(root.attr('data-latitude'));
+      const longitude = Number(root.attr('data-longitude'));
+      const imagePath = normalizeText(root.find('img').first().attr('src'));
+
+      events.push({
+        id: buildId('indexberlin', title, venue, openingStart ?? formatLocalDateKey(groupDate)),
+        title,
+        artist,
+        venue,
+        address,
+        latitude: Number.isFinite(latitude) ? latitude : undefined,
+        longitude: Number.isFinite(longitude) ? longitude : undefined,
+        openingStart,
+        openingEnd,
+        exhibitionStart: formatLocalDateKey(groupDate),
+        exhibitionEnd: formatLocalDateKey(groupDate),
+        eventType: inferEventType(eventLabel, title, artist),
+        source: 'indexberlin',
+        sourceUrl: new URL(sourcePath, listUrl).toString(),
+        imageUrl: imagePath ? new URL(imagePath, listUrl).toString() : undefined,
+        tags: undefined,
+        lastUpdated: new Date().toISOString(),
+      });
+    }
+  }
+
+  return events;
+}
+
+function parseArtrabbitDateRange(value?: string) {
+  const text = normalizeText(value)?.replace(/[–—]/g, '-');
+  if (!text) {
+    return {};
+  }
+
+  const [startText, endText] = text.split('-').map((part) => normalizeText(part));
+  const startDate = parseCalendarDate(startText);
+  const endDate = parseCalendarDate(endText);
+
+  return {
+    startDate,
+    exhibitionStart: startDate ? formatLocalDateKey(startDate) : undefined,
+    exhibitionEnd: endDate ? formatLocalDateKey(endDate) : undefined,
+  };
+}
+
+function parseArtrabbitOpeningDateTime(value: string | undefined, fallbackDate?: Date) {
+  const text = normalizeText(value);
+  if (!text) {
+    return {};
+  }
+
+  const timeMatch = text.match(/(\d{1,2}):(\d{2})$/);
+  if (!timeMatch) {
+    return {};
+  }
+
+  const explicitDateMatch = text.match(/^Opening:\s*([^,]+),\s*\d{1,2}:\d{2}$/i);
+  const explicitDate = explicitDateMatch?.[1];
+  const baseDate =
+    explicitDate && !/today/i.test(explicitDate)
+      ? parseCalendarDate(explicitDate) ?? fallbackDate
+      : fallbackDate;
+
+  if (!baseDate) {
+    return {};
+  }
+
+  return {
+    openingStart: buildLocalDateTime(baseDate, Number(timeMatch[1]), Number(timeMatch[2])),
+  };
+}
+
+function extractArtrabbitBerlinEvents(html: string, listUrl: string) {
+  const $ = load(html);
+
+  return $('article.m_listing-item[data-ident]')
+    .toArray()
+    .map<ArtEvent | undefined>((card) => {
+      const root = $(card);
+      const locationParts = root.find('.b_instructional-text.mod--large').toArray();
+      const venue = normalizeText($(locationParts[0]).text()) ?? 'Berlin venue';
+      const location = normalizeText($(locationParts[1]).text());
+
+      if (!location?.toLowerCase().includes('berlin')) {
+        return undefined;
+      }
+
+      const title = normalizeText(root.find('.b_small-heading.mod--primary').first().text());
+      const sourcePath = normalizeText(root.find('a.m_listing-link[href]').first().attr('href'));
+      if (!title || !sourcePath) {
+        return undefined;
+      }
+
+      const dateRange = parseArtrabbitDateRange(root.find('.b_small-heading.mod--colour').first().text());
+      const openingText = root.find('.b_small-heading.b_highlight').first().text();
+      const openingDateTime = parseArtrabbitOpeningDateTime(openingText, dateRange.startDate);
+      const latitude = Number(root.attr('data-lat'));
+      const longitude = Number(root.attr('data-lon'));
+      const imagePath = normalizeText(root.find('img').first().attr('src'));
+      const category = normalizeText(root.find('.b_categorical-heading').first().text());
+
+      return {
+        id: buildId('artrabbit', title, venue, openingDateTime.openingStart ?? dateRange.exhibitionStart),
+        title,
+        venue,
+        address: location,
+        latitude: Number.isFinite(latitude) ? latitude : undefined,
+        longitude: Number.isFinite(longitude) ? longitude : undefined,
+        openingStart: openingDateTime.openingStart,
+        exhibitionStart: dateRange.exhibitionStart,
+        exhibitionEnd: dateRange.exhibitionEnd,
+        eventType: inferEventType(category, openingText, title),
+        source: 'artrabbit',
+        sourceUrl: new URL(sourcePath, listUrl).toString(),
+        imageUrl: imagePath ? new URL(imagePath, listUrl).toString() : undefined,
+        tags: undefined,
+        lastUpdated: new Date().toISOString(),
+      };
+    })
+    .filter((event): event is ArtEvent => event !== undefined);
+}
+
 function dedupeEvents(events: ArtEvent[]) {
   const unique = new Map<string, ArtEvent>();
 
@@ -271,6 +567,21 @@ function createHeuristicImporter(source: EventSource, listUrl: string): SourceIm
     listUrl,
     async run() {
       const html = await fetchHtml(listUrl);
+
+      if (source === 'indexberlin') {
+        const indexBerlinEvents = extractIndexBerlinEvents(html, listUrl);
+        if (indexBerlinEvents.length > 0) {
+          return indexBerlinEvents;
+        }
+      }
+
+      if (source === 'artrabbit') {
+        const artrabbitEvents = extractArtrabbitBerlinEvents(html, listUrl);
+        if (artrabbitEvents.length > 0) {
+          return artrabbitEvents;
+        }
+      }
+
       const jsonLdEvents = extractJsonLdEvents(html, source, listUrl);
       if (jsonLdEvents.length > 0) {
         return jsonLdEvents;

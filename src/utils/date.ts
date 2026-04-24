@@ -24,6 +24,13 @@ const timeFormatter = new Intl.DateTimeFormat(undefined, {
   minute: '2-digit',
 });
 
+function formatLocalDateKey(date: Date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
 export function parseDateValue(value?: string, endOfDay = false) {
   if (!value) {
     return undefined;
@@ -111,18 +118,14 @@ export function formatGroupingLabel(dateKey: string) {
 
 export function getGroupingKey(event: ArtEvent) {
   const anchorDate = getEventAnchorDate(event);
-  return anchorDate.toISOString().slice(0, 10);
+  return formatLocalDateKey(anchorDate);
 }
 
 export function isUpcomingEvent(event: ArtEvent, now = new Date()) {
-  const eventEnd = getEventEndDate(event);
-  if (!eventEnd) {
-    return true;
-  }
-
+  const anchorDate = getEventAnchorDate(event);
   const today = new Date(now);
   today.setHours(0, 0, 0, 0);
-  return eventEnd.getTime() >= today.getTime();
+  return anchorDate.getTime() >= today.getTime();
 }
 
 function createDayBoundary(baseDate: Date, dayOffset: number) {

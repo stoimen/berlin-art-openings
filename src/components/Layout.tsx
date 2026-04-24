@@ -5,6 +5,7 @@ type LayoutProps = {
   children: ReactNode;
   totalEvents: number;
   nearbyCount: number;
+  favoriteCount: number;
   locationEnabled: boolean;
   lastUpdated?: string;
   isRefreshing: boolean;
@@ -15,6 +16,7 @@ export function Layout({
   children,
   totalEvents,
   nearbyCount,
+  favoriteCount,
   locationEnabled,
   lastUpdated,
   isRefreshing,
@@ -40,6 +42,10 @@ export function Layout({
           <div>
             <p className="hero-label">Upcoming</p>
             <strong>{totalEvents} events loaded</strong>
+          </div>
+          <div>
+            <p className="hero-label">Saved</p>
+            <strong>{favoriteCount} shortlisted</strong>
           </div>
           <button type="button" className="refresh-button" onClick={onRefresh} disabled={isRefreshing}>
             {isRefreshing ? 'Refreshing…' : 'Refresh'}

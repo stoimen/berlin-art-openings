@@ -4,6 +4,7 @@ import { sourceLabels } from '../api/events';
 export type FilterState = {
   timeframe: TimeframeFilter;
   openingsOnly: boolean;
+  savedOnly: boolean;
   search: string;
   source: 'all' | EventSource;
   maxDistanceKm: 'all' | number;
@@ -46,6 +47,7 @@ export function Filters({ value, hasLocation, onChange, onReset }: FiltersProps)
               key={option.value}
               type="button"
               className={option.value === value.timeframe ? 'chip-button active' : 'chip-button'}
+              aria-pressed={option.value === value.timeframe}
               onClick={() => onChange({ ...value, timeframe: option.value })}
             >
               {option.label}
@@ -105,6 +107,15 @@ export function Filters({ value, hasLocation, onChange, onReset }: FiltersProps)
             onChange={(event) => onChange({ ...value, openingsOnly: event.target.checked })}
           />
           <span>Openings only</span>
+        </label>
+
+        <label className="toggle-field">
+          <input
+            type="checkbox"
+            checked={value.savedOnly}
+            onChange={(event) => onChange({ ...value, savedOnly: event.target.checked })}
+          />
+          <span>Saved only</span>
         </label>
       </div>
     </section>

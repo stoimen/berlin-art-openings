@@ -14,7 +14,8 @@ const FAVORITES_STORAGE_KEY = 'berlin-art-openings:favorites';
 
 const defaultFilters: FilterState = {
   timeframe: 'all',
-  openingsOnly: false,
+  openingsOnly: true,
+  savedOnly: false,
   search: '',
   source: 'all',
   maxDistanceKm: 'all',
@@ -252,6 +253,10 @@ export default function App() {
         return false;
       }
 
+      if (filters.savedOnly && !event.isFavorite) {
+        return false;
+      }
+
       if (!matchesTimeframe(event, filters.timeframe)) {
         return false;
       }
@@ -291,6 +296,7 @@ export default function App() {
   const hasFiltersApplied =
     filters.timeframe !== 'all' ||
     filters.openingsOnly ||
+    filters.savedOnly ||
     filters.search.trim().length > 0 ||
     filters.source !== 'all' ||
     filters.maxDistanceKm !== 'all';
@@ -299,6 +305,7 @@ export default function App() {
     <Layout
       totalEvents={events.length}
       nearbyCount={nearbyCount}
+      favoriteCount={favoriteIds.length}
       locationEnabled={
         locationState.status === 'granted' &&
         locationState.latitude !== undefined &&
@@ -330,7 +337,9 @@ export default function App() {
 
       {errorMessage ? <ErrorState message={errorMessage} onRetry={handleRefresh} /> : null}
 
-      {!errorMessage && !loading && displayedEvents.length === 0 ? <EmptyState hasFilters={hasFiltersApplied} /> : null}
+      {!errorMessage && !loading && displayedEvents.length === 0 ? (
+        <EmptyState hasFilters={hasFiltersApplied} savedOnly={filters.savedOnly} favoriteCount={favoriteIds.length} />
+      ) : null}
 
       {!errorMessage && displayedEvents.length > 0 ? (
         <EventList
