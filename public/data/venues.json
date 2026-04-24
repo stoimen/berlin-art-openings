@@ -1,0 +1,44 @@
+{
+  "auguststraße 69, 10117 berlin": {
+    "latitude": 52.52689,
+    "longitude": 13.40143,
+    "displayName": "Auguststraße 69, 10117 Berlin, Germany",
+    "updatedAt": "2026-04-24T09:00:00Z"
+  },
+  "potsdamer straße 83, 10785 berlin": {
+    "latitude": 52.50052,
+    "longitude": 13.36503,
+    "displayName": "Potsdamer Straße 83, 10785 Berlin, Germany",
+    "updatedAt": "2026-04-24T09:00:00Z"
+  },
+  "christinenstraße 18-19, 10119 berlin": {
+    "latitude": 52.53344,
+    "longitude": 13.41112,
+    "displayName": "Christinenstraße 18-19, 10119 Berlin, Germany",
+    "updatedAt": "2026-04-24T09:00:00Z"
+  },
+  "invalidenstraße 50-51, 10557 berlin": {
+    "latitude": 52.52999,
+    "longitude": 13.36966,
+    "displayName": "Invalidenstraße 50-51, 10557 Berlin, Germany",
+    "updatedAt": "2026-04-24T09:00:00Z"
+  },
+  "argentinische allee 30, 14163 berlin": {
+    "latitude": 52.43458,
+    "longitude": 13.24047,
+    "displayName": "Argentinische Allee 30, 14163 Berlin, Germany",
+    "updatedAt": "2026-04-24T09:00:00Z"
+  },
+  "hardenbergstraße 22-24, 10623 berlin": {
+    "latitude": 52.50793,
+    "longitude": 13.33739,
+    "displayName": "Hardenbergstraße 22-24, 10623 Berlin, Germany",
+    "updatedAt": "2026-04-24T09:00:00Z"
+  },
+  "oberwallstraße 32, 10117 berlin": {
+    "latitude": 52.51435,
+    "longitude": 13.39924,
+    "displayName": "Oberwallstraße 32, 10117 Berlin, Germany",
+    "updatedAt": "2026-04-24T09:00:00Z"
+  }
+}
