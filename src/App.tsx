@@ -28,6 +28,23 @@ type LocationState = {
   errorMessage?: string;
 };
 
+function readDeepLinkedEventId() {
+  if (typeof window === 'undefined') {
+    return undefined;
+  }
+
+  const hashValue = window.location.hash.slice(1).trim();
+  if (!hashValue) {
+    return undefined;
+  }
+
+  try {
+    return decodeURIComponent(hashValue);
+  } catch {
+    return hashValue;
+  }
+}
+
 function readFavoriteIds() {
   if (typeof window === 'undefined') {
     return [];
@@ -75,8 +92,10 @@ export default function App() {
   const [filters, setFilters] = useState<FilterState>(defaultFilters);
   const [favoriteIds, setFavoriteIds] = useState<string[]>(readFavoriteIds);
   const [locationState, setLocationState] = useState<LocationState>({ status: 'idle' });
+  const [deepLinkedEventId, setDeepLinkedEventId] = useState<string | undefined>(readDeepLinkedEventId);
   const autoLocationAttemptedRef = useRef(false);
   const locationRequestInFlightRef = useRef(false);
+  const scrolledDeepLinkRef = useRef<string | undefined>(undefined);
 
   const deferredSearch = useDeferredValue(filters.search.trim().toLowerCase());
 
@@ -167,6 +186,20 @@ export default function App() {
     window.localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(favoriteIds));
   }, [favoriteIds]);
 
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return undefined;
+    }
+
+    function handleHashChange() {
+      scrolledDeepLinkRef.current = undefined;
+      setDeepLinkedEventId(readDeepLinkedEventId());
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
   function requestLocation(mode: 'auto' | 'manual' = 'manual') {
     if (!('geolocation' in navigator)) {
       setLocationState({ status: 'unsupported' });
@@ -235,6 +268,19 @@ export default function App() {
     );
   }
 
+  useEffect(() => {
+    if (!deepLinkedEventId) {
+      return;
+    }
+
+    const deepLinkedEvent = events.find((event) => event.id === deepLinkedEventId);
+    if (!deepLinkedEvent || deepLinkedEvent.eventType === 'opening') {
+      return;
+    }
+
+    setFilters((current) => (current.openingsOnly ? { ...current, openingsOnly: false } : current));
+  }, [deepLinkedEventId, events]);
+
   const displayedEvents = events
     .filter((event) => isUpcomingEvent(event))
     .map<DisplayEvent>((event) => ({
@@ -291,6 +337,37 @@ export default function App() {
       return searchableText.includes(deferredSearch);
     })
     .sort(locationState.status === 'granted' ? compareByNearbyScore : compareByDate);
+
+  useEffect(() => {
+    if (!deepLinkedEventId) {
+      scrolledDeepLinkRef.current = undefined;
+      return;
+    }
+
+    if (scrolledDeepLinkRef.current === deepLinkedEventId) {
+      return;
+    }
+
+    if (!displayedEvents.some((event) => event.id === deepLinkedEventId)) {
+      return;
+    }
+
+    const targetElement = document.getElementById(deepLinkedEventId);
+    if (!targetElement) {
+      return;
+    }
+
+    scrolledDeepLinkRef.current = deepLinkedEventId;
+
+    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+
+    window.requestAnimationFrame(() => {
+      targetElement.scrollIntoView({ block: 'start', behavior });
+      if (targetElement instanceof HTMLElement) {
+        targetElement.focus({ preventScroll: true });
+      }
+    });
+  }, [deepLinkedEventId, displayedEvents]);
 
   const nearbyCount = displayedEvents.filter((event) => event.distanceKm !== undefined).length;
   const hasFiltersApplied =

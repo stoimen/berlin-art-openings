@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import type { DisplayEvent } from '../types';
 import { sourceLabels } from '../api/events';
 import { formatDistance } from '../utils/distance';
@@ -15,12 +16,70 @@ function buildMapsUrl(event: DisplayEvent) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(locationQuery)}`;
 }
 
+function buildShareUrl(eventId: string) {
+  if (typeof window === 'undefined') {
+    return `#${eventId}`;
+  }
+
+  const url = new URL(window.location.href);
+  url.hash = eventId;
+  return url.toString();
+}
+
 export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCardProps) {
+  const [shareStatus, setShareStatus] = useState<'idle' | 'copied' | 'error'>('idle');
   const tagList = event.tags?.length ? event.tags : [event.eventType];
   const favoriteLabel = event.isFavorite ? 'Remove from favorites' : 'Save to favorites';
+  const shareLabel =
+    shareStatus === 'copied' ? 'Link copied' : shareStatus === 'error' ? 'Could not share link' : 'Share event';
+
+  useEffect(() => {
+    if (shareStatus === 'idle' || typeof window === 'undefined') {
+      return undefined;
+    }
+
+    const timeoutId = window.setTimeout(() => setShareStatus('idle'), 2200);
+    return () => window.clearTimeout(timeoutId);
+  }, [shareStatus]);
+
+  async function handleShare() {
+    const shareUrl = buildShareUrl(event.id);
+
+    if (typeof window !== 'undefined') {
+      window.location.hash = event.id;
+    }
+
+    if ('share' in navigator && typeof navigator.share === 'function') {
+      try {
+        await navigator.share({
+          title: event.title,
+          text: event.artist ? `${event.title} by ${event.artist}` : `${event.title} at ${event.venue}`,
+          url: shareUrl,
+        });
+        setShareStatus('idle');
+        return;
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') {
+          return;
+        }
+      }
+    }
+
+    if ('clipboard' in navigator && typeof navigator.clipboard.writeText === 'function') {
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        setShareStatus('copied');
+        return;
+      } catch {
+        // Fall through to error state when clipboard access is unavailable.
+      }
+    }
+
+    setShareStatus('error');
+  }
 
   return (
-    <article className="event-card">
+    <article id={event.id} className="event-card" tabIndex={-1}>
       {event.imageUrl ? (
         <div className="event-card-image-wrap">
           <img
@@ -112,6 +171,17 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
             <path d="M7 3a1 1 0 0 1 1 1v1h8V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7a2 2 0 0 1 2-2h1V4a1 1 0 0 1 1-1Z" />
             <path d="M5 10h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8Z" fill="var(--surface-strong)" />
             <path d="M8 13h3v3H8zM13 13h3v3h-3z" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          className={shareStatus === 'copied' ? 'icon-circle-button active' : 'icon-circle-button'}
+          onClick={() => void handleShare()}
+          aria-label={shareLabel}
+          title={shareLabel}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 6a3 3 0 1 1 .23 1.15l-6.13 3.4a3 3 0 0 1 0 2.9l6.13 3.4A3 3 0 1 1 14.5 18a3 3 0 0 1 .08-.7l-6.13-3.4a3 3 0 1 1 0-3.8l6.13-3.4A3 3 0 0 1 14.5 6Z" />
           </svg>
         </button>
         <a

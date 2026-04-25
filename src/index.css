@@ -330,6 +330,24 @@ button {
 .event-card {
   padding: 18px;
   overflow: hidden;
+  scroll-margin-top: 20px;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.event-card:target {
+  border-color: rgba(249, 115, 22, 0.45);
+  box-shadow:
+    var(--shadow),
+    0 0 0 4px rgba(249, 115, 22, 0.14);
+  transform: translateY(-2px);
+}
+
+.event-card:focus-visible {
+  outline: 2px solid rgba(15, 118, 110, 0.3);
+  outline-offset: 3px;
 }
 
 .event-card-image-wrap {
