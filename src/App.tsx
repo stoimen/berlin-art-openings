@@ -45,6 +45,16 @@ function readDeepLinkedEventId() {
   }
 }
 
+function clearDeepLinkedEventId() {
+  if (typeof window === 'undefined' || !window.location.hash) {
+    return;
+  }
+
+  const url = new URL(window.location.href);
+  url.hash = '';
+  window.history.replaceState(window.history.state, '', `${url.pathname}${url.search}`);
+}
+
 function readFavoriteIds() {
   if (typeof window === 'undefined') {
     return [];
@@ -257,6 +267,10 @@ export default function App() {
   }, [locationState.status, locationState.latitude]);
 
   function handleRefresh() {
+    scrolledDeepLinkRef.current = undefined;
+    setDeepLinkedEventId(undefined);
+    clearDeepLinkedEventId();
+
     startTransition(() => {
       setRefreshTick((current) => current + 1);
     });
