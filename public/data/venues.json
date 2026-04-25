@@ -40,5 +40,894 @@
     "longitude": 13.39924,
     "displayName": "Oberwallstraße 32, 10117 Berlin, Germany",
     "updatedAt": "2026-04-24T09:00:00Z"
+  },
+  "invalidenstraße 51, 10557, berlin": {
+    "latitude": 52.5275532,
+    "longitude": 13.3723203,
+    "address": "Invalidenstraße 51, 10557, Berlin",
+    "displayName": "51, Invalidenstraße, Europacity, Moabit, Mitte, Berlin, 10557, Germany",
+    "updatedAt": "2026-04-25T06:39:33.749Z"
+  },
+  "stresemannstraße 28, 10963, berlin": {
+    "latitude": 52.5000005,
+    "longitude": 13.3882229,
+    "address": "Stresemannstraße 28, 10963, Berlin",
+    "displayName": "Blumen Schönfeld, 28, Stresemannstraße, Möckernkiez, Zeitungsviertel, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Germany",
+    "updatedAt": "2026-04-25T06:39:35.514Z"
+  },
+  "oranienburger straße 54, 10117, berlin": {
+    "latitude": 52.5256724,
+    "longitude": 13.3891203,
+    "address": "Oranienburger Straße 54, 10117, Berlin",
+    "displayName": "Kunsthaus Tacheles, 54, Oranienburger Straße, Oranienburger Vorstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:39:36.890Z"
+  },
+  "bodestraße, 10178, berlin": {
+    "latitude": 52.5197285,
+    "longitude": 13.3983715,
+    "address": "Bodestraße, 10178, Berlin",
+    "displayName": "Bodestraße, Spandauer Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-04-25T06:39:38.244Z"
+  },
+  "hardenbergstraße 22, 10623, berlin": {
+    "latitude": 52.5065665,
+    "longitude": 13.3306054,
+    "address": "Hardenbergstraße 22-24, 10623, Berlin",
+    "displayName": "Amerika-Haus, 22-24, Hardenbergstraße, City West, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:39:40.010Z"
+  },
+  "matthäikirchplatz 8, 10785, berlin": {
+    "latitude": 52.508174,
+    "longitude": 13.3666434,
+    "address": "Matthäikirchplatz 8, 10785, Berlin",
+    "displayName": "8, Matthäikirchplatz, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:39:41.238Z"
+  },
+  "am juliusturm 64, 13599, berlin": {
+    "latitude": 52.5410344,
+    "longitude": 13.2127443,
+    "address": "Am Juliusturm 64, 13599, Berlin",
+    "displayName": "Spandau Citadel, 64, Am Juliusturm, Haselhorst, Spandau, Berlin, 13599, Germany",
+    "updatedAt": "2026-04-25T06:39:42.501Z"
+  },
+  "argentinische allee 30, 14163, berlin": {
+    "latitude": 52.4420634,
+    "longitude": 13.2384164,
+    "address": "Argentinische Allee 30, 14163, Berlin",
+    "displayName": "Haus am Waldsee, 30, Argentinische Allee, Waldsiedlung Krumme Lanke, Zehlendorf, Steglitz-Zehlendorf, Berlin, 14163, Germany",
+    "updatedAt": "2026-04-25T06:39:43.767Z"
+  },
+  "auguststraße 69, 10117, berlin": {
+    "latitude": 52.5271636,
+    "longitude": 13.3948218,
+    "address": "Auguststraße 69, 10117, Berlin",
+    "displayName": "KW Institute for Contemporary Art, 69, Auguststraße, Spandauer Vorstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:39:45.078Z"
+  },
+  "alte jakobstraße 124, 10969, berlin": {
+    "latitude": 52.5037937,
+    "longitude": 13.3987041,
+    "address": "Alte Jakobstraße 124, 10969, Berlin",
+    "displayName": "124, Alte Jakobstraße, Spring-Siedlung, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:39:46.334Z"
+  },
+  "prinzessinnenstraße 30, 10969, berlin": {
+    "latitude": 52.5015053,
+    "longitude": 13.4141307,
+    "address": "Prinzessinnenstraße 30, 10969, Berlin",
+    "displayName": "30, Prinzessinnenstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:39:49.084Z"
+  },
+  "niederkirchnerstraße 7, 10117, berlin": {
+    "latitude": 52.5066209,
+    "longitude": 13.3819472,
+    "address": "Niederkirchnerstraße 7, 10963, Berlin",
+    "displayName": "Gropius-Bau, 7, Niederkirchnerstraße, Friedrichstadt, Kreuzberg, Mitte, Berlin, 10963, Germany",
+    "updatedAt": "2026-04-25T06:39:50.851Z"
+  },
+  "potsdamer straße 50, 10785, berlin": {
+    "latitude": 52.5070409,
+    "longitude": 13.3676212,
+    "address": "Potsdamer Straße 50, 10785, Berlin",
+    "displayName": "Neue Nationalgalerie, 50, Potsdamer Straße, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:39:52.255Z"
+  },
+  "unter den linden 5, 10117, berlin": {
+    "latitude": 52.5171465,
+    "longitude": 13.3961451,
+    "address": "Unter den Linden 5, 10117, Berlin",
+    "displayName": "PalaisPopulaire, 5, Unter den Linden, Friedrichswerder, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:39:54.128Z"
+  },
+  "am sudhaus 3, 12053, berlin": {
+    "latitude": 52.4794637,
+    "longitude": 13.431275,
+    "address": "Am Sudhaus 3, 12053, Berlin",
+    "displayName": "Kindl - Zentrum für zeitgenössische Kunst, 3, Am Sudhaus, Flughafenkiez, Neukölln, Berlin, 12053, Germany",
+    "updatedAt": "2026-04-25T06:39:55.418Z"
+  },
+  "lützowplatz 9, 10785, berlin": {
+    "latitude": 52.5043546,
+    "longitude": 13.3535546,
+    "address": "Lützowplatz 9, 10785, Berlin",
+    "displayName": "Haus am Lützowplatz, 9, Lützowplatz, Kielgan-Viertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:39:56.644Z"
+  },
+  "jebensstraße 2, 10623, berlin": {
+    "latitude": 52.5081567,
+    "longitude": 13.3320921,
+    "address": "Jebensstraße 2, 10623, Berlin",
+    "displayName": "Museum of Photography, 2, Jebensstraße, City West, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:39:58.319Z"
+  },
+  "coords:52.52653,13.38988": {
+    "latitude": 52.52653122,
+    "longitude": 13.38988018,
+    "address": "Linienstraße 139, 10115, Berlin",
+    "displayName": "139, Linienstraße, Oranienburger Vorstadt, Mitte, Berlin, 10115, Germany",
+    "updatedAt": "2026-04-25T06:39:59.610Z"
+  },
+  "coords:52.51837,13.41234": {
+    "latitude": 52.51837158,
+    "longitude": 13.41234016,
+    "address": "Klosterstraße 73a, 10179, Berlin",
+    "displayName": "73a, Klosterstraße, Nikolaiviertel, Spandauer Vorstadt, Mitte, Berlin, 10179, Germany",
+    "updatedAt": "2026-04-25T06:40:01.379Z"
+  },
+  "coords:52.52791,13.38603": {
+    "latitude": 52.52790833,
+    "longitude": 13.3860302,
+    "address": "Chausseestraße 128-129, 10115, Berlin",
+    "displayName": "Neuer Berliner Kunstverein, 128-129, Chausseestraße, Oranienburger Vorstadt, Mitte, Berlin, 10115, Germany",
+    "updatedAt": "2026-04-25T06:40:02.731Z"
+  },
+  "coords:52.52667,13.33434": {
+    "latitude": 52.52666855,
+    "longitude": 13.33434391,
+    "address": "Turmstraße 75, 10551, Berlin",
+    "displayName": "75, Turmstraße, Arminiuskiez, Moabit, Mitte, Berlin, 10551, Germany",
+    "updatedAt": "2026-04-25T06:40:04.162Z"
+  },
+  "coords:52.54307,13.41487": {
+    "latitude": 52.5430652,
+    "longitude": 13.4148661,
+    "address": "Pappelallee 15, 10437, Berlin",
+    "displayName": "Osmans Töchter, 15, Pappelallee, Bremer Höhe, Prenzlauer Berg, Pankow, Berlin, 10437, Germany",
+    "updatedAt": "2026-04-25T06:40:05.568Z"
+  },
+  "coords:52.38940,13.06101": {
+    "latitude": 52.3894001,
+    "longitude": 13.0610097,
+    "address": "Max-Planck-Straße 10a, 14473, Potsdam",
+    "displayName": "Ferienhaus Brauhausberg, 10a, Max-Planck-Straße, Hauptbahnhof und Brauhausberg Nord, Potsdam, Brandenburg, 14473, Germany",
+    "updatedAt": "2026-04-25T06:40:06.876Z"
+  },
+  "coords:52.49964,13.33196": {
+    "latitude": 52.4996417,
+    "longitude": 13.3319586,
+    "address": "Schaperstraße 11, 10719, Berlin",
+    "displayName": "11, Schaperstraße, Fasanenkiez, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10719, Germany",
+    "updatedAt": "2026-04-25T06:40:08.305Z"
+  },
+  "coords:52.49452,13.33446": {
+    "latitude": 52.49451828,
+    "longitude": 13.33446026,
+    "address": "Prager Straße 3, 10779, Berlin",
+    "displayName": "3, Prager Straße, Güntzelkiez, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10779, Germany",
+    "updatedAt": "2026-04-25T06:40:09.635Z"
+  },
+  "coords:52.52563,13.49416": {
+    "latitude": 52.5256281,
+    "longitude": 13.4941593,
+    "address": "Herzbergstraße 40-43, 10365, Berlin",
+    "displayName": "FAHRBEREITSCHAFT, 40-43, Herzbergstraße, Lichtenberg, Berlin, 10365, Germany",
+    "updatedAt": "2026-04-25T06:40:11.229Z"
+  },
+  "coords:52.48427,13.42818": {
+    "latitude": 52.4842706,
+    "longitude": 13.4281775,
+    "address": "Karl-Marx-Straße 28, 12043, Berlin",
+    "displayName": "KM28, 28, Karl-Marx-Straße, Flughafenkiez, Neukölln, Berlin, 12043, Germany",
+    "updatedAt": "2026-04-25T06:40:12.541Z"
+  },
+  "coords:52.56790,13.38553": {
+    "latitude": 52.5678968,
+    "longitude": 13.3855268,
+    "address": "Kühnemannstraße, 13409, Berlin",
+    "displayName": "Kühnemannstraße, Nordbahnkiez, Reinickendorf, Berlin, 13409, Germany",
+    "updatedAt": "2026-04-25T06:40:14.206Z"
+  },
+  "coords:52.45144,13.27392": {
+    "latitude": 52.45144272,
+    "longitude": 13.27391911,
+    "address": "Clayallee 174, 14195, Berlin",
+    "displayName": "174, Clayallee, Fünf Morgen, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Germany",
+    "updatedAt": "2026-04-25T06:40:16.078Z"
+  },
+  "coords:52.47884,13.43082": {
+    "latitude": 52.47883606,
+    "longitude": 13.43082237,
+    "address": "Rollbergstraße 59, 12053, Berlin",
+    "displayName": "Burger Vision, 59, Rollbergstraße, Flughafenkiez, Neukölln, Berlin, 12053, Germany",
+    "updatedAt": "2026-04-25T06:40:17.359Z"
+  },
+  "coords:52.52835,13.40987": {
+    "latitude": 52.5283466,
+    "longitude": 13.4098659,
+    "address": "Rosa-Luxemburg-Straße 51, 10119, Berlin",
+    "displayName": "51, Rosa-Luxemburg-Straße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10119, Germany",
+    "updatedAt": "2026-04-25T06:40:18.673Z"
+  },
+  "coords:52.50400,13.32000": {
+    "latitude": 52.5039978,
+    "longitude": 13.31999588,
+    "address": "Bleibtreustraße 45, 10623, Berlin",
+    "displayName": "45, Bleibtreustraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:40:20.063Z"
+  },
+  "coords:52.45644,13.41133": {
+    "latitude": 52.4564417,
+    "longitude": 13.4113265,
+    "address": "Gottlieb-Dunkel-Straße 43, 12099, Berlin",
+    "displayName": "43, Gottlieb-Dunkel-Straße, Tempelhof, Tempelhof-Schöneberg, Berlin, Teltow, 12099, Germany",
+    "updatedAt": "2026-04-25T06:40:21.338Z"
+  },
+  "coords:52.48523,13.33052": {
+    "latitude": 52.4852335,
+    "longitude": 13.3305239,
+    "address": "Wilhelmsaue 1, 10715, Berlin",
+    "displayName": "1, Wilhelmsaue, Güntzelkiez, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10715, Germany",
+    "updatedAt": "2026-04-25T06:40:22.723Z"
+  },
+  "coords:52.50885,13.32396": {
+    "latitude": 52.50885391,
+    "longitude": 13.32395744,
+    "address": "Goethestraße 2, 10623, Berlin",
+    "displayName": "2, Goethestraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:40:24.010Z"
+  },
+  "coords:52.53381,13.41783": {
+    "latitude": 52.5338076,
+    "longitude": 13.4178277,
+    "address": "Knaackstraße 27, 10405, Berlin",
+    "displayName": "Kindergarten am Wasserturm, 27, Knaackstraße, Kollwitzkiez, Prenzlauer Berg, Pankow, Berlin, 10405, Germany",
+    "updatedAt": "2026-04-25T06:40:25.298Z"
+  },
+  "coords:52.50197,13.36621": {
+    "latitude": 52.5019746,
+    "longitude": 13.3662125,
+    "address": "Lützowstraße, 10785, Berlin",
+    "displayName": "Sunday Natural, Lützowstraße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:40:26.563Z"
+  },
+  "coords:52.50088,13.43997": {
+    "latitude": 52.500878,
+    "longitude": 13.4399732,
+    "address": "Skalitzer Straße 76, 10997, Berlin",
+    "displayName": "76, Skalitzer Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10997, Germany",
+    "updatedAt": "2026-04-25T06:40:27.828Z"
+  },
+  "coords:52.52910,13.37092": {
+    "latitude": 52.52909851,
+    "longitude": 13.37092018,
+    "address": "Am Hamburger Bahnhof 4, 10557, Berlin",
+    "displayName": "Reinhard Bär, 4, Am Hamburger Bahnhof, Europacity, Moabit, Mitte, Berlin, 10557, Germany",
+    "updatedAt": "2026-04-25T06:40:29.198Z"
+  },
+  "coords:52.51659,13.45275": {
+    "latitude": 52.51659012,
+    "longitude": 13.45275021,
+    "address": "10243, Berlin",
+    "displayName": "Frankfurter Tor Nordturm, 1, Frankfurter Tor, Boxhagener Kiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Germany",
+    "updatedAt": "2026-04-25T06:40:30.513Z"
+  },
+  "coords:52.50321,13.41338": {
+    "latitude": 52.50321198,
+    "longitude": 13.41337585,
+    "address": "Luckauer Straße 16, 10969, Berlin",
+    "displayName": "Galerie Russi Klenner, 16, Luckauer Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:40:32.280Z"
+  },
+  "coords:52.50708,13.32058": {
+    "latitude": 52.50708008,
+    "longitude": 13.32057953,
+    "address": "Bleibtreustraße 54, 10623, Berlin",
+    "displayName": "54, Bleibtreustraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:40:34.051Z"
+  },
+  "coords:52.51126,13.39614": {
+    "latitude": 52.51125717,
+    "longitude": 13.39614201,
+    "address": "Leipziger Straße, 10117, Berlin",
+    "displayName": "Konzulát, Leipziger Straße, Friedrichswerder, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:40:35.339Z"
+  },
+  "coords:52.50963,13.32471": {
+    "latitude": 52.5096337,
+    "longitude": 13.3247148,
+    "address": "Hardenbergstraße 9a, 10623, Berlin",
+    "displayName": "9a, Hardenbergstraße, Spreestadt Charlottenburg, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:40:37.113Z"
+  },
+  "coords:52.50444,13.31798": {
+    "latitude": 52.50444031,
+    "longitude": 13.31797981,
+    "address": "Niebuhrstraße, 10629, Berlin",
+    "displayName": "Niebuhrstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10629, Germany",
+    "updatedAt": "2026-04-25T06:40:38.535Z"
+  },
+  "coords:52.50118,13.33808": {
+    "latitude": 52.50117874,
+    "longitude": 13.33807755,
+    "address": "Augsburger Straße 10, 10789, Berlin",
+    "displayName": "10, Augsburger Straße, Schöneberg, Charlottenburg-Wilmersdorf, Berlin, 10789, Germany",
+    "updatedAt": "2026-04-25T06:40:39.861Z"
+  },
+  "coords:52.52572,13.38800": {
+    "latitude": 52.5257214,
+    "longitude": 13.3879979,
+    "address": "Friedrichstrasse, 10117, Berlin",
+    "displayName": "Amo by Amano, Friedrichstrasse, Oranienburger Vorstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:40:41.637Z"
+  },
+  "coords:52.51296,13.41108": {
+    "latitude": 52.5129635,
+    "longitude": 13.4110755,
+    "address": "Inselstraße 7, 10179, Berlin",
+    "displayName": "7, Inselstraße, Neu-Cölln am Wasser, Mitte, Berlin, 10179, Germany",
+    "updatedAt": "2026-04-25T06:40:44.017Z"
+  },
+  "coords:52.49685,13.41832": {
+    "latitude": 52.49685287,
+    "longitude": 13.41832256,
+    "address": "Regina-Jonas-Straße 41/43, 10999, Berlin",
+    "displayName": "Trautwein Herleth, 41/43, Regina-Jonas-Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Germany",
+    "updatedAt": "2026-04-25T06:40:45.783Z"
+  },
+  "coords:52.52624,13.41091": {
+    "latitude": 52.5262372,
+    "longitude": 13.4109092,
+    "address": "Rosa-Luxemburg-Straße 31, 10178, Berlin",
+    "displayName": "31, Rosa-Luxemburg-Straße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-04-25T06:40:47.088Z"
+  },
+  "coords:52.52614,13.41176": {
+    "latitude": 52.5261397,
+    "longitude": 13.4117645,
+    "address": "Weydingerstraße 2/4, 10178, Berlin",
+    "displayName": "Galerie Nagel Draxler, 2/4, Weydingerstraße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-04-25T06:40:48.416Z"
+  },
+  "coords:52.45395,13.27171": {
+    "latitude": 52.4539501,
+    "longitude": 13.2717085,
+    "address": "Taylorstraße 1, 14195, Berlin",
+    "displayName": "Galerie Bastian Berlin, 1, Taylorstraße, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Germany",
+    "updatedAt": "2026-04-25T06:40:50.182Z"
+  },
+  "coords:52.50582,13.39388": {
+    "latitude": 52.50582123,
+    "longitude": 13.39387989,
+    "address": "Markgrafenstraße 67, 10969, Berlin",
+    "displayName": "Carlier | Gebauer, 67, Markgrafenstraße, Zeitungsviertel, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:40:52.164Z"
+  },
+  "coords:52.52723,13.41034": {
+    "latitude": 52.5272273,
+    "longitude": 13.4103406,
+    "address": "Almstadtstraße 52, 10119, Berlin",
+    "displayName": "52, Almstadtstraße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10119, Germany",
+    "updatedAt": "2026-04-25T06:40:53.527Z"
+  },
+  "coords:52.50269,13.31868": {
+    "latitude": 52.50268555,
+    "longitude": 13.31867886,
+    "address": "Mommsenstraße 67, 10629, Berlin",
+    "displayName": "67, Mommsenstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10629, Germany",
+    "updatedAt": "2026-04-25T06:40:56.311Z"
+  },
+  "coords:52.50513,13.39401": {
+    "latitude": 52.50513458,
+    "longitude": 13.39400768,
+    "address": "Markgrafenstraße 68, 10969, Berlin",
+    "displayName": "68, Markgrafenstraße, Zeitungsviertel, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:40:57.663Z"
+  },
+  "coords:52.50648,13.39802": {
+    "latitude": 52.50648117,
+    "longitude": 13.39801979,
+    "address": "Lindenstraße 35, 10969, Berlin",
+    "displayName": "35, Lindenstraße, Ritterkiez, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:40:59.445Z"
+  },
+  "coords:52.50080,13.36298": {
+    "latitude": 52.5008049,
+    "longitude": 13.3629837,
+    "address": "Pohlstraße 65, 10785, Berlin",
+    "displayName": "65, Pohlstraße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:41:00.846Z"
+  },
+  "coords:52.51138,13.39820": {
+    "latitude": 52.5113759,
+    "longitude": 13.3981997,
+    "address": "Leipziger Straße 56, 10117, Berlin",
+    "displayName": "56, Leipziger Straße, Friedrichswerder, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:41:02.179Z"
+  },
+  "coords:52.52721,13.39128": {
+    "latitude": 52.52721405,
+    "longitude": 13.39127731,
+    "address": "Linienstraße 119A, 10115, Berlin",
+    "displayName": "119A, Linienstraße, Oranienburger Vorstadt, Mitte, Berlin, 10115, Germany",
+    "updatedAt": "2026-04-25T06:41:03.563Z"
+  },
+  "coords:52.52624,13.41223": {
+    "latitude": 52.5262418,
+    "longitude": 13.4122295,
+    "address": "Weydingerstraße 10, 10178, Berlin",
+    "displayName": "10, Weydingerstraße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-04-25T06:41:04.848Z"
+  },
+  "coords:52.49964,13.33048": {
+    "latitude": 52.49964142,
+    "longitude": 13.33047771,
+    "address": "Joachimsthaler Straße 24a, 10719, Berlin",
+    "displayName": "tabak & presse, 24a, Joachimsthaler Straße, Fasanenkiez, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10719, Germany",
+    "updatedAt": "2026-04-25T06:41:06.235Z"
+  },
+  "coords:52.52413,13.39714": {
+    "latitude": 52.52413177,
+    "longitude": 13.39713955,
+    "address": "Oranienburger Straße 18, 10178, Berlin",
+    "displayName": "ImageMovement, 18, Oranienburger Straße, Spandauer Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-04-25T06:41:09.015Z"
+  },
+  "coords:52.50169,13.36582": {
+    "latitude": 52.5016861,
+    "longitude": 13.36582088,
+    "address": "Potsdamer Straße 81E, 10785, Berlin",
+    "displayName": "Esther Schipper, 81E, Potsdamer Straße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:41:20.111Z"
+  },
+  "coords:52.52957,13.39720": {
+    "latitude": 52.5295737,
+    "longitude": 13.3971966,
+    "address": "Ackerstraße 171, 10115, Berlin",
+    "displayName": "171, Ackerstraße, Spandauer Vorstadt, Mitte, Berlin, 10115, Germany",
+    "updatedAt": "2026-04-25T06:41:21.507Z"
+  },
+  "coords:52.48752,13.42923": {
+    "latitude": 52.4875201,
+    "longitude": 13.4292328,
+    "address": "Reuterstraße 31, 12047, Berlin",
+    "displayName": "HilbertRaum, 31, Reuterstraße, Reuterkiez, Neukölln, Berlin, 12047, Germany",
+    "updatedAt": "2026-04-25T06:41:23.571Z"
+  },
+  "coords:52.50650,13.39794": {
+    "latitude": 52.5065,
+    "longitude": 13.397944,
+    "address": "Lindenstraße 35, 10969, Berlin",
+    "displayName": "35, Lindenstraße, Ritterkiez, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:41:25.349Z"
+  },
+  "coords:52.50009,13.35982": {
+    "latitude": 52.500088,
+    "longitude": 13.3598222,
+    "address": "Frobenstraße 1, 10783, Berlin",
+    "displayName": "1, Frobenstraße, Nollendorfkiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10783, Germany",
+    "updatedAt": "2026-04-25T06:41:26.652Z"
+  },
+  "coords:52.50550,13.36504": {
+    "latitude": 52.50550079,
+    "longitude": 13.36503983,
+    "address": "Schöneberger Ufer 67, 10785, Berlin",
+    "displayName": "67, Schöneberger Ufer, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:41:27.893Z"
+  },
+  "coords:52.50376,13.32366": {
+    "latitude": 52.50376129,
+    "longitude": 13.3236599,
+    "address": "Grolmanstraße 31, 10623, Berlin",
+    "displayName": "31, Grolmanstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:41:29.269Z"
+  },
+  "coords:52.52626,13.41214": {
+    "latitude": 52.52625656,
+    "longitude": 13.41214371,
+    "address": "Weydingerstraße 10, 10178, Berlin",
+    "displayName": "10, Weydingerstraße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-04-25T06:41:30.538Z"
+  },
+  "coords:52.51998,13.42534": {
+    "latitude": 52.51998138,
+    "longitude": 13.4253397,
+    "address": "Karl-Marx-Allee 45, 10178, Berlin",
+    "displayName": "45, Karl-Marx-Allee, Stralauer Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-04-25T06:41:31.811Z"
+  },
+  "coords:52.50930,13.32326": {
+    "latitude": 52.50930023,
+    "longitude": 13.32325649,
+    "address": "Knesebeckstraße 95, 10623, Berlin",
+    "displayName": "WENTRUP, 95, Knesebeckstraße, Alt-Lietzow, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:41:33.580Z"
+  },
+  "coords:52.50565,13.36574": {
+    "latitude": 52.505648,
+    "longitude": 13.365738,
+    "address": "Schöneberger Ufer, 10785, Berlin",
+    "displayName": "Hans Albers, Schöneberger Ufer, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:41:35.748Z"
+  },
+  "coords:52.50085,13.32651": {
+    "latitude": 52.5008497,
+    "longitude": 13.3265131,
+    "address": "Uhland-Fasanen-Passage, 10719, Berlin",
+    "displayName": "Uhland-Fasanen-Passage, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10719, Germany",
+    "updatedAt": "2026-04-25T06:41:37.079Z"
+  },
+  "coords:52.48696,13.35663": {
+    "latitude": 52.486964,
+    "longitude": 13.3566281,
+    "address": "Hauptstraße 18, 10827, Berlin",
+    "displayName": "18, Hauptstraße, Crellekiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10827, Germany",
+    "updatedAt": "2026-04-25T06:41:38.844Z"
+  },
+  "coords:52.50849,13.32074": {
+    "latitude": 52.5084869,
+    "longitude": 13.3207441,
+    "address": "Grolmanstraße 58, 10623, Berlin",
+    "displayName": "Galerie kajetan, 58, Grolmanstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:41:40.602Z"
+  },
+  "coords:52.51038,13.32365": {
+    "latitude": 52.5103804,
+    "longitude": 13.3236505,
+    "address": "Hardenbergstraße 6, 10623, Berlin",
+    "displayName": "6, Hardenbergstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:41:41.957Z"
+  },
+  "coords:52.50547,13.36556": {
+    "latitude": 52.50547028,
+    "longitude": 13.36555958,
+    "address": "Schöneberger Ufer 61, 10785, Berlin",
+    "displayName": "Galerie Isabella Bortolozzi, 61, Schöneberger Ufer, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:41:43.327Z"
+  },
+  "coords:52.50625,13.39805": {
+    "latitude": 52.5062455,
+    "longitude": 13.3980465,
+    "address": "Lindenstraße 34-35, 10969, Berlin",
+    "displayName": "Stoke, 34-35, Lindenstraße, Ritterkiez, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:41:45.096Z"
+  },
+  "coords:52.52768,13.39407": {
+    "latitude": 52.52767944,
+    "longitude": 13.39406967,
+    "address": "Linienstraße 155, 10115, Berlin",
+    "displayName": "155, Linienstraße, Spandauer Vorstadt, Mitte, Berlin, 10115, Germany",
+    "updatedAt": "2026-04-25T06:41:46.477Z"
+  },
+  "coords:52.49257,13.36459": {
+    "latitude": 52.49256897,
+    "longitude": 13.36458969,
+    "address": "Kulmer Straße 17, 10783, Berlin",
+    "displayName": "Noah Klink Gallery, 17, Kulmer Straße, Monumentenkiez, Crellekiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10783, Germany",
+    "updatedAt": "2026-04-25T06:41:47.725Z"
+  },
+  "coords:52.53141,13.41068": {
+    "latitude": 52.5314115,
+    "longitude": 13.4106797,
+    "address": "Schönhauser Allee, 10119, Berlin",
+    "displayName": "Schönhauser Allee, Kollwitzkiez, Prenzlauer Berg, Pankow, Berlin, 10119, Germany",
+    "updatedAt": "2026-04-25T06:41:49.054Z"
+  },
+  "coords:52.49035,13.41291": {
+    "latitude": 52.4903547,
+    "longitude": 13.4129079,
+    "address": "Fichtestraße 6, 10967, Berlin",
+    "displayName": "Geschichtsspeicher Fichtebunker, 6, Fichtestraße, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Germany",
+    "updatedAt": "2026-04-25T06:41:50.331Z"
+  },
+  "coords:52.52408,13.35108": {
+    "latitude": 52.5240785,
+    "longitude": 13.3510849,
+    "address": "Alt-Moabit 110, 10559, Berlin",
+    "displayName": "110, Alt-Moabit, Moabit, Mitte, Berlin, 10559, Germany",
+    "updatedAt": "2026-04-25T06:41:51.692Z"
+  },
+  "coords:52.50717,13.39267": {
+    "latitude": 52.50717163,
+    "longitude": 13.39266968,
+    "address": "Charlottenstraße 13, 10969, Berlin",
+    "displayName": "Buchmann Galerie, 13, Charlottenstraße, Zeitungsviertel, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:41:53.079Z"
+  },
+  "coords:52.50697,13.39147": {
+    "latitude": 52.5069712,
+    "longitude": 13.3914743,
+    "address": "Rudi-Dutschke-Straße 26, 10969, Berlin",
+    "displayName": "Tim Raue, 26, Rudi-Dutschke-Straße, Zeitungsviertel, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:41:54.428Z"
+  },
+  "coords:52.49995,13.36453": {
+    "latitude": 52.49995041,
+    "longitude": 13.36452961,
+    "address": "Potsdamer Straße, 10785, Berlin",
+    "displayName": "Institut für ökologische Wirtschaftsforschung IÖW, Potsdamer Straße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:41:55.686Z"
+  },
+  "coords:52.50356,13.36654": {
+    "latitude": 52.5035628,
+    "longitude": 13.3665419,
+    "address": "Potsdamer Straße 65, 10785, Berlin",
+    "displayName": "65, Potsdamer Straße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:41:56.991Z"
+  },
+  "coords:52.49789,13.32788": {
+    "latitude": 52.497889104701,
+    "longitude": 13.327883086294,
+    "address": "Meierottostraße 2, 10719, Berlin",
+    "displayName": "2, Meierottostraße, Fasanenkiez, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10719, Germany",
+    "updatedAt": "2026-04-25T06:41:59.371Z"
+  },
+  "coords:52.50555,13.32400": {
+    "latitude": 52.5055496,
+    "longitude": 13.3239987,
+    "address": "Kantstraße 147, 10623, Berlin",
+    "displayName": "Robert Grunenberg, 147, Kantstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:42:00.655Z"
+  },
+  "coords:52.50309,13.42724": {
+    "latitude": 52.5030909,
+    "longitude": 13.4272424,
+    "address": "Muskauer Straße 24, 10997, Berlin",
+    "displayName": "24, Muskauer Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10997, Germany",
+    "updatedAt": "2026-04-25T06:42:02.021Z"
+  },
+  "coords:52.51133,13.39702": {
+    "latitude": 52.51133,
+    "longitude": 13.39702,
+    "address": "Leipziger Straße 58, 10117, Berlin",
+    "displayName": "crusz, 58, Leipziger Straße, Friedrichswerder, Friedrichstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:42:03.404Z"
+  },
+  "coords:52.50071,13.32665": {
+    "latitude": 52.50070953,
+    "longitude": 13.32664967,
+    "address": "Fasanenstraße 30, 10719, Berlin",
+    "displayName": "Galerie Buchholz, 30, Fasanenstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10719, Germany",
+    "updatedAt": "2026-04-25T06:42:04.690Z"
+  },
+  "coords:52.51664,13.39622": {
+    "latitude": 52.51663589,
+    "longitude": 13.39621639,
+    "address": "Oberwallstraße 2, 10117, Berlin",
+    "displayName": "2, Oberwallstraße, Friedrichswerder, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:42:06.020Z"
+  },
+  "coords:52.51733,13.38754": {
+    "latitude": 52.51733017,
+    "longitude": 13.38753986,
+    "address": "Unter den Linden 32, 10117, Berlin",
+    "displayName": "32, Unter den Linden, Dorotheenstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:42:07.368Z"
+  },
+  "coords:52.48162,13.49393": {
+    "latitude": 52.4816229,
+    "longitude": 13.4939337,
+    "address": "Kiehnwerderallee, 12437, Berlin",
+    "displayName": "Kiehnwerderallee, Plänterwald, Treptow-Köpenick, Berlin, 12437, Germany",
+    "updatedAt": "2026-04-25T06:42:09.125Z"
+  },
+  "coords:52.49552,13.43127": {
+    "latitude": 52.49551773,
+    "longitude": 13.43127346,
+    "address": "Reichenberger Straße 125, 10999, Berlin",
+    "displayName": "File Asto Taverna, 125, Reichenberger Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Germany",
+    "updatedAt": "2026-04-25T06:42:10.411Z"
+  },
+  "coords:52.50699,13.35057": {
+    "latitude": 52.5069894,
+    "longitude": 13.3505665,
+    "address": "Corneliusstraße 3, 10787, Berlin",
+    "displayName": "3, Corneliusstraße, Botschaftsviertel, Tiergarten, Mitte, Berlin, 10787, Germany",
+    "updatedAt": "2026-04-25T06:42:12.178Z"
+  },
+  "coords:52.50816,13.36759": {
+    "latitude": 52.50816345,
+    "longitude": 13.36758804,
+    "address": "Matthäikirchplatz, 10785, Berlin",
+    "displayName": "Altar, Matthäikirchplatz, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:42:13.847Z"
+  },
+  "coords:52.47061,13.43620": {
+    "latitude": 52.47060776,
+    "longitude": 13.43619823,
+    "address": "Schierker Straße 9, 12051, Berlin",
+    "displayName": "9, Schierker Straße, Körnerkiez, Neukölln, Berlin, 12051, Germany",
+    "updatedAt": "2026-04-25T06:42:15.219Z"
+  },
+  "coords:52.50259,13.41374": {
+    "latitude": 52.50259399,
+    "longitude": 13.4137392,
+    "address": "Oranienstraße 161, 10969, Berlin",
+    "displayName": "daad Galerie, 161, Oranienstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:42:16.489Z"
+  },
+  "coords:52.50359,13.36177": {
+    "latitude": 52.50359344,
+    "longitude": 13.36177254,
+    "address": "Kluckstraße 23, 10785, Berlin",
+    "displayName": "23, Kluckstraße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:42:17.751Z"
+  },
+  "coords:52.56048,13.46044": {
+    "latitude": 52.5604791,
+    "longitude": 13.4604364,
+    "address": "Pasedagplatz 4, 13088, Berlin",
+    "displayName": "Backshop, 4, Pasedagplatz, Weißensee, Pankow, Berlin, 13088, Germany",
+    "updatedAt": "2026-04-25T06:42:19.024Z"
+  },
+  "coords:52.53369,13.33669": {
+    "latitude": 52.53369141,
+    "longitude": 13.33669376,
+    "address": "Siemensstraße 27, 10551, Berlin",
+    "displayName": "ZK/U, 27, Siemensstraße, Arminiuskiez, Moabit, Mitte, Berlin, 10551, Germany",
+    "updatedAt": "2026-04-25T06:42:20.330Z"
+  },
+  "coords:52.49913,13.38633": {
+    "latitude": 52.49913025,
+    "longitude": 13.38632965,
+    "address": "Hallesches Ufer 32, 10963, Berlin",
+    "displayName": "32, Hallesches Ufer, Tempelhofer Vorstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Germany",
+    "updatedAt": "2026-04-25T06:42:21.611Z"
+  },
+  "reinickendorfer straße 17, 13347 berlin": {
+    "latitude": 52.5447796,
+    "longitude": 13.3707945,
+    "address": "Reinickendorfer Straße 17, 13347, Berlin",
+    "displayName": "17, Reinickendorfer Straße, Antonkiez, Gesundbrunnen, Mitte, Berlin, 13347, Germany",
+    "updatedAt": "2026-04-25T06:42:22.856Z"
+  },
+  "matthäikirchplatz, 10785, berlin": {
+    "latitude": 52.5081976,
+    "longitude": 13.3673249,
+    "address": "Matthäikirchplatz, 10785, Berlin",
+    "displayName": "Matthäikirchplatz, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-25T06:42:24.527Z"
+  },
+  "coords:52.51057,13.42873": {
+    "latitude": 52.51057053,
+    "longitude": 13.42873001,
+    "address": "Holzmarktstraße 33, 10243, Berlin",
+    "displayName": "Radialsystem V, 33, Holzmarktstraße, Andreasviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Germany",
+    "updatedAt": "2026-04-25T06:42:26.295Z"
+  },
+  "coords:52.49446,13.36723": {
+    "latitude": 52.49446487,
+    "longitude": 13.36722946,
+    "address": "Bülowstraße 52, 10783, Berlin",
+    "displayName": "52, Bülowstraße, Crellekiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10783, Germany",
+    "updatedAt": "2026-04-25T06:42:27.555Z"
+  },
+  "coords:52.49507,13.29804": {
+    "latitude": 52.4950698,
+    "longitude": 13.2980357,
+    "address": "Schweidnitzer Straße 17, 10709, Berlin",
+    "displayName": "17, Schweidnitzer Straße, Halensee, Charlottenburg-Wilmersdorf, Berlin, 10709, Germany",
+    "updatedAt": "2026-04-25T06:42:29.722Z"
+  },
+  "coords:52.44202,13.23834": {
+    "latitude": 52.44202042,
+    "longitude": 13.23834038,
+    "address": "Argentinische Allee 30, 14163, Berlin",
+    "displayName": "Café im Haus am Waldsee, 30, Argentinische Allee, Waldsiedlung Krumme Lanke, Zehlendorf, Steglitz-Zehlendorf, Berlin, 14163, Germany",
+    "updatedAt": "2026-04-25T06:42:31.492Z"
+  },
+  "coords:52.45692,13.31938": {
+    "latitude": 52.45692444,
+    "longitude": 13.31937885,
+    "address": "Grunewaldstraße 55, 12165, Berlin",
+    "displayName": "55, Grunewaldstraße, Steglitz, Steglitz-Zehlendorf, Berlin, Teltow, 12165, Germany",
+    "updatedAt": "2026-04-25T06:42:33.862Z"
+  },
+  "coords:52.54379,13.36753": {
+    "latitude": 52.5437889,
+    "longitude": 13.3675289,
+    "address": "Lindower Straße 20, 13347, Berlin",
+    "displayName": "20, Lindower Straße, Antonkiez, Wedding, Mitte, Berlin, 13347, Germany",
+    "updatedAt": "2026-04-25T06:42:35.152Z"
+  },
+  "coords:52.54750,13.35624": {
+    "latitude": 52.54750443,
+    "longitude": 13.35624123,
+    "address": "Müllerstraße, 13353, Berlin",
+    "displayName": "Bezirk Mitte (Rathaus Wedding), Müllerstraße, Brüsseler Kiez, Wedding, Mitte, Berlin, 13353, Germany",
+    "updatedAt": "2026-04-25T06:42:36.480Z"
+  },
+  "coords:52.52684,13.39488": {
+    "latitude": 52.52684021,
+    "longitude": 13.39488029,
+    "address": "Auguststraße 69, 10117, Berlin",
+    "displayName": "69, Auguststraße, Spandauer Vorstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:42:39.056Z"
+  },
+  "coords:52.52677,13.39620": {
+    "latitude": 52.5267745,
+    "longitude": 13.3962032,
+    "address": "Auguststraße 21, 10117, Berlin",
+    "displayName": "galerie weisser elefant, 21, Auguststraße, Spandauer Vorstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-04-25T06:42:40.349Z"
+  },
+  "coords:52.50863,13.32176": {
+    "latitude": 52.50862885,
+    "longitude": 13.32176018,
+    "address": "Goethestraße 82, 10623, Berlin",
+    "displayName": "Schuhmachermeister Stephan Pöschk, 82, Goethestraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-04-25T06:42:42.515Z"
+  },
+  "coords:53.19786,13.60435": {
+    "latitude": 53.1978632,
+    "longitude": 13.6043527,
+    "address": "Kreuzkruger Straße 27a, 17268, Templin",
+    "displayName": "27a, Kreuzkruger Straße, Herzfelde, Templin, Uckermark, Brandenburg, 17268, Germany",
+    "updatedAt": "2026-04-25T06:42:43.756Z"
+  },
+  "coords:52.45479,13.31779": {
+    "latitude": 52.4547861,
+    "longitude": 13.3177899,
+    "address": "Schloßstraße 48, 12165, Berlin",
+    "displayName": "Schlosspark Theater, 48, Schloßstraße, Steglitz, Steglitz-Zehlendorf, Berlin, 12165, Germany",
+    "updatedAt": "2026-04-25T06:42:45.087Z"
+  },
+  "coords:52.47696,13.43937": {
+    "latitude": 52.47695923,
+    "longitude": 13.43936634,
+    "address": "Karl-Marx-Straße 143, 12043, Berlin",
+    "displayName": "Döner 63, 143, Karl-Marx-Straße, Böhmisches Dorf, Körnerkiez, Neukölln, Berlin, 12043, Germany",
+    "updatedAt": "2026-04-25T06:42:46.482Z"
+  },
+  "coords:52.51282,13.41447": {
+    "latitude": 52.512816,
+    "longitude": 13.414473,
+    "address": "Rungestraße, 10179, Berlin",
+    "displayName": "Bärenzwinger, Rungestraße, Luisenstadt, Mitte, Berlin, 10179, Germany",
+    "updatedAt": "2026-04-25T06:42:47.834Z"
+  },
+  "coords:52.49611,13.34120": {
+    "latitude": 52.4961143,
+    "longitude": 13.3412049,
+    "address": "Viktoria-Luise-Platz 6, 10777, Berlin",
+    "displayName": "6, Viktoria-Luise-Platz, Bayerisches Viertel, Schöneberg, Tempelhof-Schöneberg, Berlin, 10777, Germany",
+    "updatedAt": "2026-04-25T06:42:49.160Z"
+  },
+  "coords:52.48462,13.44433": {
+    "latitude": 52.4846213,
+    "longitude": 13.4443274,
+    "address": "Weigandufer, 12045, Berlin",
+    "displayName": "40, Weigandufer, Weserkiez, Neukölln, Berlin, 12045, Germany",
+    "updatedAt": "2026-04-25T06:42:50.448Z"
+  },
+  "coords:52.52950,13.33706": {
+    "latitude": 52.5295021,
+    "longitude": 13.3370577,
+    "address": "Waldenserstraße 2-4, 10551, Berlin",
+    "displayName": "tudoor academy, 2-4, Waldenserstraße, Arminiuskiez, Moabit, Mitte, Berlin, 10551, Germany",
+    "updatedAt": "2026-04-25T06:42:51.759Z"
+  },
+  "coords:52.50482,13.33508": {
+    "latitude": 52.504818,
+    "longitude": 13.335082,
+    "address": "Kurfürstendamm, 10789, Berlin",
+    "displayName": "Old Bell Tower, Kurfürstendamm, City West, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10789, Germany",
+    "updatedAt": "2026-04-25T06:42:53.070Z"
+  },
+  "coords:52.50348,13.39823": {
+    "latitude": 52.503479,
+    "longitude": 13.39822674,
+    "address": "Alte Jakobstraße, 10969, Berlin",
+    "displayName": "Markierung Glaslager, Alte Jakobstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-04-25T06:42:54.362Z"
   }
 }
