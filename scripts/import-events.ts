@@ -219,6 +219,44 @@ function buildId(source: EventSource, title: string, venue: string, date?: strin
   return `${source}-${slugify(title)}-${digest}`;
 }
 
+function hasScheduleInfo(event: ArtEvent) {
+  return Boolean(event.openingStart || event.openingEnd || event.exhibitionStart || event.exhibitionEnd);
+}
+
+function hasLocationInfo(event: ArtEvent) {
+  return Boolean(
+    event.address ||
+      typeof event.latitude === 'number' ||
+      typeof event.longitude === 'number' ||
+      normalizeText(event.venue) !== 'Berlin venue',
+  );
+}
+
+function isPublishableImportedEvent(event: ArtEvent) {
+  // Drop fallback scraper artifacts that have no schedule, no location, and only the generic placeholder venue.
+  return hasScheduleInfo(event) || hasLocationInfo(event);
+}
+
+function sanitizeImportedEvents(events: ArtEvent[]) {
+  const removedBySource = new Map<EventSource, number>();
+  const sanitized: ArtEvent[] = [];
+
+  for (const event of events) {
+    if (isPublishableImportedEvent(event)) {
+      sanitized.push(event);
+      continue;
+    }
+
+    removedBySource.set(event.source, (removedBySource.get(event.source) ?? 0) + 1);
+  }
+
+  for (const [source, removedCount] of removedBySource.entries()) {
+    console.warn(`[${source}] filtered ${removedCount} low-quality records`);
+  }
+
+  return sanitized;
+}
+
 async function fetchHtml(url: string) {
   const response = await fetch(url, {
     headers: {
@@ -622,7 +660,8 @@ async function main() {
     return;
   }
 
-  const output = dedupeEvents([...manualEvents, ...importedEvents]);
+  const sanitizedImportedEvents = sanitizeImportedEvents(importedEvents);
+  const output = dedupeEvents([...manualEvents, ...sanitizedImportedEvents]);
   await fs.writeFile(eventsPath, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
   console.log(`Wrote ${output.length} events to ${path.relative(projectRoot, eventsPath)}`);
 }
