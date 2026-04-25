@@ -332,6 +332,22 @@ button {
   overflow: hidden;
 }
 
+.event-card-image-wrap {
+  margin: -18px -18px 18px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.16), rgba(249, 115, 22, 0.18));
+  border-bottom: 1px solid var(--line);
+}
+
+.event-card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .event-card-header,
 .event-actions {
   display: flex;

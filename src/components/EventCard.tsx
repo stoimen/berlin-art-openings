@@ -21,6 +21,19 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
 
   return (
     <article className="event-card">
+      {event.imageUrl ? (
+        <div className="event-card-image-wrap">
+          <img
+            className="event-card-image"
+            src={event.imageUrl}
+            alt={event.artist ? `${event.title} by ${event.artist}` : event.title}
+            loading="lazy"
+            decoding="async"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+      ) : null}
+
       <div className="event-card-header">
         <div className="tag-row" aria-label="Event tags">
           {tagList.map((tag) => (
