@@ -929,5 +929,19 @@
     "address": "Alte Jakobstraße, 10969, Berlin",
     "displayName": "Markierung Glaslager, Alte Jakobstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
     "updatedAt": "2026-04-25T06:42:54.362Z"
+  },
+  "coords:52.50040,13.36372": {
+    "latitude": 52.5004042,
+    "longitude": 13.3637222,
+    "address": "Potsdamer Straße, 10785, Berlin",
+    "displayName": "Der Goldankauf Berlin, Potsdamer Straße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-04-27T07:35:00.275Z"
+  },
+  "coords:52.49691,13.41872": {
+    "latitude": 52.4969101,
+    "longitude": 13.41872025,
+    "address": "Regina-Jonas-Straße 43, 10999, Berlin",
+    "displayName": "43, Regina-Jonas-Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Germany",
+    "updatedAt": "2026-04-27T07:35:01.557Z"
   }
 }
