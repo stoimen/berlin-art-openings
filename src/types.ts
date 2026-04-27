@@ -38,7 +38,7 @@ export type LocationPermissionStatus =
   | 'error'
   | 'unsupported';
 
-export type TimeframeFilter = 'all' | 'today' | 'tomorrow' | 'week';
+export type TimeframeFilter = 'all' | 'day-0' | 'day-1' | 'day-2' | 'day-3' | 'day-4' | 'week';
 
 export type DisplayEvent = ArtEvent & {
   distanceKm?: number;

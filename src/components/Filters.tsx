@@ -1,5 +1,6 @@
 import type { EventSource, TimeframeFilter } from '../types';
 import { sourceLabels } from '../api/events';
+import { getTimeframeOptions } from '../utils/date';
 
 export type FilterState = {
   timeframe: TimeframeFilter;
@@ -17,16 +18,11 @@ type FiltersProps = {
   onReset: () => void;
 };
 
-const timeframeOptions: Array<{ value: TimeframeFilter; label: string }> = [
-  { value: 'all', label: 'All' },
-  { value: 'today', label: 'Today' },
-  { value: 'tomorrow', label: 'Tomorrow' },
-  { value: 'week', label: 'This week' },
-];
-
 const distanceOptions = ['all', 1, 3, 5, 10, 20] as const;
 
 export function Filters({ value, hasLocation, onChange, onReset }: FiltersProps) {
+  const timeframeOptions = getTimeframeOptions();
+
   return (
     <section className="filters-panel" aria-labelledby="filters-title">
       <div className="filters-head">

@@ -1,5 +1,8 @@
 import type { ArtEvent, DisplayEvent, TimeframeFilter } from '../types';
 
+const weekdayChipLabels = ['Su', 'M', 'T', 'W', 'Th', 'F', 'Sa'] as const;
+const upcomingDayFilters = ['day-0', 'day-1', 'day-2', 'day-3', 'day-4'] as const;
+
 const dateTimeFormatter = new Intl.DateTimeFormat(undefined, {
   weekday: 'short',
   month: 'short',
@@ -135,6 +138,20 @@ function createDayBoundary(baseDate: Date, dayOffset: number) {
   return boundary;
 }
 
+export function getTimeframeOptions(now = new Date()): Array<{ value: TimeframeFilter; label: string }> {
+  return [
+    { value: 'all', label: 'All' },
+    ...upcomingDayFilters.map((value, dayOffset) => {
+      const date = createDayBoundary(now, dayOffset);
+      return {
+        value,
+        label: weekdayChipLabels[date.getDay()],
+      };
+    }),
+    { value: 'week', label: 'This week' },
+  ];
+}
+
 export function matchesTimeframe(event: ArtEvent, timeframe: TimeframeFilter, now = new Date()) {
   if (timeframe === 'all') {
     return true;
@@ -142,15 +159,20 @@ export function matchesTimeframe(event: ArtEvent, timeframe: TimeframeFilter, no
 
   const anchorDate = getEventAnchorDate(event);
   const startToday = createDayBoundary(now, 0);
-  const startTomorrow = createDayBoundary(now, 1);
-  const startDayAfterTomorrow = createDayBoundary(now, 2);
   const endOfWeek = createDayBoundary(now, 7);
 
+  if (timeframe.startsWith('day-')) {
+    const dayOffset = Number.parseInt(timeframe.slice(4), 10);
+    if (Number.isNaN(dayOffset)) {
+      return true;
+    }
+
+    const startDay = createDayBoundary(now, dayOffset);
+    const endDay = createDayBoundary(now, dayOffset + 1);
+    return anchorDate >= startDay && anchorDate < endDay;
+  }
+
   switch (timeframe) {
-    case 'today':
-      return anchorDate >= startToday && anchorDate < startTomorrow;
-    case 'tomorrow':
-      return anchorDate >= startTomorrow && anchorDate < startDayAfterTomorrow;
     case 'week':
       return anchorDate >= startToday && anchorDate < endOfWeek;
     default:

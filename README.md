@@ -6,7 +6,7 @@ Berlin Art Openings is a mobile-first React + TypeScript + Vite PWA for browsing
 
 - Grouped event list by date
 - Nearby ranking with browser geolocation and Haversine distance
-- Filters for `Today`, `Tomorrow`, `This week`, `Openings only`, `Source`, free text, and max distance
+- Filters for the next 5 days, `This week`, `Openings only`, `Source`, free text, and max distance
 - Favorites stored in `localStorage`
 - One-click `.ics` calendar download per event
 - Google Maps links for venues
