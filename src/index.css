@@ -345,6 +345,10 @@ button {
   transform: translateY(-2px);
 }
 
+.event-card-skeleton {
+  position: relative;
+}
+
 .event-card:focus-visible {
   outline: 2px solid rgba(15, 118, 110, 0.3);
   outline-offset: 3px;
@@ -364,6 +368,78 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.skeleton-block,
+.skeleton-pill,
+.skeleton-line,
+.skeleton-icon {
+  background:
+    linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0.38) 0%,
+      rgba(255, 255, 255, 0.74) 48%,
+      rgba(255, 255, 255, 0.38) 100%
+    ),
+    rgba(17, 24, 39, 0.08);
+  background-size: 220% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+.skeleton-pill,
+.skeleton-line,
+.skeleton-icon {
+  display: inline-block;
+}
+
+.skeleton-pill {
+  min-height: 30px;
+  width: 84px;
+  border-radius: 999px;
+}
+
+.skeleton-pill-wide {
+  width: 128px;
+}
+
+.skeleton-copy {
+  display: grid;
+  gap: 10px;
+}
+
+.skeleton-line {
+  height: 0.95rem;
+  border-radius: 999px;
+}
+
+.skeleton-line-label {
+  height: 0.78rem;
+  width: 72px;
+}
+
+.skeleton-line-short {
+  width: 96px;
+}
+
+.skeleton-line-medium {
+  width: min(100%, 220px);
+}
+
+.skeleton-line-long {
+  width: min(100%, 320px);
+}
+
+.skeleton-line-title {
+  height: 1.6rem;
+  width: min(100%, 300px);
+}
+
+.skeleton-icon {
+  width: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 118, 110, 0.18);
 }
 
 .event-card-header,
@@ -423,6 +499,10 @@ button {
   border-bottom: 1px solid rgba(23, 23, 23, 0.08);
 }
 
+.event-meta-skeleton div {
+  gap: 8px;
+}
+
 .event-meta dt {
   font-size: 0.85rem;
   font-weight: 600;
@@ -436,6 +516,11 @@ button {
 }
 
 .event-description {
+  margin: 0;
+  color: var(--surface-muted);
+}
+
+.skeleton-message {
   margin: 0;
   color: var(--surface-muted);
 }
@@ -473,6 +558,16 @@ button {
   padding: 28px 0 12px;
   color: var(--surface-muted);
   font-size: 0.92rem;
+}
+
+@keyframes skeleton-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -20% 0;
+  }
 }
 
 @media (min-width: 720px) {

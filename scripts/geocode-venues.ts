@@ -21,7 +21,7 @@ const venuesPath = path.join(projectRoot, 'public', 'data', 'venues.json');
 
 const userAgent =
   process.env.GEOCODER_USER_AGENT ??
-  'BerlinArtOpeningsGeocoder/0.1 (+https://github.com/replace-this/berlin-art-openings)';
+  'BerlinArtOpeningsGeocoder/0.1 (+https://github.com/stoimen/berlin-art-openings)';
 
 function normalizeKey(address: string) {
   return address.trim().toLowerCase();

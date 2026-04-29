@@ -17,7 +17,7 @@ const eventsPath = path.join(projectRoot, 'public', 'data', 'events.json');
 
 const userAgent =
   process.env.IMPORT_USER_AGENT ??
-  'BerlinArtOpeningsImporter/0.1 (+https://github.com/replace-this/berlin-art-openings)';
+  'BerlinArtOpeningsImporter/0.1 (+https://github.com/stoimen/berlin-art-openings)';
 
 function normalizeText(value?: string | null) {
   return value?.replace(/\s+/g, ' ').trim() || undefined;

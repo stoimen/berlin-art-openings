@@ -28,10 +28,15 @@ function buildShareUrl(eventId: string) {
 
 export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCardProps) {
   const [shareStatus, setShareStatus] = useState<'idle' | 'copied' | 'error'>('idle');
+  const [imageVisible, setImageVisible] = useState(Boolean(event.imageUrl));
   const tagList = event.tags?.length ? event.tags : [event.eventType];
   const favoriteLabel = event.isFavorite ? 'Remove from favorites' : 'Save to favorites';
   const shareLabel =
     shareStatus === 'copied' ? 'Link copied' : shareStatus === 'error' ? 'Could not share link' : 'Share event';
+
+  useEffect(() => {
+    setImageVisible(Boolean(event.imageUrl));
+  }, [event.id, event.imageUrl]);
 
   useEffect(() => {
     if (shareStatus === 'idle' || typeof window === 'undefined') {
@@ -80,7 +85,7 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
 
   return (
     <article id={event.id} className="event-card" tabIndex={-1}>
-      {event.imageUrl ? (
+      {event.imageUrl && imageVisible ? (
         <div className="event-card-image-wrap">
           <img
             className="event-card-image"
@@ -89,6 +94,7 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
             loading="lazy"
             decoding="async"
             referrerPolicy="no-referrer"
+            onError={() => setImageVisible(false)}
           />
         </div>
       ) : null}

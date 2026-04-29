@@ -1,5 +1,6 @@
 import type { DisplayEvent } from '../types';
 import { groupEventsByDate } from '../utils/date';
+import { EventCardBoundary } from './EventCardBoundary';
 import { EventCard } from './EventCard';
 
 type EventListProps = {
@@ -21,12 +22,13 @@ export function EventList({ events, locationEnabled, onToggleFavorite }: EventLi
           </div>
           <div className="event-stack">
             {group.events.map((event) => (
-              <EventCard
-                key={event.id}
-                event={event}
-                locationEnabled={locationEnabled}
-                onToggleFavorite={onToggleFavorite}
-              />
+              <EventCardBoundary key={event.id} eventId={event.id}>
+                <EventCard
+                  event={event}
+                  locationEnabled={locationEnabled}
+                  onToggleFavorite={onToggleFavorite}
+                />
+              </EventCardBoundary>
             ))}
           </div>
         </section>

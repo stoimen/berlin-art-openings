@@ -6,6 +6,7 @@ import { EventList } from './components/EventList';
 import { Filters, type FilterState } from './components/Filters';
 import { Layout } from './components/Layout';
 import { LocationPermission } from './components/LocationPermission';
+import { syncEventStructuredData, syncStaticMetaTags } from './seo';
 import type { ArtEvent, DisplayEvent, LocationPermissionStatus } from './types';
 import { haversineDistanceKm } from './utils/distance';
 import { getEventAnchorDate, matchesTimeframe, isUpcomingEvent } from './utils/date';
@@ -209,6 +210,12 @@ export default function App() {
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
+
+  useEffect(() => {
+    syncStaticMetaTags();
+  }, []);
+
+  useEffect(() => syncEventStructuredData(events), [events]);
 
   function requestLocation(mode: 'auto' | 'manual' = 'manual') {
     if (!('geolocation' in navigator)) {

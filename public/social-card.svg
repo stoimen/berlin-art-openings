@@ -1,0 +1,46 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="82" y1="56" x2="1126" y2="602" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F3EA" />
+      <stop offset="0.52" stop-color="#F3E7D5" />
+      <stop offset="1" stop-color="#EFE5DB" />
+    </linearGradient>
+    <radialGradient id="warm" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(184 88) rotate(35.9041) scale(356.344 245.391)">
+      <stop stop-color="#F97316" stop-opacity="0.34" />
+      <stop offset="1" stop-color="#F97316" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="cool" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(978 76) rotate(120.161) scale(290.257 246.426)">
+      <stop stop-color="#38BDF8" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="156" y="92" width="888" height="446" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="18" />
+      <feGaussianBlur stdDeviation="24" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.0941176 0 0 0 0 0.152941 0 0 0 0.12 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape" />
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#warm)" />
+  <rect width="1200" height="630" fill="url(#cool)" />
+  <g filter="url(#shadow)">
+    <rect x="204" y="140" width="792" height="350" rx="32" fill="white" fill-opacity="0.82" />
+    <rect x="204.5" y="140.5" width="791" height="349" rx="31.5" stroke="#171717" stroke-opacity="0.12" />
+  </g>
+  <rect x="266" y="202" width="138" height="34" rx="17" fill="#111827" fill-opacity="0.08" />
+  <rect x="420" y="202" width="168" height="34" rx="17" fill="#F97316" fill-opacity="0.16" />
+  <rect x="266" y="395" width="142" height="16" rx="8" fill="#171717" fill-opacity="0.08" />
+  <rect x="266" y="426" width="272" height="16" rx="8" fill="#171717" fill-opacity="0.08" />
+  <text x="266" y="307" fill="#171717" font-family="Iowan Old Style, Palatino Linotype, Book Antiqua, Palatino, Georgia, serif" font-size="74" font-weight="700" letter-spacing="-1.6">
+    Berlin Art Openings
+  </text>
+  <text x="266" y="356" fill="#0F766E" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2.2">
+    OPENINGS • EXHIBITIONS • NEARBY GALLERIES
+  </text>
+  <text x="768" y="442" text-anchor="end" fill="#625E57" font-family="Arial, sans-serif" font-size="26" font-weight="500">
+    Fresh listings for Berlin art weeknights and weekends
+  </text>
+</svg>
