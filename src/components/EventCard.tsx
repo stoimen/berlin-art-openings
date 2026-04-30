@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useI18n } from '../i18n-context';
+import { translateTagLabel } from '../i18n';
 import type { DisplayEvent } from '../types';
 import { NEAR_YOU_THRESHOLD_KM, SHARE_RESET_DELAY_MS } from '../constants';
 import { sourceLabels } from '../api/events';
-import { formatDistance } from '../utils/distance';
+import { formatDistanceForLocale } from '../utils/distance';
 import { formatDateRange, formatOpeningWindow } from '../utils/date';
 import { downloadEventIcs } from '../utils/ics';
 
@@ -28,12 +30,17 @@ function buildShareUrl(eventId: string) {
 }
 
 export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCardProps) {
+  const { locale, copy } = useI18n();
   const [shareStatus, setShareStatus] = useState<'idle' | 'copied' | 'error'>('idle');
   const [imageVisible, setImageVisible] = useState(Boolean(event.imageUrl));
   const tagList = event.tags?.length ? event.tags : [event.eventType];
-  const favoriteLabel = event.isFavorite ? 'Remove from favorites' : 'Save to favorites';
+  const favoriteLabel = event.isFavorite ? copy.eventCard.removeFavorite : copy.eventCard.saveFavorite;
   const shareLabel =
-    shareStatus === 'copied' ? 'Link copied' : shareStatus === 'error' ? 'Could not share link' : 'Share event';
+    shareStatus === 'copied'
+      ? copy.eventCard.shareCopied
+      : shareStatus === 'error'
+        ? copy.eventCard.shareError
+        : copy.eventCard.share;
 
   useEffect(() => {
     setImageVisible(Boolean(event.imageUrl));
@@ -59,7 +66,9 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
       try {
         await navigator.share({
           title: event.title,
-          text: event.artist ? `${event.title} by ${event.artist}` : `${event.title} at ${event.venue}`,
+          text: event.artist
+            ? copy.eventCard.shareTextWithArtist(event.title, event.artist)
+            : copy.eventCard.shareTextWithVenue(event.title, event.venue),
           url: shareUrl,
         });
         setShareStatus('idle');
@@ -101,13 +110,15 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
       ) : null}
 
       <div className="event-card-header">
-        <div className="tag-row" aria-label="Event tags">
+        <div className="tag-row" aria-label={copy.eventCard.tagsAriaLabel}>
           {tagList.map((tag) => (
             <span key={tag} className="tag">
-              {tag}
+              {typeof tag === 'string' ? translateTagLabel(tag, locale) : tag}
             </span>
           ))}
-          {event.distanceKm !== undefined && event.distanceKm <= NEAR_YOU_THRESHOLD_KM ? <span className="tag nearby">Near you</span> : null}
+          {event.distanceKm !== undefined && event.distanceKm <= NEAR_YOU_THRESHOLD_KM ? (
+            <span className="tag nearby">{copy.eventCard.nearYou}</span>
+          ) : null}
         </div>
 
         <button
@@ -135,30 +146,30 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
 
         <dl className="event-meta">
           <div>
-            <dt>Venue</dt>
+            <dt>{copy.eventCard.venue}</dt>
             <dd>{event.venue}</dd>
           </div>
           {event.address ? (
             <div>
-              <dt>Address</dt>
+              <dt>{copy.eventCard.address}</dt>
               <dd>{event.address}</dd>
             </div>
           ) : null}
           <div>
-            <dt>Opening</dt>
-            <dd>{formatOpeningWindow(event)}</dd>
+            <dt>{copy.eventCard.opening}</dt>
+            <dd>{formatOpeningWindow(event, locale)}</dd>
           </div>
           <div>
-            <dt>Exhibition</dt>
-            <dd>{formatDateRange(event.exhibitionStart, event.exhibitionEnd)}</dd>
+            <dt>{copy.eventCard.exhibition}</dt>
+            <dd>{formatDateRange(event.exhibitionStart, event.exhibitionEnd, locale)}</dd>
           </div>
           <div>
-            <dt>Distance</dt>
+            <dt>{copy.eventCard.distance}</dt>
             <dd>
-              {formatDistance(event.distanceKm, {
+              {formatDistanceForLocale(event.distanceKm, {
                 locationEnabled,
                 hasCoordinates: typeof event.latitude === 'number' && typeof event.longitude === 'number',
-              })}
+              }, locale)}
             </dd>
           </div>
         </dl>
@@ -171,8 +182,8 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
           type="button"
           className="icon-circle-button"
           onClick={() => downloadEventIcs(event)}
-          aria-label="Add to calendar"
-          title="Add to calendar"
+          aria-label={copy.eventCard.addToCalendar}
+          title={copy.eventCard.addToCalendar}
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M7 3a1 1 0 0 1 1 1v1h8V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7a2 2 0 0 1 2-2h1V4a1 1 0 0 1 1-1Z" />
@@ -196,8 +207,8 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
           href={buildMapsUrl(event)}
           target="_blank"
           rel="noreferrer"
-          aria-label={`Open ${event.venue} in Google Maps`}
-          title="Open in Google Maps"
+          aria-label={copy.eventCard.openVenueInMaps(event.venue)}
+          title={copy.eventCard.openInMaps}
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12 21C10.8 19.5 6 13.6 6 10a6 6 0 1 1 12 0c0 3.6-4.8 9.5-6 11Z" />
@@ -209,8 +220,8 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
           href={event.sourceUrl}
           target="_blank"
           rel="noreferrer"
-          aria-label="Open source page in a new tab"
-          title="Open source page"
+          aria-label={copy.eventCard.openSourcePageInNewTab}
+          title={copy.eventCard.openSourcePage}
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M14 5h5v5h-2V8.41l-6.29 6.3-1.42-1.42 6.3-6.29H14V5Z" />

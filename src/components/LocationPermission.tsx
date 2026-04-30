@@ -1,4 +1,5 @@
 import type { LocationPermissionStatus } from '../types';
+import { useI18n } from '../i18n-context';
 
 type LocationPermissionProps = {
   status: LocationPermissionStatus;
@@ -6,36 +7,38 @@ type LocationPermissionProps = {
   onRequest: () => void;
 };
 
-function getCopy(status: LocationPermissionStatus, errorMessage?: string) {
+function getCopy(status: LocationPermissionStatus, errorMessage: string | undefined, fallbackCopy: ReturnType<typeof useI18n>['copy']) {
   switch (status) {
     case 'granted':
-      return 'Nearby ranking is active. Events with coordinates are sorted by date first, then by distance.';
+      return fallbackCopy.location.granted;
     case 'loading':
-      return 'Checking your position. Your browser should show a location prompt if permission has not been decided yet.';
+      return fallbackCopy.location.loading;
     case 'denied':
-      return 'Location access is off, so ranking falls back to date only. You can re-enable it in your browser settings.';
+      return fallbackCopy.location.denied;
     case 'error':
-      return errorMessage ?? 'Location lookup failed. You can keep using the app with date-based sorting.';
+      return errorMessage ?? fallbackCopy.location.errorFallback;
     case 'unsupported':
-      return 'This browser does not expose geolocation. Nearby ranking is unavailable.';
+      return fallbackCopy.location.unsupported;
     case 'prompt':
     case 'idle':
     default:
-      return 'The app will ask for your location to emphasize nearby openings and enable distance filtering.';
+      return fallbackCopy.location.prompt;
   }
 }
 
 export function LocationPermission({ status, errorMessage, onRequest }: LocationPermissionProps) {
+  const { copy } = useI18n();
+
   return (
     <section className="location-panel" aria-labelledby="location-panel-title">
       <div>
-        <p className="eyebrow">Location</p>
-        <h2 id="location-panel-title">Prioritize nearby galleries</h2>
-        <p>{getCopy(status, errorMessage)}</p>
+        <p className="eyebrow">{copy.location.eyebrow}</p>
+        <h2 id="location-panel-title">{copy.location.title}</h2>
+        <p>{getCopy(status, errorMessage, copy)}</p>
       </div>
 
       <button type="button" className="primary-button" onClick={onRequest} disabled={status === 'loading'}>
-        {status === 'granted' ? 'Refresh location' : status === 'loading' ? 'Locating…' : 'Use my location'}
+        {status === 'granted' ? copy.location.refresh : status === 'loading' ? copy.location.locating : copy.location.useMyLocation}
       </button>
     </section>
   );

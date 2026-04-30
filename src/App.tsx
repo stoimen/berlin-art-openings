@@ -9,6 +9,8 @@ import { LocationPermission } from './components/LocationPermission';
 import { FAVORITES_STORAGE_KEY } from './constants';
 import { useEventFilters } from './hooks/useEventFilters';
 import { useGeolocation } from './hooks/useGeolocation';
+import { I18nProvider, useI18n } from './i18n-context';
+import { translateLoadErrorMessage } from './i18n';
 import { syncEventStructuredData, syncStaticMetaTags } from './seo';
 import type { ArtEvent } from './types';
 
@@ -53,7 +55,8 @@ function readFavoriteIds() {
   }
 }
 
-export default function App() {
+function AppContent() {
+  const { locale, copy } = useI18n();
   const [events, setEvents] = useState<ArtEvent[]>([]);
   const [loading, setLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState<string>();
@@ -91,7 +94,9 @@ export default function App() {
           return;
         }
 
-        setErrorMessage(error instanceof Error ? error.message : 'Unknown error while loading events.');
+        setErrorMessage(
+          error instanceof Error ? error.message : 'Unknown error while loading events.',
+        );
       } finally {
         if (!controller.signal.aborted) {
           setLoading(false);
@@ -208,14 +213,14 @@ export default function App() {
 
       {loading && events.length === 0 ? (
         <section className="state-panel" aria-live="polite">
-          <h2>Loading events</h2>
+          <h2>{copy.loadingState.title}</h2>
           <p>
-            Reading the latest static dataset from <code>/data/events.json</code>.
+            {copy.loadingState.description} <code>/data/events.json</code>.
           </p>
         </section>
       ) : null}
 
-      {errorMessage ? <ErrorState message={errorMessage} onRetry={handleRefresh} /> : null}
+      {errorMessage ? <ErrorState message={translateLoadErrorMessage(errorMessage, locale)} onRetry={handleRefresh} /> : null}
 
       {!errorMessage && !loading && displayedEvents.length === 0 ? (
         <EmptyState hasFilters={hasFiltersApplied} savedOnly={filters.savedOnly} favoriteCount={favoriteIds.length} />
@@ -225,5 +230,13 @@ export default function App() {
         <EventList events={displayedEvents} locationEnabled={locationEnabled} onToggleFavorite={handleToggleFavorite} />
       ) : null}
     </Layout>
+  );
+}
+
+export default function App() {
+  return (
+    <I18nProvider>
+      <AppContent />
+    </I18nProvider>
   );
 }

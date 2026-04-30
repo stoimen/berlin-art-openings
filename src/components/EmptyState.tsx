@@ -1,3 +1,5 @@
+import { useI18n } from '../i18n-context';
+
 type EmptyStateProps = {
   hasFilters: boolean;
   savedOnly: boolean;
@@ -5,17 +7,18 @@ type EmptyStateProps = {
 };
 
 export function EmptyState({ hasFilters, savedOnly, favoriteCount }: EmptyStateProps) {
+  const { copy } = useI18n();
   const message = savedOnly
     ? favoriteCount > 0
-      ? 'No saved events match the current filters. Try widening the date window, source selection, or distance filter.'
-      : 'You have not saved any events yet. Use the bookmark button on an event card to build a shortlist.'
+      ? copy.emptyState.savedWithFilters
+      : copy.emptyState.savedEmpty
     : hasFilters
-      ? 'Try widening the date window, source selection, or distance filter.'
-      : 'The local dataset is empty right now. Refresh or update public/data/events.json.';
+      ? copy.emptyState.filtersOnly
+      : copy.emptyState.datasetEmpty;
 
   return (
     <section className="state-panel" aria-live="polite">
-      <h2>No matching events</h2>
+      <h2>{copy.emptyState.title}</h2>
       <p>{message}</p>
     </section>
   );

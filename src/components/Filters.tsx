@@ -1,5 +1,6 @@
 import type { FilterState } from '../types';
 import { sourceLabels } from '../api/events';
+import { useI18n } from '../i18n-context';
 import { getTimeframeOptions } from '../utils/date';
 
 export type { FilterState };
@@ -14,23 +15,24 @@ type FiltersProps = {
 const distanceOptions = ['all', 1, 3, 5, 10, 20] as const;
 
 export function Filters({ value, hasLocation, onChange, onReset }: FiltersProps) {
-  const timeframeOptions = getTimeframeOptions();
+  const { locale, copy } = useI18n();
+  const timeframeOptions = getTimeframeOptions(locale);
 
   return (
     <section className="filters-panel" aria-labelledby="filters-title">
       <div className="filters-head">
         <div>
-          <p className="eyebrow">Filters</p>
-          <h2 id="filters-title">Focus the list</h2>
+          <p className="eyebrow">{copy.filters.eyebrow}</p>
+          <h2 id="filters-title">{copy.filters.title}</h2>
         </div>
         <button type="button" className="ghost-button" onClick={onReset}>
-          Reset
+          {copy.filters.reset}
         </button>
       </div>
 
       <div className="filter-grid">
         <fieldset className="chip-group">
-          <legend className="chip-legend">Dates</legend>
+          <legend className="chip-legend">{copy.filters.dates}</legend>
           {timeframeOptions.map((option) => (
             <button
               key={option.value}
@@ -45,22 +47,22 @@ export function Filters({ value, hasLocation, onChange, onReset }: FiltersProps)
         </fieldset>
 
         <label className="field">
-          <span>Search</span>
+          <span>{copy.filters.search}</span>
           <input
             type="search"
-            placeholder="Artist, venue, neighborhood…"
+            placeholder={copy.filters.searchPlaceholder}
             value={value.search}
             onChange={(event) => onChange({ ...value, search: event.target.value })}
           />
         </label>
 
         <label className="field">
-          <span>Source</span>
+          <span>{copy.filters.source}</span>
           <select
             value={value.source}
             onChange={(event) => onChange({ ...value, source: event.target.value as FilterState['source'] })}
           >
-            <option value="all">All sources</option>
+            <option value="all">{copy.filters.allSources}</option>
             {Object.entries(sourceLabels).map(([source, label]) => (
               <option key={source} value={source}>
                 {label}
@@ -70,7 +72,7 @@ export function Filters({ value, hasLocation, onChange, onReset }: FiltersProps)
         </label>
 
         <label className="field">
-          <span>Max distance</span>
+          <span>{copy.filters.maxDistance}</span>
           <select
             value={String(value.maxDistanceKm)}
             disabled={!hasLocation}
@@ -83,7 +85,7 @@ export function Filters({ value, hasLocation, onChange, onReset }: FiltersProps)
           >
             {distanceOptions.map((option) => (
               <option key={String(option)} value={String(option)}>
-                {option === 'all' ? 'Any distance' : `${option} km`}
+                {option === 'all' ? copy.filters.anyDistance : `${option} km`}
               </option>
             ))}
           </select>
@@ -95,7 +97,7 @@ export function Filters({ value, hasLocation, onChange, onReset }: FiltersProps)
             checked={value.openingsOnly}
             onChange={(event) => onChange({ ...value, openingsOnly: event.target.checked })}
           />
-          <span>Openings only</span>
+          <span>{copy.filters.openingsOnly}</span>
         </label>
 
         <label className="toggle-field">
@@ -104,7 +106,7 @@ export function Filters({ value, hasLocation, onChange, onReset }: FiltersProps)
             checked={value.savedOnly}
             onChange={(event) => onChange({ ...value, savedOnly: event.target.checked })}
           />
-          <span>Saved only</span>
+          <span>{copy.filters.savedOnly}</span>
         </label>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import { getIntlLocale, translations, type Locale } from '../i18n';
+
 const EARTH_RADIUS_KM = 6371;
 
 function toRadians(value: number) {
@@ -32,21 +34,34 @@ type FormatDistanceOptions = {
 };
 
 export function formatDistance(distanceKm: number | undefined, options: FormatDistanceOptions) {
+  return formatDistanceForLocale(distanceKm, options, 'en');
+}
+
+export function formatDistanceForLocale(
+  distanceKm: number | undefined,
+  options: FormatDistanceOptions,
+  locale: Locale,
+) {
   if (distanceKm === undefined) {
     if (!options.locationEnabled) {
-      return 'Share location to calculate distance';
+      return translations[locale].distance.shareLocation;
     }
 
     if (!options.hasCoordinates) {
-      return 'Venue coordinates unavailable';
+      return translations[locale].distance.coordinatesUnavailable;
     }
 
-    return 'Distance unavailable';
+    return translations[locale].distance.distanceUnavailable;
   }
 
   if (distanceKm < 1) {
-    return `${Math.round(distanceKm * 1000)} m away`;
+    return translations[locale].distance.metersAway(Math.round(distanceKm * 1000));
   }
 
-  return `${distanceKm.toFixed(1)} km away`;
+  const formattedDistance = new Intl.NumberFormat(getIntlLocale(locale), {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
+  }).format(distanceKm);
+
+  return translations[locale].distance.kilometersAway(formattedDistance);
 }

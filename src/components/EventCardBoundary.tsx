@@ -1,15 +1,17 @@
 import { Component, type ErrorInfo, type ReactNode } from 'react';
+import { useI18n } from '../i18n-context';
 
 type EventCardBoundaryProps = {
   children: ReactNode;
   eventId: string;
+  fallbackMessage: string;
 };
 
 type EventCardBoundaryState = {
   hasError: boolean;
 };
 
-function EventCardSkeleton() {
+function EventCardSkeleton({ message }: { message: string }) {
   return (
     <article className="event-card event-card-skeleton" aria-live="polite">
       <div className="event-card-image-wrap skeleton-block" aria-hidden="true" />
@@ -45,12 +47,12 @@ function EventCardSkeleton() {
         </div>
       </div>
 
-      <p className="skeleton-message">This event card could not be displayed.</p>
+      <p className="skeleton-message">{message}</p>
     </article>
   );
 }
 
-export class EventCardBoundary extends Component<EventCardBoundaryProps, EventCardBoundaryState> {
+class EventCardBoundaryInner extends Component<EventCardBoundaryProps, EventCardBoundaryState> {
   state: EventCardBoundaryState = {
     hasError: false,
   };
@@ -65,9 +67,14 @@ export class EventCardBoundary extends Component<EventCardBoundaryProps, EventCa
 
   render() {
     if (this.state.hasError) {
-      return <EventCardSkeleton />;
+      return <EventCardSkeleton message={this.props.fallbackMessage} />;
     }
 
     return this.props.children;
   }
+}
+
+export function EventCardBoundary(props: Omit<EventCardBoundaryProps, 'fallbackMessage'>) {
+  const { copy } = useI18n();
+  return <EventCardBoundaryInner {...props} fallbackMessage={copy.eventCard.fallback} />;
 }

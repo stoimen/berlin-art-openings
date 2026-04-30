@@ -1,31 +1,39 @@
+import { getIntlLocale, translations, type Locale } from '../i18n';
 import type { ArtEvent, DisplayEvent, TimeframeFilter } from '../types';
 
-const weekdayChipLabels = ['Su', 'M', 'T', 'W', 'Th', 'F', 'Sa'] as const;
 const upcomingDayFilters = ['day-0', 'day-1', 'day-2', 'day-3', 'day-4'] as const;
 
-const dateTimeFormatter = new Intl.DateTimeFormat(undefined, {
-  weekday: 'short',
-  month: 'short',
-  day: 'numeric',
-  hour: 'numeric',
-  minute: '2-digit',
-});
+function createDateTimeFormatter(locale: Locale) {
+  return new Intl.DateTimeFormat(getIntlLocale(locale), {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+  });
+}
 
-const dateFormatter = new Intl.DateTimeFormat(undefined, {
-  weekday: 'long',
-  month: 'long',
-  day: 'numeric',
-});
+function createDateFormatter(locale: Locale) {
+  return new Intl.DateTimeFormat(getIntlLocale(locale), {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+  });
+}
 
-const compactDateFormatter = new Intl.DateTimeFormat(undefined, {
-  month: 'short',
-  day: 'numeric',
-});
+function createCompactDateFormatter(locale: Locale) {
+  return new Intl.DateTimeFormat(getIntlLocale(locale), {
+    month: 'short',
+    day: 'numeric',
+  });
+}
 
-const timeFormatter = new Intl.DateTimeFormat(undefined, {
-  hour: 'numeric',
-  minute: '2-digit',
-});
+function createTimeFormatter(locale: Locale) {
+  return new Intl.DateTimeFormat(getIntlLocale(locale), {
+    hour: 'numeric',
+    minute: '2-digit',
+  });
+}
 
 function formatLocalDateKey(date: Date) {
   const year = date.getFullYear();
@@ -71,52 +79,53 @@ export function getEventEndDate(event: ArtEvent) {
   );
 }
 
-export function formatDateTime(value?: string) {
+export function formatDateTime(value?: string, locale: Locale = 'en') {
   const date = parseDateValue(value);
-  return date ? dateTimeFormatter.format(date) : 'Time TBA';
+  return date ? createDateTimeFormatter(locale).format(date) : translations[locale].dates.timeTba;
 }
 
-export function formatDateRange(start?: string, end?: string) {
+export function formatDateRange(start?: string, end?: string, locale: Locale = 'en') {
   const startDate = parseDateValue(start);
   const endDate = parseDateValue(end, true);
+  const compactDateFormatter = createCompactDateFormatter(locale);
 
   if (!startDate && !endDate) {
-    return 'Dates TBA';
+    return translations[locale].dates.datesTba;
   }
 
   if (startDate && endDate) {
-    return `${compactDateFormatter.format(startDate)} to ${compactDateFormatter.format(endDate)}`;
+    return `${compactDateFormatter.format(startDate)} ${translations[locale].dates.rangeSeparator} ${compactDateFormatter.format(endDate)}`;
   }
 
   return compactDateFormatter.format(startDate ?? endDate ?? new Date());
 }
 
-export function formatOpeningWindow(event: ArtEvent) {
+export function formatOpeningWindow(event: ArtEvent, locale: Locale = 'en') {
   if (!event.openingStart) {
-    return 'Opening time TBA';
+    return translations[locale].dates.openingTimeTba;
   }
 
   if (!event.openingEnd) {
-    return formatDateTime(event.openingStart);
+    return formatDateTime(event.openingStart, locale);
   }
 
   const openingStart = parseDateValue(event.openingStart);
   const openingEnd = parseDateValue(event.openingEnd);
 
   if (!openingStart || !openingEnd) {
-    return formatDateTime(event.openingStart);
+    return formatDateTime(event.openingStart, locale);
   }
 
-  return `${dateTimeFormatter.format(openingStart)} to ${timeFormatter.format(openingEnd)}`;
+  return `${createDateTimeFormatter(locale).format(openingStart)} ${translations[locale].dates.rangeSeparator} ${createTimeFormatter(locale).format(openingEnd)}`;
 }
 
-export function formatGroupingLabel(dateKey: string) {
+export function formatGroupingLabel(dateKey: string, locale: Locale = 'en') {
   if (dateKey === 'undated') {
-    return 'Date TBA';
+    return translations[locale].dates.dateTba;
   }
 
   const date = parseDateValue(dateKey);
-  return date ? dateFormatter.format(date) : 'Date TBA';
+  return date ? createDateFormatter(locale).format(date) : translations[locale].dates.dateTba;
 }
 
 export function getGroupingKey(event: ArtEvent) {
@@ -138,17 +147,17 @@ function createDayBoundary(baseDate: Date, dayOffset: number) {
   return boundary;
 }
 
-export function getTimeframeOptions(now = new Date()): Array<{ value: TimeframeFilter; label: string }> {
+export function getTimeframeOptions(locale: Locale = 'en', now = new Date()): Array<{ value: TimeframeFilter; label: string }> {
   return [
-    { value: 'all', label: 'All' },
+    { value: 'all', label: translations[locale].timeframe.all },
     ...upcomingDayFilters.map((value, dayOffset) => {
       const date = createDayBoundary(now, dayOffset);
       return {
         value,
-        label: weekdayChipLabels[date.getDay()],
+        label: translations[locale].timeframe.weekdayLabels[date.getDay()],
       };
     }),
-    { value: 'week', label: 'This week' },
+    { value: 'week', label: translations[locale].timeframe.week },
   ];
 }
 
@@ -180,7 +189,7 @@ export function matchesTimeframe(event: ArtEvent, timeframe: TimeframeFilter, no
   }
 }
 
-export function groupEventsByDate(events: DisplayEvent[]) {
+export function groupEventsByDate(events: DisplayEvent[], locale: Locale = 'en') {
   const groups = new Map<string, DisplayEvent[]>();
 
   for (const event of events) {
@@ -198,7 +207,7 @@ export function groupEventsByDate(events: DisplayEvent[]) {
     .sort(([left], [right]) => left.localeCompare(right))
     .map(([key, groupedEvents]) => ({
       key,
-      label: formatGroupingLabel(key),
+      label: formatGroupingLabel(key, locale),
       events: groupedEvents,
     }));
 }
