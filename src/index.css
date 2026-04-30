@@ -89,7 +89,7 @@ button {
 
 .brand-block {
   border-radius: 30px;
-  padding: 28px 24px 22px;
+  padding: 18px 20px 16px;
   position: relative;
   overflow: hidden;
 }
@@ -104,11 +104,64 @@ button {
   background: radial-gradient(circle, rgba(56, 189, 248, 0.4), transparent 70%);
 }
 
-.brand-block h1 {
-  margin: 0 0 10px;
+.brand-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand-title-row h1 {
+  margin: 0;
   font-size: clamp(2.4rem, 8vw, 4.4rem);
   line-height: 0.94;
-  max-width: 9ch;
+}
+
+.header-toggle {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-strong);
+  color: var(--surface-ink);
+  transition: background-color 160ms ease;
+}
+
+.header-toggle svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 280ms ease;
+}
+
+.app-header--open .header-toggle svg {
+  transform: rotate(180deg);
+}
+
+.header-toggle:hover {
+  background: white;
+}
+
+.brand-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 280ms ease;
+}
+
+.brand-details-inner {
+  overflow: hidden;
+  padding-top: 0;
+  transition: padding-top 280ms ease;
+}
+
+.app-header--open .brand-details {
+  grid-template-rows: 1fr;
+}
+
+.app-header--open .brand-details-inner {
+  padding-top: 14px;
 }
 
 .lead {
@@ -118,11 +171,23 @@ button {
   font-size: 1.02rem;
 }
 
+.hero-panel-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 280ms ease;
+}
+
+.app-header--open .hero-panel-wrap {
+  grid-template-rows: 1fr;
+}
+
 .hero-panel {
   display: grid;
   gap: 14px;
   padding: 18px;
   border-radius: var(--radius-lg);
+  overflow: hidden;
+  min-height: 0;
 }
 
 .hero-label,
@@ -581,6 +646,33 @@ button {
     align-items: stretch;
   }
 
+  .header-toggle {
+    display: none;
+  }
+
+  .brand-block {
+    padding: 28px 24px 22px;
+  }
+
+  .brand-details {
+    grid-template-rows: 1fr;
+    transition: none;
+  }
+
+  .brand-details-inner {
+    padding-top: 14px;
+    transition: none;
+  }
+
+  .hero-panel-wrap {
+    display: contents;
+  }
+
+  .hero-panel {
+    overflow: visible;
+    min-height: unset;
+  }
+
   .location-panel {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
@@ -604,5 +696,10 @@ button {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+
+  .brand-details,
+  .hero-panel-wrap {
+    transition: none !important;
   }
 }
