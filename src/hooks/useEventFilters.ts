@@ -1,4 +1,4 @@
-import { useDeferredValue, useState } from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
 import type { ArtEvent, DisplayEvent, FilterState, LocationPermissionStatus } from '../types';
 import { sourceReliability } from '../api/events';
 import { haversineDistanceKm } from '../utils/distance';
@@ -47,40 +47,40 @@ export function useEventFilters(events: ArtEvent[], favoriteIds: string[], locat
   const [filters, setFilters] = useState<FilterState>(defaultFilters);
   const deferredSearch = useDeferredValue(filters.search.trim().toLowerCase());
 
-  const locationGranted =
-    location.status === 'granted' && location.latitude !== undefined && location.longitude !== undefined;
+  const { latitude, longitude, status } = location;
 
-  const displayedEvents = events
-    .filter((event) => isUpcomingEvent(event))
-    .map<DisplayEvent>((event) => ({
-      ...event,
-      distanceKm:
-        location.status === 'granted' &&
-        location.latitude !== undefined &&
-        location.longitude !== undefined &&
-        hasCoordinates(event)
-          ? haversineDistanceKm(location.latitude, location.longitude, event.latitude, event.longitude)
-          : undefined,
-      isFavorite: favoriteIds.includes(event.id),
-    }))
-    .filter((event) => {
-      if (filters.openingsOnly && event.eventType !== 'opening') return false;
-      if (filters.savedOnly && !event.isFavorite) return false;
-      if (!matchesTimeframe(event, filters.timeframe)) return false;
-      if (filters.source !== 'all' && event.source !== filters.source) return false;
-      if (filters.maxDistanceKm !== 'all' && (event.distanceKm === undefined || event.distanceKm > filters.maxDistanceKm)) {
-        return false;
-      }
-      if (!deferredSearch) return true;
+  const displayedEvents = useMemo(() => {
+    const locationGranted = status === 'granted' && latitude !== undefined && longitude !== undefined;
 
-      const searchableText = [event.title, event.artist, event.venue, event.address, event.description, ...(event.tags ?? [])]
-        .filter(Boolean)
-        .join(' ')
-        .toLowerCase();
+    return events
+      .filter((event) => isUpcomingEvent(event))
+      .map<DisplayEvent>((event) => ({
+        ...event,
+        distanceKm:
+          locationGranted && hasCoordinates(event)
+            ? haversineDistanceKm(latitude, longitude, event.latitude, event.longitude)
+            : undefined,
+        isFavorite: favoriteIds.includes(event.id),
+      }))
+      .filter((event) => {
+        if (filters.openingsOnly && event.eventType !== 'opening') return false;
+        if (filters.savedOnly && !event.isFavorite) return false;
+        if (!matchesTimeframe(event, filters.timeframe)) return false;
+        if (filters.source !== 'all' && event.source !== filters.source) return false;
+        if (filters.maxDistanceKm !== 'all' && (event.distanceKm === undefined || event.distanceKm > filters.maxDistanceKm)) {
+          return false;
+        }
+        if (!deferredSearch) return true;
 
-      return searchableText.includes(deferredSearch);
-    })
-    .sort(locationGranted ? compareByNearbyScore : compareByDate);
+        const searchableText = [event.title, event.artist, event.venue, event.address, event.description, ...(event.tags ?? [])]
+          .filter(Boolean)
+          .join(' ')
+          .toLowerCase();
+
+        return searchableText.includes(deferredSearch);
+      })
+      .sort(locationGranted ? compareByNearbyScore : compareByDate);
+  }, [events, favoriteIds, status, latitude, longitude, filters, deferredSearch]);
 
   const hasFiltersApplied =
     filters.timeframe !== 'all' ||
