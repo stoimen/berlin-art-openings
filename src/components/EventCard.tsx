@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { DisplayEvent } from '../types';
+import { NEAR_YOU_THRESHOLD_KM, SHARE_RESET_DELAY_MS } from '../constants';
 import { sourceLabels } from '../api/events';
 import { formatDistance } from '../utils/distance';
 import { formatDateRange, formatOpeningWindow } from '../utils/date';
@@ -43,7 +44,7 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
       return undefined;
     }
 
-    const timeoutId = window.setTimeout(() => setShareStatus('idle'), 2200);
+    const timeoutId = window.setTimeout(() => setShareStatus('idle'), SHARE_RESET_DELAY_MS);
     return () => window.clearTimeout(timeoutId);
   }, [shareStatus]);
 
@@ -106,7 +107,7 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
               {tag}
             </span>
           ))}
-          {event.distanceKm !== undefined && event.distanceKm <= 3 ? <span className="tag nearby">Near you</span> : null}
+          {event.distanceKm !== undefined && event.distanceKm <= NEAR_YOU_THRESHOLD_KM ? <span className="tag nearby">Near you</span> : null}
         </div>
 
         <button

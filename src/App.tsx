@@ -1,33 +1,16 @@
-import { startTransition, useDeferredValue, useEffect, useRef, useState } from 'react';
-import { loadEvents, sourceReliability } from './api/events';
+import { startTransition, useEffect, useRef, useState } from 'react';
+import { loadEvents } from './api/events';
 import { EmptyState } from './components/EmptyState';
 import { ErrorState } from './components/ErrorState';
 import { EventList } from './components/EventList';
-import { Filters, type FilterState } from './components/Filters';
+import { Filters } from './components/Filters';
 import { Layout } from './components/Layout';
 import { LocationPermission } from './components/LocationPermission';
+import { FAVORITES_STORAGE_KEY } from './constants';
+import { useEventFilters } from './hooks/useEventFilters';
+import { useGeolocation } from './hooks/useGeolocation';
 import { syncEventStructuredData, syncStaticMetaTags } from './seo';
-import type { ArtEvent, DisplayEvent, LocationPermissionStatus } from './types';
-import { haversineDistanceKm } from './utils/distance';
-import { getEventAnchorDate, matchesTimeframe, isUpcomingEvent } from './utils/date';
-
-const FAVORITES_STORAGE_KEY = 'berlin-art-openings:favorites';
-
-const defaultFilters: FilterState = {
-  timeframe: 'all',
-  openingsOnly: true,
-  savedOnly: false,
-  search: '',
-  source: 'all',
-  maxDistanceKm: 'all',
-};
-
-type LocationState = {
-  status: LocationPermissionStatus;
-  latitude?: number;
-  longitude?: number;
-  errorMessage?: string;
-};
+import type { ArtEvent } from './types';
 
 function readDeepLinkedEventId() {
   if (typeof window === 'undefined') {
@@ -70,45 +53,24 @@ function readFavoriteIds() {
   }
 }
 
-function hasCoordinates(event: ArtEvent): event is ArtEvent & { latitude: number; longitude: number } {
-  return typeof event.latitude === 'number' && typeof event.longitude === 'number';
-}
-
-function compareByDate(left: DisplayEvent, right: DisplayEvent) {
-  return (
-    getEventAnchorDate(left).getTime() - getEventAnchorDate(right).getTime() ||
-    sourceReliability[left.source] - sourceReliability[right.source] ||
-    left.title.localeCompare(right.title)
-  );
-}
-
-function compareByNearbyScore(left: DisplayEvent, right: DisplayEvent) {
-  const leftDistance = left.distanceKm ?? Number.POSITIVE_INFINITY;
-  const rightDistance = right.distanceKm ?? Number.POSITIVE_INFINITY;
-
-  return (
-    getEventAnchorDate(left).getTime() - getEventAnchorDate(right).getTime() ||
-    leftDistance - rightDistance ||
-    sourceReliability[left.source] - sourceReliability[right.source] ||
-    left.title.localeCompare(right.title)
-  );
-}
-
 export default function App() {
   const [events, setEvents] = useState<ArtEvent[]>([]);
   const [loading, setLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState<string>();
   const [refreshTick, setRefreshTick] = useState(0);
   const [lastUpdated, setLastUpdated] = useState<string>();
-  const [filters, setFilters] = useState<FilterState>(defaultFilters);
   const [favoriteIds, setFavoriteIds] = useState<string[]>(readFavoriteIds);
-  const [locationState, setLocationState] = useState<LocationState>({ status: 'idle' });
   const [deepLinkedEventId, setDeepLinkedEventId] = useState<string | undefined>(readDeepLinkedEventId);
-  const autoLocationAttemptedRef = useRef(false);
-  const locationRequestInFlightRef = useRef(false);
   const scrolledDeepLinkRef = useRef<string | undefined>(undefined);
 
-  const deferredSearch = useDeferredValue(filters.search.trim().toLowerCase());
+  const { status, latitude, longitude, errorMessage: locationError, requestLocation } = useGeolocation();
+  const location = { status, latitude, longitude };
+
+  const { filters, setFilters, resetFilters, displayedEvents, hasFiltersApplied } = useEventFilters(
+    events,
+    favoriteIds,
+    location,
+  );
 
   useEffect(() => {
     const controller = new AbortController();
@@ -142,58 +104,6 @@ export default function App() {
   }, [refreshTick]);
 
   useEffect(() => {
-    if (!('geolocation' in navigator)) {
-      setLocationState({ status: 'unsupported' });
-      return;
-    }
-
-    let cancelled = false;
-    let permissionStatus: PermissionStatus | undefined;
-
-    async function inspectPermission() {
-      if (!('permissions' in navigator) || !navigator.permissions.query) {
-        setLocationState((current) => ({ ...current, status: current.status === 'idle' ? 'prompt' : current.status }));
-        return;
-      }
-
-      try {
-        const nextPermissionStatus = await navigator.permissions.query({ name: 'geolocation' });
-        permissionStatus = nextPermissionStatus;
-        if (cancelled) {
-          return;
-        }
-
-        setLocationState((current) => ({
-          ...current,
-          status: nextPermissionStatus.state === 'granted' ? 'granted' : nextPermissionStatus.state,
-        }));
-
-        nextPermissionStatus.onchange = () => {
-          if (cancelled) {
-            return;
-          }
-
-          setLocationState((current) => ({
-            ...current,
-            status: nextPermissionStatus.state === 'granted' ? 'granted' : nextPermissionStatus.state,
-          }));
-        };
-      } catch {
-        setLocationState((current) => ({ ...current, status: current.status === 'idle' ? 'prompt' : current.status }));
-      }
-    }
-
-    void inspectPermission();
-
-    return () => {
-      cancelled = true;
-      if (permissionStatus) {
-        permissionStatus.onchange = null;
-      }
-    };
-  }, []);
-
-  useEffect(() => {
     window.localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(favoriteIds));
   }, [favoriteIds]);
 
@@ -217,78 +127,6 @@ export default function App() {
 
   useEffect(() => syncEventStructuredData(events), [events]);
 
-  function requestLocation(mode: 'auto' | 'manual' = 'manual') {
-    if (!('geolocation' in navigator)) {
-      setLocationState({ status: 'unsupported' });
-      return;
-    }
-
-    if (locationRequestInFlightRef.current) {
-      return;
-    }
-
-    if (mode === 'auto') {
-      autoLocationAttemptedRef.current = true;
-    }
-
-    locationRequestInFlightRef.current = true;
-
-    setLocationState((current) => ({
-      ...current,
-      status: 'loading',
-      errorMessage: undefined,
-    }));
-
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        locationRequestInFlightRef.current = false;
-        setLocationState({
-          status: 'granted',
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-        });
-      },
-      (error) => {
-        locationRequestInFlightRef.current = false;
-        setLocationState({
-          status: error.code === error.PERMISSION_DENIED ? 'denied' : 'error',
-          errorMessage: error.message,
-        });
-      },
-      {
-        enableHighAccuracy: false,
-        timeout: 10_000,
-        maximumAge: 15 * 60 * 1000,
-      },
-    );
-  }
-
-  useEffect(() => {
-    if (
-      !autoLocationAttemptedRef.current &&
-      (locationState.status === 'prompt' || locationState.status === 'granted') &&
-      locationState.latitude === undefined
-    ) {
-      requestLocation('auto');
-    }
-  }, [locationState.status, locationState.latitude]);
-
-  function handleRefresh() {
-    scrolledDeepLinkRef.current = undefined;
-    setDeepLinkedEventId(undefined);
-    clearDeepLinkedEventId();
-
-    startTransition(() => {
-      setRefreshTick((current) => current + 1);
-    });
-  }
-
-  function handleToggleFavorite(eventId: string) {
-    setFavoriteIds((current) =>
-      current.includes(eventId) ? current.filter((favoriteId) => favoriteId !== eventId) : [...current, eventId],
-    );
-  }
-
   useEffect(() => {
     if (!deepLinkedEventId) {
       return;
@@ -300,64 +138,7 @@ export default function App() {
     }
 
     setFilters((current) => (current.openingsOnly ? { ...current, openingsOnly: false } : current));
-  }, [deepLinkedEventId, events]);
-
-  const displayedEvents = events
-    .filter((event) => isUpcomingEvent(event))
-    .map<DisplayEvent>((event) => ({
-      ...event,
-      distanceKm:
-        locationState.status === 'granted' &&
-        locationState.latitude !== undefined &&
-        locationState.longitude !== undefined &&
-        hasCoordinates(event)
-          ? haversineDistanceKm(locationState.latitude, locationState.longitude, event.latitude, event.longitude)
-          : undefined,
-      isFavorite: favoriteIds.includes(event.id),
-    }))
-    .filter((event) => {
-      if (filters.openingsOnly && event.eventType !== 'opening') {
-        return false;
-      }
-
-      if (filters.savedOnly && !event.isFavorite) {
-        return false;
-      }
-
-      if (!matchesTimeframe(event, filters.timeframe)) {
-        return false;
-      }
-
-      if (filters.source !== 'all' && event.source !== filters.source) {
-        return false;
-      }
-
-      if (
-        filters.maxDistanceKm !== 'all' &&
-        (event.distanceKm === undefined || event.distanceKm > filters.maxDistanceKm)
-      ) {
-        return false;
-      }
-
-      if (!deferredSearch) {
-        return true;
-      }
-
-      const searchableText = [
-        event.title,
-        event.artist,
-        event.venue,
-        event.address,
-        event.description,
-        ...(event.tags ?? []),
-      ]
-        .filter(Boolean)
-        .join(' ')
-        .toLowerCase();
-
-      return searchableText.includes(deferredSearch);
-    })
-    .sort(locationState.status === 'granted' ? compareByNearbyScore : compareByDate);
+  }, [deepLinkedEventId, events, setFilters]);
 
   useEffect(() => {
     if (!deepLinkedEventId) {
@@ -390,46 +171,45 @@ export default function App() {
     });
   }, [deepLinkedEventId, displayedEvents]);
 
+  function handleRefresh() {
+    scrolledDeepLinkRef.current = undefined;
+    setDeepLinkedEventId(undefined);
+    clearDeepLinkedEventId();
+
+    startTransition(() => {
+      setRefreshTick((current) => current + 1);
+    });
+  }
+
+  function handleToggleFavorite(eventId: string) {
+    setFavoriteIds((current) =>
+      current.includes(eventId) ? current.filter((favoriteId) => favoriteId !== eventId) : [...current, eventId],
+    );
+  }
+
   const nearbyCount = displayedEvents.filter((event) => event.distanceKm !== undefined).length;
-  const hasFiltersApplied =
-    filters.timeframe !== 'all' ||
-    filters.openingsOnly ||
-    filters.savedOnly ||
-    filters.search.trim().length > 0 ||
-    filters.source !== 'all' ||
-    filters.maxDistanceKm !== 'all';
+  const locationEnabled = status === 'granted' && latitude !== undefined && longitude !== undefined;
 
   return (
     <Layout
       totalEvents={events.length}
       nearbyCount={nearbyCount}
       favoriteCount={favoriteIds.length}
-      locationEnabled={
-        locationState.status === 'granted' &&
-        locationState.latitude !== undefined &&
-        locationState.longitude !== undefined
-      }
+      locationEnabled={locationEnabled}
       lastUpdated={lastUpdated}
       isRefreshing={loading && events.length > 0}
       onRefresh={handleRefresh}
     >
-      <LocationPermission
-        status={locationState.status}
-        errorMessage={locationState.errorMessage}
-        onRequest={requestLocation}
-      />
+      <LocationPermission status={status} errorMessage={locationError} onRequest={requestLocation} />
 
-      <Filters
-        value={filters}
-        hasLocation={locationState.status === 'granted'}
-        onChange={setFilters}
-        onReset={() => setFilters(defaultFilters)}
-      />
+      <Filters value={filters} hasLocation={status === 'granted'} onChange={setFilters} onReset={resetFilters} />
 
       {loading && events.length === 0 ? (
         <section className="state-panel" aria-live="polite">
           <h2>Loading events</h2>
-          <p>Reading the latest static dataset from <code>/data/events.json</code>.</p>
+          <p>
+            Reading the latest static dataset from <code>/data/events.json</code>.
+          </p>
         </section>
       ) : null}
 
@@ -440,15 +220,7 @@ export default function App() {
       ) : null}
 
       {!errorMessage && displayedEvents.length > 0 ? (
-        <EventList
-          events={displayedEvents}
-          locationEnabled={
-            locationState.status === 'granted' &&
-            locationState.latitude !== undefined &&
-            locationState.longitude !== undefined
-          }
-          onToggleFavorite={handleToggleFavorite}
-        />
+        <EventList events={displayedEvents} locationEnabled={locationEnabled} onToggleFavorite={handleToggleFavorite} />
       ) : null}
     </Layout>
   );

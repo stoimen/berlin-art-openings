@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 const repository = process.env.GITHUB_REPOSITORY;
 const base = repository ? `/${repository.split('/')[1]}/` : '/';
@@ -9,6 +10,7 @@ export default defineConfig({
   base,
   plugins: [
     react(),
+    process.env.ANALYZE ? visualizer({ open: true, filename: 'dist/bundle-stats.html' }) : null,
     VitePWA({
       registerType: 'autoUpdate',
       injectRegister: 'auto',

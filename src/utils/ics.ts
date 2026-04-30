@@ -1,4 +1,5 @@
 import type { ArtEvent } from '../types';
+import { ICS_DEFAULT_DURATION_MS } from '../constants';
 import { parseDateValue } from './date';
 
 function escapeIcsText(value: string) {
@@ -28,7 +29,7 @@ function getIcsWindow(event: ArtEvent) {
     return {
       allDay: false,
       start: timedStart,
-      end: timedEnd ?? new Date(timedStart.getTime() + 2 * 60 * 60 * 1000),
+      end: timedEnd ?? new Date(timedStart.getTime() + ICS_DEFAULT_DURATION_MS),
     };
   }
 
