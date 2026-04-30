@@ -3,43 +3,70 @@ import type { ArtEvent, DisplayEvent, TimeframeFilter } from '../types';
 
 const upcomingDayFilters = ['day-0', 'day-1', 'day-2', 'day-3', 'day-4'] as const;
 
+const BERLIN_TIMEZONE = 'Europe/Berlin';
+
+const formatterCache = new Map<string, Intl.DateTimeFormat>();
+
+function getFormatter(key: string, factory: () => Intl.DateTimeFormat) {
+  let formatter = formatterCache.get(key);
+  if (!formatter) {
+    formatter = factory();
+    formatterCache.set(key, formatter);
+  }
+  return formatter;
+}
+
 function createDateTimeFormatter(locale: Locale) {
-  return new Intl.DateTimeFormat(getIntlLocale(locale), {
-    weekday: 'short',
-    month: 'short',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: '2-digit',
-  });
+  return getFormatter(`datetime-${locale}`, () =>
+    new Intl.DateTimeFormat(getIntlLocale(locale), {
+      weekday: 'short',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+    }),
+  );
 }
 
 function createDateFormatter(locale: Locale) {
-  return new Intl.DateTimeFormat(getIntlLocale(locale), {
-    weekday: 'long',
-    month: 'long',
-    day: 'numeric',
-  });
+  return getFormatter(`date-${locale}`, () =>
+    new Intl.DateTimeFormat(getIntlLocale(locale), {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+    }),
+  );
 }
 
 function createCompactDateFormatter(locale: Locale) {
-  return new Intl.DateTimeFormat(getIntlLocale(locale), {
-    month: 'short',
-    day: 'numeric',
-  });
+  return getFormatter(`compact-${locale}`, () =>
+    new Intl.DateTimeFormat(getIntlLocale(locale), {
+      month: 'short',
+      day: 'numeric',
+    }),
+  );
 }
 
 function createTimeFormatter(locale: Locale) {
-  return new Intl.DateTimeFormat(getIntlLocale(locale), {
-    hour: 'numeric',
-    minute: '2-digit',
-  });
+  return getFormatter(`time-${locale}`, () =>
+    new Intl.DateTimeFormat(getIntlLocale(locale), {
+      hour: 'numeric',
+      minute: '2-digit',
+    }),
+  );
 }
 
+// Always use Berlin timezone so events group by the correct local date
+// regardless of where the user's browser is running.
+const berlinDateKeyFormatter = new Intl.DateTimeFormat('en-CA', {
+  timeZone: BERLIN_TIMEZONE,
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+});
+
 function formatLocalDateKey(date: Date) {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  return `${year}-${month}-${day}`;
+  return berlinDateKeyFormatter.format(date);
 }
 
 export function parseDateValue(value?: string, endOfDay = false) {

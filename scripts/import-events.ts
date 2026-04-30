@@ -656,8 +656,8 @@ async function main() {
   }
 
   if (importedEvents.length === 0) {
-    console.warn('No sources produced events. Existing public/data/events.json was left unchanged.');
-    return;
+    console.error('No sources produced events. Existing public/data/events.json was left unchanged.');
+    process.exit(1);
   }
 
   const sanitizedImportedEvents = sanitizeImportedEvents(importedEvents);

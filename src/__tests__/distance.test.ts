@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { formatDistance, haversineDistanceKm } from '../utils/distance';
+import { formatDistanceForLocale, haversineDistanceKm } from '../utils/distance';
 
 describe('haversineDistanceKm', () => {
   it('returns 0 for identical coordinates', () => {
@@ -26,32 +26,63 @@ describe('haversineDistanceKm', () => {
   });
 });
 
-describe('formatDistance', () => {
+describe('formatDistanceForLocale (en)', () => {
   it('returns a prompt to share location when location is not enabled', () => {
-    expect(formatDistance(undefined, { locationEnabled: false, hasCoordinates: true })).toBe(
+    expect(formatDistanceForLocale(undefined, { locationEnabled: false, hasCoordinates: true }, 'en')).toBe(
       'Share location to calculate distance',
     );
   });
 
   it('returns unavailable message when venue has no coordinates', () => {
-    expect(formatDistance(undefined, { locationEnabled: true, hasCoordinates: false })).toBe(
+    expect(formatDistanceForLocale(undefined, { locationEnabled: true, hasCoordinates: false }, 'en')).toBe(
       'Venue coordinates unavailable',
     );
   });
 
   it('returns generic unavailable when location enabled but distance is still undefined', () => {
-    expect(formatDistance(undefined, { locationEnabled: true, hasCoordinates: true })).toBe('Distance unavailable');
+    expect(formatDistanceForLocale(undefined, { locationEnabled: true, hasCoordinates: true }, 'en')).toBe('Distance unavailable');
   });
 
   it('formats sub-kilometre distances in metres', () => {
-    expect(formatDistance(0.35, { locationEnabled: true, hasCoordinates: true })).toBe('350 m away');
+    expect(formatDistanceForLocale(0.35, { locationEnabled: true, hasCoordinates: true }, 'en')).toBe('350 m away');
   });
 
   it('formats kilometre distances with one decimal', () => {
-    expect(formatDistance(2.567, { locationEnabled: true, hasCoordinates: true })).toBe('2.6 km away');
+    expect(formatDistanceForLocale(2.567, { locationEnabled: true, hasCoordinates: true }, 'en')).toBe('2.6 km away');
   });
 
   it('formats exactly 1 km', () => {
-    expect(formatDistance(1.0, { locationEnabled: true, hasCoordinates: true })).toBe('1.0 km away');
+    expect(formatDistanceForLocale(1.0, { locationEnabled: true, hasCoordinates: true }, 'en')).toBe('1.0 km away');
+  });
+});
+
+describe('formatDistanceForLocale (de)', () => {
+  it('returns a prompt to share location when location is not enabled', () => {
+    expect(formatDistanceForLocale(undefined, { locationEnabled: false, hasCoordinates: true }, 'de')).toBe(
+      'Teile deinen Standort, um die Distanz zu berechnen',
+    );
+  });
+
+  it('returns unavailable message when venue has no coordinates', () => {
+    expect(formatDistanceForLocale(undefined, { locationEnabled: true, hasCoordinates: false }, 'de')).toBe(
+      'Koordinaten des Orts nicht verfügbar',
+    );
+  });
+
+  it('returns generic unavailable when location enabled but distance is still undefined', () => {
+    expect(formatDistanceForLocale(undefined, { locationEnabled: true, hasCoordinates: true }, 'de')).toBe('Distanz nicht verfügbar');
+  });
+
+  it('formats sub-kilometre distances in metres', () => {
+    expect(formatDistanceForLocale(0.35, { locationEnabled: true, hasCoordinates: true }, 'de')).toBe('350 m entfernt');
+  });
+
+  it('formats kilometre distances with one decimal using German number formatting', () => {
+    // German locale uses comma as decimal separator: 2,6
+    expect(formatDistanceForLocale(2.567, { locationEnabled: true, hasCoordinates: true }, 'de')).toBe('2,6 km entfernt');
+  });
+
+  it('formats exactly 1 km', () => {
+    expect(formatDistanceForLocale(1.0, { locationEnabled: true, hasCoordinates: true }, 'de')).toBe('1,0 km entfernt');
   });
 });

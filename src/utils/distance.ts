@@ -33,10 +33,6 @@ type FormatDistanceOptions = {
   hasCoordinates: boolean;
 };
 
-export function formatDistance(distanceKm: number | undefined, options: FormatDistanceOptions) {
-  return formatDistanceForLocale(distanceKm, options, 'en');
-}
-
 export function formatDistanceForLocale(
   distanceKm: number | undefined,
   options: FormatDistanceOptions,
