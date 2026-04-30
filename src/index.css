@@ -112,6 +112,7 @@ button {
 }
 
 .lead {
+  display: none;
   margin: 0;
   max-width: 54ch;
   color: var(--surface-muted);
@@ -120,9 +121,22 @@ button {
 
 .hero-panel {
   display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
   gap: 14px;
   padding: 18px;
   border-radius: var(--radius-lg);
+}
+
+.hero-stat-nearby,
+.hero-stat-saved,
+.hero-update-stamp,
+.refresh-button-label {
+  display: none;
+}
+
+.mobile-location-button:disabled svg {
+  animation: refresh-spin 0.9s linear infinite;
 }
 
 .hero-label,
@@ -148,7 +162,7 @@ button {
 }
 
 .location-panel {
-  display: grid;
+  display: none;
   gap: 16px;
   align-items: start;
   padding: 20px;
@@ -306,6 +320,27 @@ button {
 .primary-button,
 .refresh-button {
   justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.refresh-button {
+  justify-self: end;
+  width: 44px;
+  min-width: 44px;
+  padding: 0;
+  justify-content: center;
+}
+
+.refresh-button-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.refresh-button:disabled .refresh-button-icon {
+  animation: refresh-spin 0.9s linear infinite;
 }
 
 .event-groups {
@@ -570,10 +605,24 @@ button {
   }
 }
 
+@keyframes refresh-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 @media (min-width: 720px) {
   .app-shell {
     width: min(1120px, calc(100% - 40px));
     padding-top: 28px;
+  }
+
+  .lead {
+    display: block;
   }
 
   .app-header {
@@ -581,7 +630,34 @@ button {
     align-items: stretch;
   }
 
+  .hero-panel {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .mobile-location-button {
+    display: none;
+  }
+
+  .hero-stat-nearby,
+  .hero-stat-saved,
+  .hero-update-stamp {
+    display: block;
+  }
+
+  .refresh-button-label {
+    display: inline;
+  }
+
+  .refresh-button {
+    justify-self: start;
+    width: auto;
+    min-width: 0;
+    padding: 0 16px;
+  }
+
   .location-panel {
+    display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
   }

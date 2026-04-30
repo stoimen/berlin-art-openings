@@ -196,9 +196,11 @@ export default function App() {
       nearbyCount={nearbyCount}
       favoriteCount={favoriteIds.length}
       locationEnabled={locationEnabled}
+      locationStatus={status}
       lastUpdated={lastUpdated}
       isRefreshing={loading && events.length > 0}
       onRefresh={handleRefresh}
+      onRequestLocation={requestLocation}
     >
       <LocationPermission status={status} errorMessage={locationError} onRequest={requestLocation} />
 
