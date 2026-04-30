@@ -342,7 +342,7 @@ export const translations: Record<Locale, TranslationSet> = {
     htmlLang: 'de',
     documentTitle: 'Berlin Art Eröffnungen',
     languageToggleLabel: 'Sprache',
-    appEyebrow: 'Berliner Kunstkalender',
+    appEyebrow: 'Kunstkalender',
     introLead:
       'Kommende Ausstellungseröffnungen, Gespräche, Screenings und Museumsnächte. Teile deinen Standort, um nahe Galerien hervorzuheben.',
     hero: {
@@ -352,7 +352,7 @@ export const translations: Record<Locale, TranslationSet> = {
       saved: 'Gespeichert',
       enableLocation: 'Standort aktivieren',
       eventsWithDistance: (count) => `${count} Termine mit Distanz`,
-      eventsLoaded: (count) => `${count} Termine geladen`,
+      eventsLoaded: (count) => `${count} Ausstellungen`,
       shortlisted: (count) => `${count} gemerkt`,
       refresh: 'Aktualisieren',
       refreshing: 'Aktualisiere…',
