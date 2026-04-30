@@ -97,15 +97,24 @@ export function EventCard({ event, locationEnabled, onToggleFavorite }: EventCar
     <article id={event.id} className="event-card" tabIndex={-1}>
       {event.imageUrl && imageVisible ? (
         <div className="event-card-image-wrap">
-          <img
-            className="event-card-image"
-            src={event.imageUrl}
-            alt={event.artist ? `${event.title} by ${event.artist}` : event.title}
-            loading="lazy"
-            decoding="async"
-            referrerPolicy="no-referrer"
-            onError={() => setImageVisible(false)}
-          />
+          <a
+            className="event-card-image-link"
+            href={event.sourceUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={copy.eventCard.openSourcePageInNewTab}
+            title={copy.eventCard.openSourcePage}
+          >
+            <img
+              className="event-card-image"
+              src={event.imageUrl}
+              alt={event.artist ? `${event.title} by ${event.artist}` : event.title}
+              loading="lazy"
+              decoding="async"
+              referrerPolicy="no-referrer"
+              onError={() => setImageVisible(false)}
+            />
+          </a>
         </div>
       ) : null}
 
