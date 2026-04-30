@@ -1,15 +1,8 @@
-import type { EventSource, TimeframeFilter } from '../types';
+import type { FilterState } from '../types';
 import { sourceLabels } from '../api/events';
 import { getTimeframeOptions } from '../utils/date';
 
-export type FilterState = {
-  timeframe: TimeframeFilter;
-  openingsOnly: boolean;
-  savedOnly: boolean;
-  search: string;
-  source: 'all' | EventSource;
-  maxDistanceKm: 'all' | number;
-};
+export type { FilterState };
 
 type FiltersProps = {
   value: FilterState;
