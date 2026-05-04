@@ -943,5 +943,40 @@
     "address": "Regina-Jonas-Straße 43, 10999, Berlin",
     "displayName": "43, Regina-Jonas-Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Germany",
     "updatedAt": "2026-04-27T07:35:01.557Z"
+  },
+  "coords:52.52509,13.38128": {
+    "latitude": 52.52508545,
+    "longitude": 13.38128376,
+    "address": "Philippstraße 13, 10115, Berlin",
+    "displayName": "Anatomisches Theater der Tierarzneischule, 13, Philippstraße, Friedrich-Wilhelm-Stadt, Mitte, Berlin, 10115, Germany",
+    "updatedAt": "2026-05-04T07:47:54.376Z"
+  },
+  "mauerstraße 79, 10117, berlin": {
+    "latitude": 52.5085739,
+    "longitude": 13.3871178,
+    "address": "Mauerstraße 79, 10117, Berlin",
+    "displayName": "ewerk, 79, Mauerstraße, Friedrichstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-05-04T07:47:55.631Z"
+  },
+  "coords:52.49417,13.36394": {
+    "latitude": 52.4941671,
+    "longitude": 13.3639373,
+    "address": "Goebenstraße, 10783, Berlin",
+    "displayName": "Amazon Hub, Goebenstraße, Crellekiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10783, Germany",
+    "updatedAt": "2026-05-04T07:47:57.266Z"
+  },
+  "coords:52.52201,13.40942": {
+    "latitude": 52.5220052,
+    "longitude": 13.4094168,
+    "address": "Gontardstraße, 10178, Berlin",
+    "displayName": "Munchies, Gontardstraße, Spandauer Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-05-04T07:47:58.711Z"
+  },
+  "coords:52.53354,13.39539": {
+    "latitude": 52.5335381,
+    "longitude": 13.3953947,
+    "address": "Elisabethkirchstraße 16, 10115, Berlin",
+    "displayName": "16, Elisabethkirchstraße, Rosenthaler Vorstadt, Mitte, Berlin, 10115, Germany",
+    "updatedAt": "2026-05-04T07:48:00.288Z"
   }
 }
