@@ -978,5 +978,40 @@
     "address": "Elisabethkirchstraße 16, 10115, Berlin",
     "displayName": "16, Elisabethkirchstraße, Rosenthaler Vorstadt, Mitte, Berlin, 10115, Germany",
     "updatedAt": "2026-05-04T07:48:00.288Z"
+  },
+  "coords:52.53745,13.43035": {
+    "latitude": 52.5374533,
+    "longitude": 13.4303532,
+    "address": "Danziger Straße 101/103/105, 10405, Berlin",
+    "displayName": "101/103/105, Danziger Straße, Winsviertel, Prenzlauer Berg, Pankow, Berlin, 10405, Germany",
+    "updatedAt": "2026-05-11T08:25:12.943Z"
+  },
+  "poststraße 16, 10178, berlin": {
+    "latitude": 52.5158704,
+    "longitude": 13.4071942,
+    "address": "Poststraße 16, 10178, Berlin",
+    "displayName": "Ephraim-Palais, 16, Poststraße, Nikolaiviertel, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-05-11T08:25:14.324Z"
+  },
+  "coords:52.50663,13.33067": {
+    "latitude": 52.50662994,
+    "longitude": 13.33067036,
+    "address": "Hardenbergstraße 22-24, 10623, Berlin",
+    "displayName": "C/O Berlin, 22-24, Hardenbergstraße, City West, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-05-11T08:25:16.055Z"
+  },
+  "coords:52.50437,13.35374": {
+    "latitude": 52.50437164,
+    "longitude": 13.35373974,
+    "address": "Lützowplatz, 10785, Berlin",
+    "displayName": "Lützowplatz, Kielgan-Viertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-05-11T08:25:17.795Z"
+  },
+  "spreeweg 1, 10557, berlin": {
+    "latitude": 52.5172851,
+    "longitude": 13.3524323,
+    "address": "Spreeweg 1, 10557, Berlin",
+    "displayName": "Bellevue Palace, 1, Spreeweg, Tiergarten, Mitte, Berlin, 10557, Germany",
+    "updatedAt": "2026-05-11T08:25:19.530Z"
   }
 }
