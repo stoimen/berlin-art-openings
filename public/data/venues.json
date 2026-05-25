@@ -1027,5 +1027,47 @@
     "address": "Gerichtstraße 35, 13347, Berlin",
     "displayName": "35, Gerichtstraße, Antonkiez, Wedding, Mitte, Berlin, 13347, Germany",
     "updatedAt": "2026-05-18T08:45:27.929Z"
+  },
+  "coords:52.52740,13.41218": {
+    "latitude": 52.5274047,
+    "longitude": 13.4121803,
+    "address": "Linienstraße 227, 10178, Berlin",
+    "displayName": "227, Linienstraße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-05-25T08:57:31.871Z"
+  },
+  "coords:52.51121,13.39525": {
+    "latitude": 52.5112065,
+    "longitude": 13.395254,
+    "address": "Leipziger Straße 61, 10117, Berlin",
+    "displayName": "Scherben e.V., 61, Leipziger Straße, Friedrichswerder, Friedrichstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-05-25T08:57:33.421Z"
+  },
+  "coords:52.51630,13.39689": {
+    "latitude": 52.5163036,
+    "longitude": 13.3968946,
+    "address": "Werdersche Rosenstraße, 10117, Berlin",
+    "displayName": "Schinkelpavillon, Werdersche Rosenstraße, Friedrichswerder, Dorotheenstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-05-25T08:57:34.779Z"
+  },
+  "coords:52.50420,13.36112": {
+    "latitude": 52.5042043,
+    "longitude": 13.3611228,
+    "address": "Lützowstraße 32, 10785, Berlin",
+    "displayName": "32, Lützowstraße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-05-25T08:57:36.324Z"
+  },
+  "coords:52.53143,13.42631": {
+    "latitude": 52.53142929,
+    "longitude": 13.42630959,
+    "address": "Immanuelkirchstraße 15, 10405, Berlin",
+    "displayName": "15, Immanuelkirchstraße, Winsviertel, Prenzlauer Berg, Pankow, Berlin, 10405, Germany",
+    "updatedAt": "2026-05-25T08:57:38.460Z"
+  },
+  "coords:52.52762,13.40514": {
+    "latitude": 52.5276158,
+    "longitude": 13.4051437,
+    "address": "Mulackstraße 13, 10119, Berlin",
+    "displayName": "13, Mulackstraße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10119, Germany",
+    "updatedAt": "2026-05-25T08:57:39.817Z"
   }
 }
