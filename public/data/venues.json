@@ -1069,5 +1069,12 @@
     "address": "Mulackstraße 13, 10119, Berlin",
     "displayName": "13, Mulackstraße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10119, Germany",
     "updatedAt": "2026-05-25T08:57:39.817Z"
+  },
+  "coords:52.54477,13.38127": {
+    "latitude": 52.54476547,
+    "longitude": 13.38127136,
+    "address": "Wiesenstraße 1, 13357, Berlin",
+    "displayName": "1, Wiesenstraße, Brunnenviertel, Gesundbrunnen, Mitte, Berlin, 13357, Germany",
+    "updatedAt": "2026-06-01T10:21:54.797Z"
   }
 }
