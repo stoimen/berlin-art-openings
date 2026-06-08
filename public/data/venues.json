@@ -1076,5 +1076,26 @@
     "address": "Wiesenstraße 1, 13357, Berlin",
     "displayName": "1, Wiesenstraße, Brunnenviertel, Gesundbrunnen, Mitte, Berlin, 13357, Germany",
     "updatedAt": "2026-06-01T10:21:54.797Z"
+  },
+  "coords:52.41360,13.08777": {
+    "latitude": 52.4135988,
+    "longitude": 13.0877662,
+    "address": "Berliner Straße 86, 14467, Potsdam",
+    "displayName": "Villa Schoeningen, 86, Berliner Straße, Berliner Vorstadt, Potsdam, Brandenburg, 14467, Germany",
+    "updatedAt": "2026-06-08T09:23:05.660Z"
+  },
+  "coords:52.50329,13.34549": {
+    "latitude": 52.5032922,
+    "longitude": 13.3454915,
+    "address": "Keithstraße 15, 10787, Berlin",
+    "displayName": "15, Keithstraße, Nollendorfkiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10787, Germany",
+    "updatedAt": "2026-06-08T09:23:07.607Z"
+  },
+  "coords:52.51854,13.36371": {
+    "latitude": 52.51854324,
+    "longitude": 13.36370945,
+    "address": "John-Foster-Dulles-Allee 10, 10557, Berlin",
+    "displayName": "House of the Cultures of the World, 10, John-Foster-Dulles-Allee, Tiergarten, Mitte, Berlin, 10557, Germany",
+    "updatedAt": "2026-06-08T09:23:08.903Z"
   }
 }
