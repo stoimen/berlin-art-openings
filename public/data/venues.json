@@ -1097,5 +1097,61 @@
     "address": "John-Foster-Dulles-Allee 10, 10557, Berlin",
     "displayName": "House of the Cultures of the World, 10, John-Foster-Dulles-Allee, Tiergarten, Mitte, Berlin, 10557, Germany",
     "updatedAt": "2026-06-08T09:23:08.903Z"
+  },
+  "oberwallstraße 32, 10117, berlin": {
+    "latitude": 52.5148489,
+    "longitude": 13.3968392,
+    "address": "Oberwallstraße, 10117, Berlin",
+    "displayName": "Oberwallstraße, Friedrichswerder, Friedrichstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-06-15T10:55:17.368Z"
+  },
+  "coords:52.50736,13.38410": {
+    "latitude": 52.50735855,
+    "longitude": 13.38410091,
+    "address": "Niederkirchnerstraße 8, 10963, Berlin",
+    "displayName": "8, Niederkirchnerstraße, Friedrichstadt, Kreuzberg, Mitte, Berlin, 10963, Germany",
+    "updatedAt": "2026-06-15T10:55:18.736Z"
+  },
+  "coords:52.50557,13.36593": {
+    "latitude": 52.50556946,
+    "longitude": 13.3659296,
+    "address": "Schöneberger Ufer 59, 10785, Berlin",
+    "displayName": "Future Gallery, 59, Schöneberger Ufer, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-06-15T10:55:20.472Z"
+  },
+  "coords:52.50880,13.32430": {
+    "latitude": 52.5088018,
+    "longitude": 13.3242994,
+    "address": "Goethestraße 2, 10623, Berlin",
+    "displayName": "2, Goethestraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-06-15T10:55:21.748Z"
+  },
+  "coords:52.52692,13.39712": {
+    "latitude": 52.52692032,
+    "longitude": 13.39712048,
+    "address": "Auguststraße 26, 10117, Berlin",
+    "displayName": "26, Auguststraße, Spandauer Vorstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-06-15T10:55:23.486Z"
+  },
+  "coords:52.51028,13.39786": {
+    "latitude": 52.51028442,
+    "longitude": 13.39785576,
+    "address": "Leipziger Straße 47, 10117, Berlin",
+    "displayName": "KVOST, 47, Leipziger Straße, Friedrichswerder, Friedrichstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-06-15T10:55:25.317Z"
+  },
+  "coords:52.55080,13.43914": {
+    "latitude": 52.55079651,
+    "longitude": 13.43914127,
+    "address": "Streustraße 91, 13086, Berlin",
+    "displayName": "91, Streustraße, Gründerviertel, Weißensee, Pankow, Berlin, 13086, Germany",
+    "updatedAt": "2026-06-15T10:55:27.050Z"
+  },
+  "coords:52.50994,13.25484": {
+    "latitude": 52.50993729,
+    "longitude": 13.25484276,
+    "address": "Sensburger Allee 25, 14055, Berlin",
+    "displayName": "Georg Kolbe Museum, 25, Sensburger Allee, Siedlung Heerstraße, Neu-Westend, Westend, Charlottenburg-Wilmersdorf, Berlin, 14055, Germany",
+    "updatedAt": "2026-06-15T10:55:28.684Z"
   }
 }
