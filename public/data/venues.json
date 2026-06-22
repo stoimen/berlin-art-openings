@@ -1153,5 +1153,47 @@
     "address": "Sensburger Allee 25, 14055, Berlin",
     "displayName": "Georg Kolbe Museum, 25, Sensburger Allee, Siedlung Heerstraße, Neu-Westend, Westend, Charlottenburg-Wilmersdorf, Berlin, 14055, Germany",
     "updatedAt": "2026-06-15T10:55:28.684Z"
+  },
+  "karl-marx-allee 45, 10178": {
+    "latitude": 52.5198483,
+    "longitude": 13.4251493,
+    "address": "Karl-Marx-Allee 45, 10178, Berlin",
+    "displayName": "Capitain Petzel, 45, Karl-Marx-Allee, Stralauer Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-06-22T10:38:50.656Z"
+  },
+  "coords:52.54038,13.41410": {
+    "latitude": 52.540383,
+    "longitude": 13.414097,
+    "address": "Knaackstraße 97, 10435, Berlin",
+    "displayName": "97, Knaackstraße, Bremer Höhe, Helmholtzkiez, Prenzlauer Berg, Pankow, Berlin, 10435, Germany",
+    "updatedAt": "2026-06-22T10:38:51.938Z"
+  },
+  "coords:52.50932,13.47281": {
+    "latitude": 52.509315,
+    "longitude": 13.4728089,
+    "address": "Oderstraße 34, 10247, Berlin",
+    "displayName": "Kinderladen Friedrichsklain, 34, Oderstraße, Travekiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10247, Germany",
+    "updatedAt": "2026-06-22T10:38:53.669Z"
+  },
+  "coords:52.50204,13.36562": {
+    "latitude": 52.50204086,
+    "longitude": 13.36561966,
+    "address": "Potsdamer Straße 81e, 10785, Berlin",
+    "displayName": "Andreas Murkudis, 81e, Potsdamer Straße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-06-22T10:38:55.522Z"
+  },
+  "kiehnwerderallee 2, 12437, berlin": {
+    "latitude": 52.4814927,
+    "longitude": 13.4943009,
+    "address": "Kiehnwerderallee 2, 12437, Berlin",
+    "displayName": "Eierhäuschen, 2, Kiehnwerderallee, Plänterwald, Treptow-Köpenick, Berlin, 12437, Germany",
+    "updatedAt": "2026-06-22T10:38:58.586Z"
+  },
+  "coords:52.50349,13.42497": {
+    "latitude": 52.50349045,
+    "longitude": 13.42496967,
+    "address": "Mariannenplatz, 10997, Berlin",
+    "displayName": "Mariannenplatz, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10997, Germany",
+    "updatedAt": "2026-06-22T10:38:59.957Z"
   }
 }
