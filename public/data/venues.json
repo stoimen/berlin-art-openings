@@ -1195,5 +1195,54 @@
     "address": "Mariannenplatz, 10997, Berlin",
     "displayName": "Mariannenplatz, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10997, Germany",
     "updatedAt": "2026-06-22T10:38:59.957Z"
+  },
+  "coords:52.50823,13.42444": {
+    "latitude": 52.5082265,
+    "longitude": 13.4244371,
+    "address": "Adalbertstraße 43, 10179, Berlin",
+    "displayName": "43, Adalbertstraße, Luisenstadt, Mitte, Berlin, 10179, Germany",
+    "updatedAt": "2026-06-29T09:25:51.566Z"
+  },
+  "coords:52.50746,13.45462": {
+    "latitude": 52.5074638,
+    "longitude": 13.4546177,
+    "address": "Revaler Straße 99, 10245, Berlin",
+    "displayName": "Emma Pea, 99, Revaler Straße, Boxhagener Kiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Germany",
+    "updatedAt": "2026-06-29T09:25:53.042Z"
+  },
+  "coords:52.54935,13.49077": {
+    "latitude": 52.54934692,
+    "longitude": 13.49077129,
+    "address": "Oberseestraße 60, 13053, Berlin",
+    "displayName": "Haus Lemke, 60, Oberseestraße, Villenviertel am Orankesee, Märkisches Viertel, Alt-Hohenschönhausen, Lichtenberg, Berlin, 13053, Germany",
+    "updatedAt": "2026-06-29T09:25:56.007Z"
+  },
+  "robert-w.-kempner-straße 6, 14167, berlin": {
+    "latitude": 52.4376603,
+    "longitude": 13.2799735,
+    "address": "Robert-W.-Kempner-Straße 6, 14167, Berlin",
+    "displayName": "6, Robert-W.-Kempner-Straße, Borkowski Umzüge, Zehlendorf, Steglitz-Zehlendorf, Berlin, 14167, Germany",
+    "updatedAt": "2026-06-29T09:25:57.437Z"
+  },
+  "straße des 17. juni 152, 10623, berlin": {
+    "latitude": 52.5137508,
+    "longitude": 13.3234541,
+    "address": "Straße des 17. Juni 152, 10623, Berlin",
+    "displayName": "Mensa TU Architektur, 152, Straße des 17. Juni, Spreestadt Charlottenburg, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-06-29T09:25:58.928Z"
+  },
+  "coords:52.51265,13.30870": {
+    "latitude": 52.5126452,
+    "longitude": 13.308703,
+    "address": "Zillestraße, 10585, Berlin",
+    "displayName": "Parkhaus Deutsche Oper, Zillestraße, Gierkekiez, Alt-Lietzow, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Germany",
+    "updatedAt": "2026-06-29T09:26:00.399Z"
+  },
+  "coords:52.56338,13.46135": {
+    "latitude": 52.5633834,
+    "longitude": 13.4613483,
+    "address": "An der Industriebahn 12, 13088, Berlin",
+    "displayName": "AMATA AG, 12, An der Industriebahn, Weißensee, Pankow, Berlin, 13088, Germany",
+    "updatedAt": "2026-06-29T09:26:01.705Z"
   }
 }
