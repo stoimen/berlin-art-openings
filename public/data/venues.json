@@ -1244,5 +1244,26 @@
     "address": "An der Industriebahn 12, 13088, Berlin",
     "displayName": "AMATA AG, 12, An der Industriebahn, Weißensee, Pankow, Berlin, 13088, Germany",
     "updatedAt": "2026-06-29T09:26:01.705Z"
+  },
+  "coords:53.03677,13.98813": {
+    "latitude": 53.0367718,
+    "longitude": 13.988135,
+    "address": "Greiffenberger Straße 8, 16278, Angermünde",
+    "displayName": "8, Greiffenberger Straße, Kerkow, Angermünde, Mark Landin, Uckermark, Brandenburg, 16278, Germany",
+    "updatedAt": "2026-07-06T09:00:13.004Z"
+  },
+  "gerichtstraße 35, 13347, berlin": {
+    "latitude": 52.5456853,
+    "longitude": 13.36649,
+    "address": "Gerichtstraße 35, 13347, Berlin",
+    "displayName": "silent green Kulturquartier, 35, Gerichtstraße, Antonkiez, Wedding, Mitte, Berlin, 13347, Germany",
+    "updatedAt": "2026-07-06T09:00:14.496Z"
+  },
+  "schloßstraße 70, 14059, berlin": {
+    "latitude": 52.5191183,
+    "longitude": 13.2967062,
+    "address": "Schloßstraße 70, 14059, Berlin",
+    "displayName": "Scharf-Gerstenberg Collection, 70, Schloßstraße, Gierkekiez, Danckelmannkiez, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 14059, Germany",
+    "updatedAt": "2026-07-06T09:00:16.222Z"
   }
 }
