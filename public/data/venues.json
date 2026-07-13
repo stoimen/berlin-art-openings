@@ -1265,5 +1265,19 @@
     "address": "Schloßstraße 70, 14059, Berlin",
     "displayName": "Scharf-Gerstenberg Collection, 70, Schloßstraße, Gierkekiez, Danckelmannkiez, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 14059, Germany",
     "updatedAt": "2026-07-06T09:00:16.222Z"
+  },
+  "am kupfergraben, 10117, berlin": {
+    "latitude": 52.5205401,
+    "longitude": 13.3951016,
+    "address": "Am Kupfergraben, 10117, Berlin",
+    "displayName": "Am Kupfergraben, Dorotheenstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-07-13T08:17:13.111Z"
+  },
+  "coords:52.50920,13.32704": {
+    "latitude": 52.50920105,
+    "longitude": 13.32703972,
+    "address": "Hardenbergstraße 33, 10623, Berlin",
+    "displayName": "33, Hardenbergstraße, Alt-Lietzow, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
+    "updatedAt": "2026-07-13T08:17:14.736Z"
   }
 }
