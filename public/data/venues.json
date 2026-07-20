@@ -1279,5 +1279,12 @@
     "address": "Hardenbergstraße 33, 10623, Berlin",
     "displayName": "33, Hardenbergstraße, Alt-Lietzow, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10623, Germany",
     "updatedAt": "2026-07-13T08:17:14.736Z"
+  },
+  "oranienburger straße 18, 10178, berlin": {
+    "latitude": 52.5240834,
+    "longitude": 13.3971151,
+    "address": "Oranienburger Straße 18, 10178, Berlin",
+    "displayName": "18, Oranienburger Straße, Spandauer Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-07-20T08:05:49.623Z"
   }
 }
