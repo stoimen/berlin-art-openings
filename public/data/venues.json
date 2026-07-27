@@ -1286,5 +1286,12 @@
     "address": "Oranienburger Straße 18, 10178, Berlin",
     "displayName": "18, Oranienburger Straße, Spandauer Vorstadt, Mitte, Berlin, 10178, Germany",
     "updatedAt": "2026-07-20T08:05:49.623Z"
+  },
+  "coords:52.50181,13.31872": {
+    "latitude": 52.501807,
+    "longitude": 13.3187171,
+    "address": "Kurfürstendamm, 10707, Berlin",
+    "displayName": "Kurfürstendamm, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10707, Germany",
+    "updatedAt": "2026-07-27T08:30:50.195Z"
   }
 }
