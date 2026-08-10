@@ -106,7 +106,9 @@ export function Layout({
       <main>{children}</main>
 
       <footer className="app-footer">
-        <p>{copy.footer}</p>
+        <p>
+          {copy.footer} © {new Date().getFullYear()}
+        </p>
       </footer>
     </div>
   );
