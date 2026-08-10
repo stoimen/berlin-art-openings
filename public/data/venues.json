@@ -1293,5 +1293,33 @@
     "address": "Kurfürstendamm, 10707, Berlin",
     "displayName": "Kurfürstendamm, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10707, Germany",
     "updatedAt": "2026-07-27T08:30:50.195Z"
+  },
+  "sensburger allee 25, 14055, berlin": {
+    "latitude": 52.5099369,
+    "longitude": 13.2549022,
+    "address": "Sensburger Allee 25, 14055, Berlin",
+    "displayName": "Georg Kolbe Museum, 25, Sensburger Allee, Siedlung Heerstraße, Neu-Westend, Westend, Charlottenburg-Wilmersdorf, Berlin, 14055, Germany",
+    "updatedAt": "2026-08-10T05:37:23.608Z"
+  },
+  "coords:52.77422,13.62849": {
+    "latitude": 52.7742233,
+    "longitude": 13.6284895,
+    "address": "Wehrmühlenweg 8, 16359, Biesenthal",
+    "displayName": "Wehrmühle, 8, Wehrmühlenweg, Biesenthal, Biesenthal-Barnim, Barnim, Brandenburg, 16359, Germany",
+    "updatedAt": "2026-08-10T05:37:24.976Z"
+  },
+  "coords:52.50658,13.36733": {
+    "latitude": 52.50658035,
+    "longitude": 13.3673296,
+    "address": "Potsdamer Straße 50, 10785, Berlin",
+    "displayName": "Five Elephant, 50, Potsdamer Straße, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-08-10T05:37:26.850Z"
+  },
+  "coords:52.51937,13.42704": {
+    "latitude": 52.519368,
+    "longitude": 13.427043,
+    "address": "Strausberger Platz 1, 10243, Berlin",
+    "displayName": "PlaceOne Panoramabar, 1, Strausberger Platz, Andreasviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Germany",
+    "updatedAt": "2026-08-10T05:37:28.210Z"
   }
 }
