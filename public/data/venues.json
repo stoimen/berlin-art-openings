@@ -1321,5 +1321,103 @@
     "address": "Strausberger Platz 1, 10243, Berlin",
     "displayName": "PlaceOne Panoramabar, 1, Strausberger Platz, Andreasviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Germany",
     "updatedAt": "2026-08-10T05:37:28.210Z"
+  },
+  "coords:52.54483,13.37072": {
+    "latitude": 52.5448325,
+    "longitude": 13.3707182,
+    "address": "Reinickendorfer Straße 17, 13347, Berlin",
+    "displayName": "Savvy Contemporary, 17, Reinickendorfer Straße, Maxgärten, Antonkiez, Gesundbrunnen, Mitte, Berlin, 13347, Germany",
+    "updatedAt": "2026-08-17T05:34:53.314Z"
+  },
+  "coords:52.52578,13.38878": {
+    "latitude": 52.5257798,
+    "longitude": 13.3887826,
+    "address": "Oranienburger Straße 54, 10117, Berlin",
+    "displayName": "54, Oranienburger Straße, Oranienburger Vorstadt, Mitte, Berlin, 10117, Germany",
+    "updatedAt": "2026-08-17T05:34:54.708Z"
+  },
+  "coords:52.49264,13.36603": {
+    "latitude": 52.49264145,
+    "longitude": 13.36602974,
+    "address": "Mansteinstraße 5, 10783, Berlin",
+    "displayName": "5, Mansteinstraße, Monumentenkiez, Crellekiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10783, Germany",
+    "updatedAt": "2026-08-17T05:34:56.221Z"
+  },
+  "wilhelminenhofstraße 76, 12459, berlin": {
+    "latitude": 52.4586963,
+    "longitude": 13.5255636,
+    "address": "Wilhelminenhofstraße 76, 12459, Berlin",
+    "displayName": "76, Wilhelminenhofstraße, Oberschöneweide, Treptow-Köpenick, Berlin, 12459, Germany",
+    "updatedAt": "2026-08-17T05:34:57.722Z"
+  },
+  "coords:52.50039,13.35989": {
+    "latitude": 52.5003946,
+    "longitude": 13.3598864,
+    "address": "Kurfürstenstraße 143, 10785, Berlin",
+    "displayName": "143, Kurfürstenstraße, Lützowviertel, Schöneberg, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-08-17T05:34:59.118Z"
+  },
+  "coords:52.50010,13.31527": {
+    "latitude": 52.50009918,
+    "longitude": 13.31527424,
+    "address": "Wielandstraße 26, 10707, Berlin",
+    "displayName": "Société, 26, Wielandstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10707, Germany",
+    "updatedAt": "2026-08-17T05:35:01.049Z"
+  },
+  "coords:52.52606,13.41148": {
+    "latitude": 52.5260582,
+    "longitude": 13.41147995,
+    "address": "Rosa-Luxemburg-Straße 30, 10178, Berlin",
+    "displayName": "Soy, 30, Rosa-Luxemburg-Straße, Scheunenviertel, Rosenthaler Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-08-17T05:35:02.633Z"
+  },
+  "coords:52.50139,13.36213": {
+    "latitude": 52.50138855,
+    "longitude": 13.36213398,
+    "address": "Pohlstraße, 10785, Berlin",
+    "displayName": "Lernhaus Pohlstraße, Pohlstraße, Lützowviertel, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-08-17T05:35:03.991Z"
+  },
+  "coords:52.53319,13.39906": {
+    "latitude": 52.5331928,
+    "longitude": 13.3990591,
+    "address": "Brunnenstraße 22, 10119, Berlin",
+    "displayName": "22, Brunnenstraße, Rosenthaler Vorstadt, Mitte, Berlin, 10119, Germany",
+    "updatedAt": "2026-08-17T05:35:05.536Z"
+  },
+  "coords:52.54456,13.37255": {
+    "latitude": 52.54455948,
+    "longitude": 13.37255287,
+    "address": "Gerichtstraße, 13347, Berlin",
+    "displayName": "LebensMittelPunkt, Gerichtstraße, Gesundbrunnen, Mitte, Berlin, 13347, Germany",
+    "updatedAt": "2026-08-17T05:35:07.064Z"
+  },
+  "coords:52.45898,13.40612": {
+    "latitude": 52.4589787,
+    "longitude": 13.4061206,
+    "address": "Teilestraße, 12099, Berlin",
+    "displayName": "Contessa Fahrzeugtechnik & Containerdienst, Teilestraße, Tempelhof, Tempelhof-Schöneberg, Berlin, 12099, Germany",
+    "updatedAt": "2026-08-17T05:35:08.889Z"
+  },
+  "coords:52.50437,13.31891": {
+    "latitude": 52.5043672,
+    "longitude": 13.318908,
+    "address": "Niebuhrstraße 2, 10629, Berlin",
+    "displayName": "2, Niebuhrstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10629, Germany",
+    "updatedAt": "2026-08-17T05:35:10.207Z"
+  },
+  "coords:52.50982,13.55767": {
+    "latitude": 52.5098165,
+    "longitude": 13.5576729,
+    "address": "Alt-Biesdorf 55, 12683, Berlin",
+    "displayName": "Cafe Schloss Biesdorf, 55, Alt-Biesdorf, Habichtshorst, Biesdorf, Marzahn-Hellersdorf, Berlin, 12683, Germany",
+    "updatedAt": "2026-08-17T05:35:11.707Z"
+  },
+  "coords:52.52721,13.38892": {
+    "latitude": 52.52721024,
+    "longitude": 13.38891983,
+    "address": "Torstraße 220, 10115, Berlin",
+    "displayName": "220, Torstraße, Oranienburger Vorstadt, Mitte, Berlin, 10115, Germany",
+    "updatedAt": "2026-08-17T05:35:13.247Z"
   }
 }
