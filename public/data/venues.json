@@ -1419,5 +1419,12 @@
     "address": "Torstraße 220, 10115, Berlin",
     "displayName": "220, Torstraße, Oranienburger Vorstadt, Mitte, Berlin, 10115, Germany",
     "updatedAt": "2026-08-17T05:35:13.247Z"
+  },
+  "coords:52.49289,13.39604": {
+    "latitude": 52.4928902,
+    "longitude": 13.3960431,
+    "address": "Fürbringerstraße 11, 10961, Berlin",
+    "displayName": "11, Fürbringerstraße, Bergmannkiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10961, Germany",
+    "updatedAt": "2026-08-24T05:37:54.330Z"
   }
 }
