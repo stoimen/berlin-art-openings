@@ -1426,5 +1426,68 @@
     "address": "Fürbringerstraße 11, 10961, Berlin",
     "displayName": "11, Fürbringerstraße, Bergmannkiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10961, Germany",
     "updatedAt": "2026-08-24T05:37:54.330Z"
+  },
+  "coords:52.53986,13.41072": {
+    "latitude": 52.5398561,
+    "longitude": 13.4107187,
+    "address": "Kastanienallee 7-9, 10435, Berlin",
+    "displayName": "Volksbühne im Prater, 7-9, Kastanienallee, Gleimviertel, Prenzlauer Berg, Pankow, Berlin, 10435, Germany",
+    "updatedAt": "2026-08-31T11:23:36.516Z"
+  },
+  "coords:52.50197,13.39497": {
+    "latitude": 52.5019722,
+    "longitude": 13.3949728,
+    "address": "Lindenstraße 9-14, 10969, Berlin",
+    "displayName": "Libeskind-Bau, 9-14, Lindenstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-08-31T11:23:37.811Z"
+  },
+  "coords:52.48030,13.43670": {
+    "latitude": 52.4803002,
+    "longitude": 13.4366972,
+    "address": "Karl-Marx-Straße 95, 12043, Berlin",
+    "displayName": "95, Karl-Marx-Straße, Rollbergsiedlung, Donaukiez, Neukölln, Berlin, 12043, Germany",
+    "updatedAt": "2026-08-31T11:23:39.108Z"
+  },
+  "karl-liebknecht-straße 11, 10178, berlin": {
+    "latitude": 52.5217615,
+    "longitude": 13.4075481,
+    "address": "Karl-Liebknecht-Straße 11, 10178, Berlin",
+    "displayName": "Hafenbar, 11, Karl-Liebknecht-Straße, Nikolaiviertel, Spandauer Vorstadt, Mitte, Berlin, 10178, Germany",
+    "updatedAt": "2026-08-31T11:23:43.154Z"
+  },
+  "chausseestraße 128-129, 10115, berlin": {
+    "latitude": 52.5279121,
+    "longitude": 13.3860465,
+    "address": "Chausseestraße 128-129, 10115, Berlin",
+    "displayName": "Neuer Berliner Kunstverein, 128-129, Chausseestraße, Oranienburger Vorstadt, Mitte, Berlin, 10115, Germany",
+    "updatedAt": "2026-08-31T11:23:44.623Z"
+  },
+  "coords:52.50222,13.36588": {
+    "latitude": 52.5022169,
+    "longitude": 13.3658771,
+    "address": "Potsdamer Straße 81A, 10785, Berlin",
+    "displayName": "Odeeh Space, 81A, Potsdamer Straße, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-08-31T11:23:46.106Z"
+  },
+  "coords:52.53455,13.35158": {
+    "latitude": 52.5345487,
+    "longitude": 13.3515826,
+    "address": "Stephanstraße 11, 10559, Berlin",
+    "displayName": "11, Stephanstraße, Stephankiez, Moabit, Mitte, Berlin, 10559, Germany",
+    "updatedAt": "2026-08-31T11:23:47.845Z"
+  },
+  "coords:52.51120,13.44123": {
+    "latitude": 52.5111954,
+    "longitude": 13.4412313,
+    "address": "Am Wriezener Bahnhof 1, 10243, Berlin",
+    "displayName": "1, Am Wriezener Bahnhof, Andreasviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Germany",
+    "updatedAt": "2026-08-31T11:23:49.578Z"
+  },
+  "coords:52.44274,13.76417": {
+    "latitude": 52.442739,
+    "longitude": 13.7641705,
+    "address": "Schleusenstraße 34, 15569, Woltersdorf",
+    "displayName": "34, Schleusenstraße, Springeberg, Woltersdorf, Oder-Spree, Brandenburg, 15569, Germany",
+    "updatedAt": "2026-08-31T11:23:51.025Z"
   }
 }
