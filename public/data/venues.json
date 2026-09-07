@@ -1489,5 +1489,19 @@
     "address": "Schleusenstraße 34, 15569, Woltersdorf",
     "displayName": "34, Schleusenstraße, Springeberg, Woltersdorf, Oder-Spree, Brandenburg, 15569, Germany",
     "updatedAt": "2026-08-31T11:23:51.025Z"
+  },
+  "coords:52.49597,13.45395": {
+    "latitude": 52.495971,
+    "longitude": 13.4539545,
+    "address": "Eichenstraße 6, 12435, Berlin",
+    "displayName": "6, Eichenstraße, Kungerkiez, Alt-Treptow, Treptow-Köpenick, Berlin, 12435, Germany",
+    "updatedAt": "2026-09-07T09:58:34.366Z"
+  },
+  "coords:52.49829,13.40126": {
+    "latitude": 52.498295,
+    "longitude": 13.4012567,
+    "address": "Gitschiner Straße 17, 10969, Berlin",
+    "displayName": "17, Gitschiner Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-09-07T09:58:35.748Z"
   }
 }
