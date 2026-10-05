@@ -1503,5 +1503,12 @@
     "address": "Gitschiner Straße 17, 10969, Berlin",
     "displayName": "17, Gitschiner Straße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
     "updatedAt": "2026-09-07T09:58:35.748Z"
+  },
+  "christinenstraße 18, 10119, berlin": {
+    "latitude": 52.5320392,
+    "longitude": 13.4104725,
+    "address": "Christinenstraße 18, 10119, Berlin",
+    "displayName": "18, Christinenstraße, Kollwitzkiez, Prenzlauer Berg, Pankow, Berlin, 10119, Germany",
+    "updatedAt": "2026-10-05T12:04:42.232Z"
   }
 }
