@@ -1510,5 +1510,12 @@
     "address": "Christinenstraße 18, 10119, Berlin",
     "displayName": "18, Christinenstraße, Kollwitzkiez, Prenzlauer Berg, Pankow, Berlin, 10119, Germany",
     "updatedAt": "2026-10-05T12:04:42.232Z"
+  },
+  "coords:52.08368,13.15420": {
+    "latitude": 52.0836768,
+    "longitude": 13.1542049,
+    "address": "Rudolf-Breitscheid-Straße 73, 14943, Luckenwalde",
+    "displayName": "E-Werk Luckenwalde, 73, Rudolf-Breitscheid-Straße, Luckenwalde, Teltow-Fläming, Brandenburg, 14943, Germany",
+    "updatedAt": "2026-10-12T12:48:25.620Z"
   }
 }
