@@ -1517,5 +1517,33 @@
     "address": "Rudolf-Breitscheid-Straße 73, 14943, Luckenwalde",
     "displayName": "E-Werk Luckenwalde, 73, Rudolf-Breitscheid-Straße, Luckenwalde, Teltow-Fläming, Brandenburg, 14943, Germany",
     "updatedAt": "2026-10-12T12:48:25.620Z"
+  },
+  "bussardsteig 9, 14195, berlin": {
+    "latitude": 52.4669327,
+    "longitude": 13.2747539,
+    "address": "Bussardsteig 9, 14195, Berlin",
+    "displayName": "Bridges Museum, 9, Bussardsteig, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Germany",
+    "updatedAt": "2026-10-19T10:32:49.900Z"
+  },
+  "coords:52.50623,13.39807": {
+    "latitude": 52.5062275,
+    "longitude": 13.3980673,
+    "address": "Lindenstraße 34-35, 10969, Berlin",
+    "displayName": "Stoke, 34-35, Lindenstraße, Ritterkiez, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Germany",
+    "updatedAt": "2026-10-19T10:32:51.635Z"
+  },
+  "coords:52.50215,13.36603": {
+    "latitude": 52.50214767,
+    "longitude": 13.36603451,
+    "address": "Potsdamer Straße 81B, 10785, Berlin",
+    "displayName": "81B, Potsdamer Straße, Tiergarten, Mitte, Berlin, 10785, Germany",
+    "updatedAt": "2026-10-19T10:32:53.380Z"
+  },
+  "coords:52.49798,13.35974": {
+    "latitude": 52.4979843,
+    "longitude": 13.3597419,
+    "address": "Bülowstraße, 10783, Berlin",
+    "displayName": "ZEIT Café, Bülowstraße, Winterfeldtkiez, Nollendorfkiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10783, Germany",
+    "updatedAt": "2026-10-19T10:32:55.114Z"
   }
 }
