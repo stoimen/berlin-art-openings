@@ -1,5 +1,77 @@
 [
   {
+    "id": "berlin_de-shilpa-gupta-what-still-holds-a08273f541",
+    "title": "Shilpa Gupta: What Still Holds",
+    "venue": "Hamburger Bahnhof - Museum für Gegenwart",
+    "address": "Invalidenstraße 51, 10557, Berlin",
+    "openingStart": "2026-03-26T23:00:00.000Z",
+    "openingEnd": "2027-01-03T22:59:59.000Z",
+    "exhibitionStart": "2026-03-26",
+    "exhibitionEnd": "2027-01-03",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/shilpa-gupta-what-still-holds-c11e71c7-2bbd-40f5-8d78-31f4ea6c77c1/",
+    "description": "Starting point of Shilpa Gupta’s solo exhibition at Hamburger Bahnhof is the monumental work Truth, situated at the intersection of language, power, and control.",
+    "imageUrl": "https://imgproxy.berlinonline.net/4_qacDDpJTbHhXQpdAbDjXLx8G3wGyvXmrLhIvTC-OU/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzc1L2YwZDNkYmI3LWQxMTAtYjAyNi01YTRiLWVmZDMwMjcwZTEyMy5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5275532,
+    "longitude": 13.3723203
+  },
+  {
+    "id": "berlin_de-intermezzo-revisiting-helmut-newton-0c2a357205",
+    "title": "Intermezzo: Revisiting Helmut Newton",
+    "venue": "Museum für Fotografie - Helmut Newton Stiftung",
+    "address": "Jebensstraße 2, 10623, Berlin",
+    "openingStart": "2026-04-23T22:00:00.000Z",
+    "openingEnd": "2030-04-23T22:00:00.000Z",
+    "exhibitionStart": "2026-04-23",
+    "exhibitionEnd": "2030-04-23",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/intermezzo-revisiting-helmut-newton-5ff73038-390b-48dc-85a2-801c3ff747e6/",
+    "description": "The new permanent exhibition at the Museum of Photography will respond even more dynamically to the different aspects of Helmut and June Newton's photographic works.",
+    "imageUrl": "https://imgproxy.berlinonline.net/ZIcNeK0Kg8MMcbHfz-p8S6USrWvWA5rISz5kCuzfLa8/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzI1MS8zMjE0YTQzYy0xYjJhLTRkMDAtYmVmYi05Nzc3YjQ1ZDllYTMuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5081567,
+    "longitude": 13.3320921
+  },
+  {
+    "id": "berlin_de-ruin-and-rush-berlin-1910-1930-12761aaa75",
+    "title": "Ruin and Rush: Berlin 1910–1930",
+    "venue": "Neue Nationalgalerie",
+    "address": "Potsdamer Straße 50, 10785, Berlin",
+    "openingStart": "2026-04-24T22:00:00.000Z",
+    "openingEnd": "2027-01-03T22:59:59.000Z",
+    "exhibitionStart": "2026-04-24",
+    "exhibitionEnd": "2027-01-03",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/ruin-and-rush-berlin-1910-1930-41669289-2895-461d-ae9e-4d4264ab495d/",
+    "description": "With the exhibition Ruin and Rush, the Neue Nationalgalerie focuses on selected works from its collection of Classical Modernism that address the Berlin of the 1910s and 1920s.",
+    "imageUrl": "https://imgproxy.berlinonline.net/KJKyWZYSCWVkemhlQkERDSwZa7Ie06A2yqSXZ7yKw_0/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzEwNy9lMmY1MmMyZi0yZDJhLTNiOTgtYzU2Yi02ODRiYjczZjA3YTkuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5070409,
+    "longitude": 13.3676212
+  },
+  {
+    "id": "berlin_de-lina-lapelyt-we-make-years-out-of-hours-chanel-commission-a3c847cf54",
+    "title": "Lina Lapelytė: We Make Years Out of Hours – Chanel Commission",
+    "venue": "Hamburger Bahnhof - Museum für Gegenwart",
+    "address": "Invalidenstraße 51, 10557, Berlin",
+    "openingStart": "2026-04-30T22:00:00.000Z",
+    "openingEnd": "2027-01-10T22:59:59.000Z",
+    "exhibitionStart": "2026-04-30",
+    "exhibitionEnd": "2027-01-10",
+    "eventType": "other",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/lina-lapelyt-we-make-years-out-of-hours-dba95155-327c-4310-907b-86f7cc7452fb/",
+    "description": "For the second edition of the Chanel Commission Lina Lapelytė will transform the Historic Hall into a polyphonic stage for a participatory choreography.",
+    "imageUrl": "https://imgproxy.berlinonline.net/yiLaSzXLFPkqCcoYRzmQadoCELaPhQ1e5kxEJ6YEzb4/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzE0MC8zY2ZjNDJkZC1lZmVkLTQ5NmQtOTg4Yy0yZDIyMjdmZjdiODYuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5275532,
+    "longitude": 13.3723203
+  },
+  {
     "id": "manual-savvy-contemporary-rooftop-screening-2026-05-12",
     "title": "Rooftop Screening: City Fragments",
     "artist": "Various Artists",
@@ -22,216 +94,324 @@
     "longitude": 13.3707945
   },
   {
-    "id": "indexberlin-diskurs-pop-liebe-gespr-chsreihe-mit-max-czollek-max-czollek-in-conversation-with-mely-kiyak-and-necati-ziri-8593193c40",
-    "title": "Diskurs. Pop. Liebe. Gesprächsreihe mit Max Czollek: Max Czollek in Conversation with Mely Kiyak and Necati Öziri",
-    "venue": "Haus der Kulturen der Welt",
-    "latitude": 52.51854324,
-    "longitude": 13.36370945,
-    "openingStart": "2026-10-28T19:00:00.000Z",
-    "exhibitionStart": "2026-10-28",
-    "exhibitionEnd": "2026-10-28",
-    "eventType": "talk",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/45709/diskurs-pop-liebe-gesprachsreihe-mit-max-czollek-max-czollek-in-conversation-with-mely-kiyak-and-necati-oziri",
-    "lastUpdated": "2026-10-26T10:47:22.481Z",
-    "address": "John-Foster-Dulles-Allee 10, 10557, Berlin"
+    "id": "berlin_de-rooms-stages-a8135441d9",
+    "title": "Rooms / Stages",
+    "venue": "Museum für Fotografie - Helmut Newton Stiftung",
+    "address": "Jebensstraße 2, 10623, Berlin",
+    "openingStart": "2026-06-04T22:00:00.000Z",
+    "openingEnd": "2026-11-15T22:59:59.000Z",
+    "exhibitionStart": "2026-06-04",
+    "exhibitionEnd": "2026-11-15",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/rooms-stages-a4943bcf-5277-438c-8d4e-2d7679ca99e8/",
+    "description": "The exhibition “Rooms / Stages” dispenses with artistic documentation, instead shifting the context and focus from the performative act to the stage space itself.",
+    "imageUrl": "https://imgproxy.berlinonline.net/ddO099rvGUC1o6LftPmw6P8KyOu9RgIgZWzW2PNRXn8/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzE4My83YTEzYzZmOS03ZmI1LTY3ZmYtMTZiNy03ZWMxMjA0MzNhMWEuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5081567,
+    "longitude": 13.3320921
   },
   {
-    "id": "indexberlin-neozoon-in-conversation-with-rahel-jaeggi-philosopher-berlin-9f4ae9ff3b",
-    "title": "NEOZOON in conversation with Rahel Jaeggi (Philosopher, Berlin)",
-    "venue": "KINDL – Zentrum für zeitgenössische Kunst",
-    "latitude": 52.47883606,
-    "longitude": 13.43082237,
-    "openingStart": "2026-10-28T19:00:00.000Z",
-    "exhibitionStart": "2026-10-28",
-    "exhibitionEnd": "2026-10-28",
-    "eventType": "talk",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46307/neozoon-in-conversation-with-rahel-jaeggi-philosopher-berlin",
-    "lastUpdated": "2026-10-26T10:47:22.482Z",
-    "address": "Rollbergstraße 59, 12053, Berlin"
-  },
-  {
-    "id": "indexberlin-klasse-brenner-x-art-us-collectors-collective-93188914d9",
-    "title": "Klasse Brenner X Art’Us Collectors’ Collective",
-    "venue": "EIGEN + ART Lab",
-    "latitude": 52.52721024,
-    "longitude": 13.38891983,
-    "openingStart": "2026-10-30T17:00:00.000Z",
-    "openingEnd": "2026-10-30T20:00:00.000Z",
-    "exhibitionStart": "2026-10-30",
-    "exhibitionEnd": "2026-10-30",
-    "eventType": "opening",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/45090/klasse-brenner-x-art-us-collectors-collective",
-    "lastUpdated": "2026-10-26T10:47:22.483Z",
-    "address": "Torstraße 220, 10115, Berlin"
-  },
-  {
-    "id": "indexberlin-marie-schleef-the-gap-as-a-source-of-inspiration-toward-a-feminist-theater-practice-7b9b9476fe",
-    "title": "MARIE SCHLEEF: The Gap as a Source of Inspiration: Toward a Feminist Theater Practice",
-    "venue": "ZK/U - Zentrum für Kunst und Urbanistik, Moabiter Stadtgarten",
-    "latitude": 52.53369141,
-    "longitude": 13.33669376,
-    "openingStart": "2026-10-30T17:00:00.000Z",
-    "openingEnd": "2026-10-30T19:00:00.000Z",
-    "exhibitionStart": "2026-10-30",
-    "exhibitionEnd": "2026-10-30",
-    "eventType": "talk",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46105/marie-schleef-the-gap-as-a-source-of-inspiration-toward-a-feminist-theater-practice",
-    "lastUpdated": "2026-10-26T10:47:22.484Z",
-    "address": "Siemensstraße 27, 10551, Berlin"
-  },
-  {
-    "id": "indexberlin-eine-buchverzweigung-die-solothurner-paneele-von-1976-dbc4c9b520",
-    "title": "Eine Buchverzweigung - Die Solothurner Paneele von 1976",
-    "artist": "Dieter Roth",
-    "venue": "LEVY",
-    "latitude": 52.5240785,
-    "longitude": 13.3510849,
-    "openingStart": "2026-10-30T18:00:00.000Z",
-    "openingEnd": "2026-10-30T21:00:00.000Z",
-    "exhibitionStart": "2026-10-30",
-    "exhibitionEnd": "2026-10-30",
-    "eventType": "opening",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46140/eine-buchverzweigung-die-solothurner-paneele-von-1976",
-    "lastUpdated": "2026-10-26T10:47:22.486Z",
-    "address": "Alt-Moabit 110, 10559, Berlin"
-  },
-  {
-    "id": "indexberlin-oje-oje-df696fb955",
-    "title": "Oje oje",
-    "artist": "Johannes Raimann",
-    "venue": "Klemm's",
-    "latitude": 52.51133,
-    "longitude": 13.39702,
-    "openingStart": "2026-10-30T18:00:00.000Z",
-    "openingEnd": "2026-10-30T21:00:00.000Z",
-    "exhibitionStart": "2026-10-30",
-    "exhibitionEnd": "2026-10-30",
-    "eventType": "opening",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46257/oje-oje",
-    "imageUrl": "https://www.indexberlin.com/images/Klemms_Johannes_Raimann.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.485Z",
-    "address": "Leipziger Straße 58, 10117, Berlin"
-  },
-  {
-    "id": "indexberlin-poltergeist-presence-580c155c3d",
-    "title": "Poltergeist Presence",
-    "artist": "Ulrich Gebert",
-    "venue": "Klemm's",
-    "latitude": 52.51133,
-    "longitude": 13.39702,
-    "openingStart": "2026-10-30T18:00:00.000Z",
-    "openingEnd": "2026-10-30T21:00:00.000Z",
-    "exhibitionStart": "2026-10-30",
-    "exhibitionEnd": "2026-10-30",
-    "eventType": "opening",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46256/poltergeist-presence",
-    "imageUrl": "https://www.indexberlin.com/images/Klemms_Ulrich_Gebert_Poltergeist_L.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.485Z",
-    "address": "Leipziger Straße 58, 10117, Berlin"
-  },
-  {
-    "id": "indexberlin-the-labyrinth-of-albisola-fbe8c3a84f",
-    "title": "The Labyrinth of Albisola",
-    "artist": "Nicolás Guagnini",
-    "venue": "Galerie Max Mayer",
-    "latitude": 52.5096337,
-    "longitude": 13.3247148,
-    "openingStart": "2026-10-30T18:00:00.000Z",
-    "exhibitionStart": "2026-10-30",
-    "exhibitionEnd": "2026-10-30",
-    "eventType": "opening",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46222/the-labyrinth-of-albisola",
-    "lastUpdated": "2026-10-26T10:47:22.484Z",
-    "address": "Hardenbergstraße 9a, 10623, Berlin"
-  },
-  {
-    "id": "indexberlin-let-s-unicorn-f96ba4c897",
-    "title": "Let’s Unicorn",
-    "artist": "Oska Gutheil",
-    "venue": "Galerie Russi Klenner",
-    "latitude": 52.50321198,
-    "longitude": 13.41337585,
-    "openingStart": "2026-10-30T19:00:00.000Z",
-    "exhibitionStart": "2026-10-30",
-    "exhibitionEnd": "2026-10-30",
-    "eventType": "opening",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/45149/let-s-unicorn",
-    "imageUrl": "https://www.indexberlin.com/images/Oska_Gutheil_Pink_Universe_180x200cm_Ol_auf_Leinwand_2026_INDEX.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.486Z",
-    "address": "Luckauer Straße 16, 10969, Berlin"
-  },
-  {
-    "id": "indexberlin-party-laura-mars-gallery-since-2001-64a8d93078",
-    "title": "Party - Laura Mars Gallery since 2001",
-    "venue": "Laura Mars Gallery",
-    "latitude": 52.49446487,
-    "longitude": 13.36722946,
-    "openingStart": "2026-10-30T19:00:00.000Z",
-    "exhibitionStart": "2026-10-30",
-    "exhibitionEnd": "2026-10-30",
-    "eventType": "opening",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46068/party-laura-mars-gallery-since-2001",
-    "lastUpdated": "2026-10-26T10:47:22.487Z",
-    "address": "Bülowstraße 52, 10783, Berlin"
-  },
-  {
-    "id": "indexberlin-finissage-und-performance-space-is-my-canvas-von-kerim-seiler-5a1b753b70",
-    "title": "Finissage und Performance „Space is my canvas“ von Kerim Seiler",
-    "venue": "SEXAUER",
-    "latitude": 52.55079651,
-    "longitude": 13.43914127,
-    "openingStart": "2026-10-31T14:00:00.000Z",
-    "openingEnd": "2026-10-31T18:00:00.000Z",
-    "exhibitionStart": "2026-10-31",
-    "exhibitionEnd": "2026-10-31",
-    "eventType": "performance",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46015/finissage-und-performance-space-is-my-canvas-von-kerim-seiler",
-    "lastUpdated": "2026-10-26T10:47:22.488Z",
-    "address": "Streustraße 91, 13086, Berlin"
-  },
-  {
-    "id": "indexberlin-vanina-saracino-futuring-otherwise-curating-in-the-anthropocene-2-2-221857ebf7",
-    "title": "VANINA SARACINO: Futuring Otherwise: Curating in the Anthropocene 2/2",
-    "venue": "ZK/U - Zentrum für Kunst und Urbanistik, Moabiter Stadtgarten",
-    "latitude": 52.53369141,
-    "longitude": 13.33669376,
-    "openingStart": "2026-10-31T14:00:00.000Z",
-    "openingEnd": "2026-10-31T18:00:00.000Z",
-    "exhibitionStart": "2026-10-31",
-    "exhibitionEnd": "2026-10-31",
+    "id": "berlin_de-gabriele-st-tzer-dabei-sein-und-nicht-schweigen-f12d2b27fd",
+    "title": "Gabriele Stötzer: Dabei sein und nicht schweigen",
+    "venue": "Gropius Bau",
+    "address": "Niederkirchnerstraße 7, 10117, Berlin",
+    "openingStart": "2026-06-18T22:00:00.000Z",
+    "openingEnd": "2026-12-05T23:00:00.000Z",
+    "exhibitionStart": "2026-06-18",
+    "exhibitionEnd": "2026-12-05",
     "eventType": "other",
-    "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46103/vanina-saracino-futuring-otherwise-curating-in-the-anthropocene-2-2",
-    "lastUpdated": "2026-10-26T10:47:22.488Z",
-    "address": "Siemensstraße 27, 10551, Berlin"
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/gabriele-stoetzer-dabei-sein-und-nicht-schweigen-0599f46c-dd53-471d-b939-860e787b4518/",
+    "description": "For over five decades, Gabriele Stötzer has been addressing issues such as justice, self-determination, and gender.",
+    "imageUrl": "https://imgproxy.berlinonline.net/DF59eRVMduitqVagxRoTwr45NNYUOwcRi6Eh3WNk54I/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzM5LzRkYjY1NDZiLWY2NTktNGY0YS1hZTI3LTUzYjA4MzkyZDBhNi5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5066209,
+    "longitude": 13.3819472
   },
   {
-    "id": "indexberlin-emerging-berlin-mouths-on-water-and-whisky-35ca839fb8",
-    "title": "Emerging Berlin – Mouths: On Water and Whisky",
-    "artist": "Miji Hi",
-    "venue": "Fotografiska",
-    "latitude": 52.5257798,
-    "longitude": 13.3887826,
-    "openingStart": "2026-11-03T19:00:00.000Z",
+    "id": "berlin_de-materialistin-matter-of-care-care-of-matter-aa283a188b",
+    "title": "Materialistin: Matter of Care, Care of Matter",
+    "venue": "Hamburger Bahnhof - Museum für Gegenwart",
+    "address": "Invalidenstraße 51, 10557, Berlin",
+    "openingStart": "2026-07-02T22:00:00.000Z",
+    "openingEnd": "2027-03-14T22:59:59.000Z",
+    "exhibitionStart": "2026-07-02",
+    "exhibitionEnd": "2027-03-14",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/materialistin-matter-of-care-care-of-matter-d5561bb9-e4a1-44b4-b76c-716ef73dee7b/",
+    "description": "The exhibition features sculptures and site-specific installations at the Hamburger Bahnhof that explore social and cultural-political issues.",
+    "imageUrl": "https://imgproxy.berlinonline.net/KlW9TYOzjCrGEHye0cbtn64WOdove11mUEkYrhq0pC4/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzE0Ni9lMjcxZTJjZC0wZmQ4LTQ3ZjAtNDM5Mi00ZTBiZmExMjUwZjEuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5275532,
+    "longitude": 13.3723203
+  },
+  {
+    "id": "berlin_de-everybody-86b0432bfd",
+    "title": "Everybody",
+    "venue": "Georg-Kolbe-Museum",
+    "address": "Sensburger Allee 25, 14055, Berlin",
+    "openingStart": "2026-08-07T22:00:00.000Z",
+    "openingEnd": "2026-11-28T23:00:00.000Z",
+    "exhibitionStart": "2026-08-07",
+    "exhibitionEnd": "2026-11-28",
+    "eventType": "other",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/everybody-e077c001-6340-4b40-a361-7cb6fd278ef3/",
+    "description": "The artworks on display focus on the body not as a static category, but as a dynamic construct shaped by social, historical, and emotional influences.",
+    "imageUrl": "https://imgproxy.berlinonline.net/lJbKxxnWbPPv7j40oQVPRjFpDjfHMLcSOLEHlY6JLbw/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzE3Mi85Yjk0YjZjZC0xZDIyLTQwODUtYTBhYy04ODQ4NDg5NGNlYTEuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5099369,
+    "longitude": 13.2549022
+  },
+  {
+    "id": "berlin_de-josef-kaiser-building-for-the-gdr-0638ca016b",
+    "title": "Josef Kaiser: Building for the GDR",
+    "venue": "Berlinische Galerie",
+    "address": "Alte Jakobstraße 124, 10969, Berlin",
+    "openingStart": "2026-08-27T22:00:00.000Z",
+    "openingEnd": "2027-02-01T22:59:59.000Z",
+    "exhibitionStart": "2026-08-27",
+    "exhibitionEnd": "2027-02-01",
+    "eventType": "screening",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/josef-kaiser-building-for-the-gdr-3eb91ce9-03b0-42be-8bc0-57cb233e7917/",
+    "description": "Josef Kaiser is considered one of the most influential architects of the GDR. For the first time, this exhibition explores his life and work through drawings, photographs, films, and models, shedding light on political and aesthetic tensions.",
+    "imageUrl": "https://imgproxy.berlinonline.net/LzOBFD1GPzghaumvV9JI8MwqbNLM_L1g4ws0nbJFEqQ/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzE4MC9lZjgwYWQ3MC1iN2NhLTRmMTItYjNiNC0yMzhlNWUzZDM1ZTcuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5037937,
+    "longitude": 13.3987041
+  },
+  {
+    "id": "berlin_de-zwischen-b-umen-4590aa23cf",
+    "title": "Zwischen Bäumen",
+    "venue": "Villa Schöningen",
+    "address": "Berliner Straße 86, 14467, Potsdam",
+    "openingStart": "2026-09-05T22:00:00.000Z",
+    "openingEnd": "2027-03-30T22:00:00.000Z",
+    "exhibitionStart": "2026-09-05",
+    "exhibitionEnd": "2027-03-30",
+    "eventType": "other",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/zwischen-baeumen-5a13a7a0-c6ec-4d39-8edd-9ea26528764e/",
+    "description": "At Villa Schöningen, some 90 works by more than 60 international artists spanning three centuries explore the forest as a motif, a space of memory, and a cultural canvas.",
+    "imageUrl": "https://imgproxy.berlinonline.net/o3zsyNADDch1pNdLQFd2HuYmRhE4elTu4QFenPVIe_U/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzIyNS80ODc0NzRlOC1hNmI5LTRkZDMtYTBlMS0yYzM1NmU1ZjgyOGUuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z"
+  },
+  {
+    "id": "berlin_de-kreuzberg-edef6ec5dc",
+    "title": "Kreuzberg",
+    "venue": "Gropius Bau",
+    "address": "Niederkirchnerstraße 7, 10117, Berlin",
+    "openingStart": "2026-09-09T22:00:00.000Z",
+    "openingEnd": "2027-01-16T23:00:00.000Z",
+    "exhibitionStart": "2026-09-09",
+    "exhibitionEnd": "2027-01-16",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/kreuzberg-8ff144d6-975c-473b-82ab-1f309daab9be/",
+    "description": "In 2026, the exhibition “Kreuzberg” will be dedicated to the diverse and hitherto largely unrecognized cultural production surrounding the theme of labor migration, showing how artists in Kreuzberg are addressing the tensions and issues of their time.",
+    "imageUrl": "https://imgproxy.berlinonline.net/sBCg0NMDUIMdWlAhqzHWQqaTLtXlhqb-CXbLHdn6e-I/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzI1MC9mMjhkMWVjOC0yYmJhLTQxZDQtYTVmYS02OGNiYzMxMzg4N2QuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5066209,
+    "longitude": 13.3819472
+  },
+  {
+    "id": "berlin_de-maurizio-cattelan-night-preis-der-nationalgalerie-2026-438a1a6496",
+    "title": "Maurizio Cattelan: Night – Preis der Nationalgalerie 2026",
+    "venue": "Neue Nationalgalerie",
+    "address": "Potsdamer Straße 50, 10785, Berlin",
+    "openingStart": "2026-09-09T22:00:00.000Z",
+    "openingEnd": "2027-03-07T22:59:59.000Z",
+    "exhibitionStart": "2026-09-09",
+    "exhibitionEnd": "2027-03-07",
+    "eventType": "other",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/maurizio-cattelan-night-b705bbc1-ad56-472a-9e11-192f7047e9fb/",
+    "description": "The Italian artist Maurizio Cattelan is one of the most influential positions in contemporary art and has been awarded the Preis der Nationalgalerie 2026.",
+    "imageUrl": "https://imgproxy.berlinonline.net/f5k9n8YBlt60IgddPhu0NdpduiuIzoO2Ht5CGYU_UYA/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzc1LzcwOTkzY2IzLTJmZjctZTNmNy1kZDRiLTg2MDAwNjk2OWIxZi5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5070409,
+    "longitude": 13.3676212
+  },
+  {
+    "id": "berlin_de-ryuichi-sakamoto-seeing-sound-hearing-time-07eef53e5e",
+    "title": "Ryuichi Sakamoto: seeing sound, hearing time",
+    "venue": "Hamburger Bahnhof - Museum für Gegenwart",
+    "address": "Invalidenstraße 51, 10557, Berlin",
+    "openingStart": "2026-09-10T22:00:00.000Z",
+    "openingEnd": "2027-06-20T21:59:59.000Z",
+    "exhibitionStart": "2026-09-10",
+    "exhibitionEnd": "2027-06-20",
+    "eventType": "performance",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/ryuichi-sakamoto-seeing-sound-hearing-time-0b6af817-c2a3-4b77-814f-8c9d798021c7/",
+    "description": "The composer and artist Ryuichi Sakamoto is considered a pioneer of electronic and experimental music who has constantly redefined the boundaries between sound, film, performance and visual art.",
+    "imageUrl": "https://imgproxy.berlinonline.net/2YGx5uJyfcD55KnYXmY6TSEwZXknsQaISR4sLD24vPY/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzQ2LzU4M2U4YTUxLTk5ZTEtNDA2Yy1mMDJlLTFhYjBiODcxZmNkMi5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5275532,
+    "longitude": 13.3723203
+  },
+  {
+    "id": "berlin_de-the-magic-of-the-street-e53a0549ba",
+    "title": "The Magic of the Street",
+    "venue": "f³ – Freiraum für Fotografie",
+    "address": "Prinzessinnenstraße 30, 10969, Berlin",
+    "openingStart": "2026-09-16T22:00:00.000Z",
+    "openingEnd": "2026-11-29T22:59:59.000Z",
+    "exhibitionStart": "2026-09-16",
+    "exhibitionEnd": "2026-11-29",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/the-magic-of-the-street-03aa31fc-f7a2-46ef-b577-1ca79fe372f5/",
+    "description": "Masterpieces of Street Photography: The exhibition \"The Magic of the Street\" presents some of the most important names in the history of photography.",
+    "imageUrl": "https://imgproxy.berlinonline.net/RMInI3xniDMrLAw0efKtXCy9oOsrhVwkYpdt1ovAAyQ/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzg1L2Y0ZTlhNjk4LTQwNDAtYmRlZi0zYzU1LTUwM2M5YTJjMmQ4Ny5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5015053,
+    "longitude": 13.4141307
+  },
+  {
+    "id": "berlin_de-nizo-yamamoto-master-of-anime-scenography-c659c3b5f2",
+    "title": "Nizo Yamamoto: Master of Anime Scenography",
+    "venue": "Tchoban Foundation",
+    "address": "Christinenstraße 18, 10119, Berlin",
+    "openingStart": "2026-10-02T22:00:00.000Z",
+    "openingEnd": "2027-01-10T22:59:59.000Z",
+    "exhibitionStart": "2026-10-02",
+    "exhibitionEnd": "2027-01-10",
+    "eventType": "screening",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/nizo-yamamoto-master-of-anime-scenography-94e0d591-d4a3-4d78-921e-e22ebda271a0/",
+    "description": "Yamamoto is considered one of the most influential art directors in Japanese animated film. For more than four decades, he created visual worlds that have left a lasting mark on the visual memory of the genre.",
+    "imageUrl": "https://imgproxy.berlinonline.net/vNtaPZVRgE2i8Ep06j7CZBXUjODwtmXN3gytOIQJTS0/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzIzL2JkNzFkMTI4LTMwZDUtNGU1Yy05YjE3LWNjMTc5OGViOTJkOS5wbmc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5320392,
+    "longitude": 13.4104725
+  },
+  {
+    "id": "berlin_de-christoph-schlingensief-es-ist-nicht-mehr-mein-problem-macht-eure-schei-e-alleine-c0cd06a6ed",
+    "title": "Christoph Schlingensief: Es ist nicht mehr mein Problem, macht eure Scheiße alleine",
+    "venue": "Gropius Bau",
+    "address": "Niederkirchnerstraße 7, 10117, Berlin",
+    "openingStart": "2026-10-08T22:00:00.000Z",
+    "openingEnd": "2027-01-16T23:00:00.000Z",
+    "exhibitionStart": "2026-10-08",
+    "exhibitionEnd": "2027-01-16",
+    "eventType": "performance",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/christoph-schlingensief-es-ist-nicht-mehr-mein-problem-macht-eure-scheisse-alleine-86b2ff7b-a9dd-44b5-991e-ec1c91b60723/",
+    "description": "The Gropius Bau is dedicating an exhibition to Schlingensief that highlights his visionary work, ranging from sensational political actions and radical theatrical productions to the fusion of performance and visual art.",
+    "imageUrl": "https://imgproxy.berlinonline.net/j-xQ6XcVhG0m_xEw2bk3KxEj-cz-hXz-CEUl0xMwZBI/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzQvNGVkOTJkMWMtZjVlNS00YzYzLTllMDQtNWQwMmJiNzA0Zjk1LmpwZw.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5066209,
+    "longitude": 13.3819472
+  },
+  {
+    "id": "berlin_de-lovis-corinth-then-came-berlin-14404f72fe",
+    "title": "Lovis Corinth: Then came Berlin!",
+    "venue": "Berlinische Galerie",
+    "address": "Alte Jakobstraße 124, 10969, Berlin",
+    "openingStart": "2026-10-08T22:00:00.000Z",
+    "openingEnd": "2027-01-25T22:59:59.000Z",
+    "exhibitionStart": "2026-10-08",
+    "exhibitionEnd": "2027-01-25",
+    "eventType": "other",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/lovis-corinth-then-came-berlin-ceb30856-1c10-40d1-9053-549c74b73774/",
+    "description": "It is hard to exaggerate Lovis Corinth’s contribution to modernism. In his own lifetime the virtuosic painter (1858–1925) was one of the most eminent and influential figures in the Berlin art world.",
+    "imageUrl": "https://imgproxy.berlinonline.net/uIWMMBcSOb_gwKCWSi3LNFoix_sHzmdB8bj1OVZkvjw/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzEzNC81MGVmYjlhYS0yZDU4LTU5ZjgtZWE4Ni01YTNhN2Y2MDc3MmMuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5037937,
+    "longitude": 13.3987041
+  },
+  {
+    "id": "berlin_de-next-door-tacita-dean-and-bruce-nauman-thomas-demand-olafur-eliasson-henrik-h-kansson-tom-s-saraceno-8fa2b97a83",
+    "title": "Next Door: Tacita Dean and Bruce Nauman, Thomas Demand, Olafur Eliasson, Henrik Håkansson, Tomás Saraceno",
+    "venue": "Hamburger Bahnhof - Museum für Gegenwart",
+    "address": "Invalidenstraße 51, 10557, Berlin",
+    "openingStart": "2026-10-08T22:00:00.000Z",
+    "openingEnd": "2029-12-31T22:59:59.000Z",
+    "exhibitionStart": "2026-10-08",
+    "exhibitionEnd": "2029-12-31",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/next-door-tacita-dean-and-bruce-nauman-thomas-demand-olafur-eliasson-henrik-hkansson-toms-saraceno-b072e581-df94-49ea-a842-4420cc59e6fc/",
+    "description": "The group exhibition underscores the ongoing creative relevance of this unique site.",
+    "imageUrl": "https://imgproxy.berlinonline.net/Vt5zcptqqUDfwV0HVRKCfRKkc4VFhKc5w8Lj814tzJg/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzIzL2FlNGZiZjQ1LTBlMjUtZTM4NS0wMzE3LWQ1YjJmMzI3NzQzMC5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5275532,
+    "longitude": 13.3723203
+  },
+  {
+    "id": "berlin_de-susan-hiller-bad-dreams-716f4490d0",
+    "title": "Susan Hiller: Bad Dreams",
+    "venue": "KW - Institute for Contemporary Art",
+    "address": "Auguststraße 69, 10117, Berlin",
+    "openingStart": "2026-10-16T22:00:00.000Z",
+    "openingEnd": "2027-01-09T23:00:00.000Z",
+    "exhibitionStart": "2026-10-16",
+    "exhibitionEnd": "2027-01-09",
+    "eventType": "screening",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/susan-hiller-bad-dreams-6bc48de8-9a63-427e-a31a-cb785be49871/",
+    "description": "Susan Hiller's first retrospective exhibition in Berlin presents hypnotic and phantasmagorical audiovisual works alongside sculptures made from collected everyday objects and images from the internet, film, and television.",
+    "imageUrl": "https://imgproxy.berlinonline.net/-G7DGutncdsR2NFHV405jJzmlgYluC-1xAqN55ycvEo/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzE2Ni82NmY4MzdjNC00YmQyLTQzMGItYjFhNi00MDRlNzNlNzc4NDUuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5271636,
+    "longitude": 13.3948218
+  },
+  {
+    "id": "berlin_de-genghis-khan-the-world-of-the-mongols-c134598670",
+    "title": "Genghis Khan: The world of the Mongols",
+    "venue": "James-Simon-Galerie",
+    "address": "Bodestraße, 10178, Berlin",
+    "openingStart": "2026-10-20T22:00:00.000Z",
+    "openingEnd": "2027-04-18T21:59:59.000Z",
+    "exhibitionStart": "2026-10-20",
+    "exhibitionEnd": "2027-04-18",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/genghis-khan-the-world-of-the-mongols-b10cf0ce-3706-48ec-b0d6-53d551e51948/",
+    "description": "The Museum of Prehistory and Early History is focusing on Genghis Khan as a central ruling figure in a major exhibition and shedding archaeological light on the world of the Mongols, which is virtually unknown in this country.",
+    "imageUrl": "https://imgproxy.berlinonline.net/iJPGnoT75eIeaoDkgsHnLcWWuA1wv6pjRKmHvOEMY2o/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzQ5L2MyYzQ1YTE2LWNjMGMtZThjNy05YzMxLWVhOWJhNjQ3MWY0ZC5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.133Z",
+    "latitude": 52.5197285,
+    "longitude": 13.3983715
+  },
+  {
+    "id": "berlin_de-across-epochs-gursky-lucas-mir-warhol-and-the-art-of-the-long-19th-century-f84919e8b2",
+    "title": "Across Epochs: Gursky, Lucas, Miró, Warhol and the Art of the Long 19th Century",
+    "venue": "Alte Nationalgalerie",
+    "address": "Bodestraße 1, 10178, Berlin",
+    "openingStart": "2026-10-21T22:00:00.000Z",
+    "openingEnd": "2027-02-28T22:59:59.000Z",
+    "exhibitionStart": "2026-10-21",
+    "exhibitionEnd": "2027-02-28",
+    "eventType": "other",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/across-epochs-gursky-lucas-mir-warhol-and-the-art-of-the-long-19th-century-772be90a-81f1-4d0f-822c-82d8ab4f9ff7/",
+    "description": "In the special presentation at the Alte Nationalgalerie, works by artists from the 19th and late 20th centuries are brought together in select locations throughout the building.",
+    "imageUrl": "https://imgproxy.berlinonline.net/i6MYGIwGxDD2D_7zupsJ98uXWenJOUh8oNTg_t2ulQI/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzE4MS82NzYzMjNkMy1iNDFjLWM4YWUtM2JiNS05YzdiYjI2NjJlNDAuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.134Z",
+    "latitude": 52.5201701,
+    "longitude": 13.3977174
+  },
+  {
+    "id": "indexberlin-emergent-conditions-d18002cca0",
+    "title": "Emergent Conditions",
+    "artist": "Amanda E. Metzger, Laura Benech, and Zeno Gries",
+    "venue": "transmediale studio",
+    "latitude": 52.5456939,
+    "longitude": 13.3663962,
+    "openingStart": "2026-11-03T18:00:00.000Z",
     "exhibitionStart": "2026-11-03",
     "exhibitionEnd": "2026-11-03",
     "eventType": "opening",
     "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/45400/emerging-berlin-mouths-on-water-and-whisky",
-    "imageUrl": "https://www.indexberlin.com/images/Fotografiska_Miji_Ih_Project_Mouths_.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.489Z",
-    "address": "Oranienburger Straße 54, 10117, Berlin"
+    "sourceUrl": "https://www.indexberlin.com/events/list/46528/emergent-conditions",
+    "lastUpdated": "2026-11-02T13:10:08.547Z",
+    "address": "Gerichtstraße 35, 13347, Berlin"
   },
   {
     "id": "indexberlin-giacometti-figur-raum-ce48dd15a4",
@@ -246,7 +426,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46231/giacometti-figur-raum",
     "imageUrl": "https://www.indexberlin.com/images/Gutshaus_Steglitz_Giacometti_Femme_debout_1_.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.489Z",
+    "lastUpdated": "2026-11-02T13:10:08.548Z",
     "address": "Schloßstraße 48, 12165, Berlin"
   },
   {
@@ -261,8 +441,26 @@
     "eventType": "talk",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/45968/im-krieg-aufbahrung-ellen-kobe-in-conversation-with-andres-veiel-director-and-writer",
-    "lastUpdated": "2026-10-26T10:47:22.490Z",
+    "lastUpdated": "2026-11-02T13:10:08.548Z",
     "address": "Alt-Biesdorf 55, 12683, Berlin"
+  },
+  {
+    "id": "berlin_de-roger-ballen-roger-ballen-drawing-meets-photography-8ee0ea4f68",
+    "title": "Roger Ballen: roger ballen.! drawing meets photography",
+    "venue": "Fotografiska Berlin",
+    "address": "Oranienburger Straße 54, 10117, Berlin",
+    "openingStart": "2026-11-05T23:00:00.000Z",
+    "openingEnd": "2027-03-13T23:00:00.000Z",
+    "exhibitionStart": "2026-11-05",
+    "exhibitionEnd": "2027-03-13",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/roger-ballen-roger-ballen-drawing-meets-photography-c50cf206-2f09-43f8-8f57-65fdc63ba0e9/",
+    "description": "The exhibition “roger ballen.! drawing meets photography” explores the fluid boundaries between drawing, photography, and painting.",
+    "imageUrl": "https://imgproxy.berlinonline.net/FSdEn67JHOCwxYN5_BPfY2pVggh__nuajGfIfBsPMmg/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzg4LzZhMjdlYTgwLTQ1MmYtNGFhYi1hNDU4LTQ5ODlmMDcyOGJmMS5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.135Z",
+    "latitude": 52.5256724,
+    "longitude": 13.3891203
   },
   {
     "id": "indexberlin-i-bequeath-myself-to-the-dirt-to-grow-from-the-grass-i-love-200d36c85a",
@@ -279,25 +477,25 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46392/i-bequeath-myself-to-the-dirt-to-grow-from-the-grass-i-love",
     "imageUrl": "https://www.indexberlin.com/images/Eemil_Karila_Die_Antwort_weiss_ganz_allein_der_Wind_135x107_2026_Credits_Eemil_Karila.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.490Z",
+    "lastUpdated": "2026-11-02T13:10:08.549Z",
     "address": "Augsburger Straße 10, 10789, Berlin"
   },
   {
-    "id": "indexberlin-cleaning-f09bebad10",
-    "title": "Cleaning",
-    "artist": "Laura Kärki",
-    "venue": "Miettinen Collection",
-    "latitude": 52.50117874,
-    "longitude": 13.33807755,
+    "id": "indexberlin-77-frauen-unserer-zeit-75611105aa",
+    "title": "77 Frauen unserer Zeit",
+    "artist": "Alexandra Hopf",
+    "venue": "Kunstverein am Rosa–Luxemburg–Platz",
+    "latitude": 52.5272273,
+    "longitude": 13.4103406,
     "openingStart": "2026-11-06T18:00:00.000Z",
     "openingEnd": "2026-11-06T21:00:00.000Z",
     "exhibitionStart": "2026-11-06",
     "exhibitionEnd": "2026-11-06",
-    "eventType": "opening",
+    "eventType": "other",
     "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46393/cleaning",
-    "lastUpdated": "2026-10-26T10:47:22.493Z",
-    "address": "Augsburger Straße 10, 10789, Berlin"
+    "sourceUrl": "https://www.indexberlin.com/events/list/46505/77-frauen-unserer-zeit",
+    "lastUpdated": "2026-11-02T13:10:08.553Z",
+    "address": "Almstadtstraße 52, 10119, Berlin"
   },
   {
     "id": "indexberlin-drunken-boat-curated-by-augusto-arbizo-2a94bbd028",
@@ -314,7 +512,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46146/drunken-boat-curated-by-augusto-arbizo",
     "imageUrl": "https://www.indexberlin.com/images/Anna_Jung_Seo_Reading_Pierre_Louys_Pink_oil_on_canvas_2026_23x16x2cm_unframed.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.492Z",
+    "lastUpdated": "2026-11-02T13:10:08.552Z",
     "address": "Markgrafenstraße 68, 10969, Berlin"
   },
   {
@@ -331,8 +529,26 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46078/elephant",
-    "lastUpdated": "2026-10-26T10:47:22.492Z",
+    "lastUpdated": "2026-11-02T13:10:08.551Z",
     "address": "Potsdamer Straße 81E, 10785, Berlin"
+  },
+  {
+    "id": "indexberlin-going-to-the-other-side-2c50b05259",
+    "title": "Going to the Other Side",
+    "artist": "Laura Kärki",
+    "venue": "Miettinen Collection",
+    "latitude": 52.50117874,
+    "longitude": 13.33807755,
+    "openingStart": "2026-11-06T18:00:00.000Z",
+    "openingEnd": "2026-11-06T21:00:00.000Z",
+    "exhibitionStart": "2026-11-06",
+    "exhibitionEnd": "2026-11-06",
+    "eventType": "opening",
+    "source": "indexberlin",
+    "sourceUrl": "https://www.indexberlin.com/events/list/46393/going-to-the-other-side",
+    "imageUrl": "https://www.indexberlin.com/images/0_Pimple_2025_mixed_tufted_yarns_64_x_62_x_2_cm_photo_Bernhard_Ludewig.png?w=300",
+    "lastUpdated": "2026-11-02T13:10:08.553Z",
+    "address": "Augsburger Straße 10, 10789, Berlin"
   },
   {
     "id": "indexberlin-make-a-wish-cef68522b3",
@@ -348,7 +564,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46077/make-a-wish",
-    "lastUpdated": "2026-10-26T10:47:22.491Z",
+    "lastUpdated": "2026-11-02T13:10:08.551Z",
     "address": "Potsdamer Straße 81E, 10785, Berlin"
   },
   {
@@ -366,7 +582,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46147/new-paintings-keep-on-keeping-on",
     "imageUrl": "https://www.indexberlin.com/images/Peter_Bonde_Untitled_The_Betty_Center_2023_25_oil_Injekt_print_on_canvas_240x200cm.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.492Z",
+    "lastUpdated": "2026-11-02T13:10:08.552Z",
     "address": "Markgrafenstraße 68, 10969, Berlin"
   },
   {
@@ -384,7 +600,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46186/the-department",
     "imageUrl": "https://www.indexberlin.com/images/DS_M_201820_SCHDA0628_V1_JPEG_HIGH_RES_LARGE_.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.491Z",
+    "lastUpdated": "2026-11-02T13:10:08.551Z",
     "address": "Grolmanstraße 31, 10623, Berlin"
   },
   {
@@ -401,8 +617,26 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46458/roger-ballen-drawing-meets-photography",
     "imageUrl": "https://www.indexberlin.com/images/Fotografiska_C_Roger_Ballen_Snatched_2021.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.493Z",
+    "lastUpdated": "2026-11-02T13:10:08.553Z",
     "address": "Oranienburger Straße 54, 10117, Berlin"
+  },
+  {
+    "id": "berlin_de-swedish-modernism-2daa923e10",
+    "title": "Swedish modernism",
+    "venue": "Brücke Museum",
+    "address": "Bussardsteig 9, 14195, Berlin",
+    "openingStart": "2026-11-06T23:00:00.000Z",
+    "openingEnd": "2027-02-27T23:00:00.000Z",
+    "exhibitionStart": "2026-11-06",
+    "exhibitionEnd": "2027-02-27",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/swedish-modernism-e658d1ba-2b2c-4fa6-96d8-89591e2a499a/",
+    "description": "In cooperation with Moderna Museet, Stockholm, the Brücke Museum is presenting a comprehensive exhibition on Swedish modernism for the first time in Germany.",
+    "imageUrl": "https://imgproxy.berlinonline.net/KgNP1DO0S_5xixw082eIi1ffGVywkfXR5-v_qpx1A_M/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JkZS1jbXMvYm8udGIuZXZlbnQvaW1hZ2VzLzM1LzBlNjM1YjhjLTY1NzUtNDJiZS1iMTIzLTE5NzZlMmVmN2IxOS5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.135Z",
+    "latitude": 52.4669327,
+    "longitude": 13.2747539
   },
   {
     "id": "indexberlin-nothing-really-happens-8c944753a8",
@@ -419,8 +653,42 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46220/nothing-really-happens",
     "imageUrl": "https://www.indexberlin.com/images/Katarzyna_KOZYRA_Neg.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.493Z",
+    "lastUpdated": "2026-11-02T13:10:08.554Z",
     "address": "Lindenstraße 35, 10969, Berlin"
+  },
+  {
+    "id": "indexberlin-emergent-conditions-65957d3ce1",
+    "title": "Emergent Conditions",
+    "artist": "Amanda E. Metzger, Laura Benech, and Zeno Gries",
+    "venue": "transmediale studio",
+    "latitude": 52.5456939,
+    "longitude": 13.3663962,
+    "openingStart": "2026-11-07T18:00:00.000Z",
+    "exhibitionStart": "2026-11-07",
+    "exhibitionEnd": "2026-11-07",
+    "eventType": "talk",
+    "source": "indexberlin",
+    "sourceUrl": "https://www.indexberlin.com/events/list/46529/emergent-conditions",
+    "lastUpdated": "2026-11-02T13:10:08.554Z",
+    "address": "Gerichtstraße 35, 13347, Berlin"
+  },
+  {
+    "id": "indexberlin-st-tzen-der-gesellschaft-703845a233",
+    "title": "Stützen der Gesellschaft",
+    "artist": "Alexandra Tretter",
+    "venue": "orbit international",
+    "latitude": 52.5042043,
+    "longitude": 13.3611228,
+    "openingStart": "2026-11-07T18:00:00.000Z",
+    "openingEnd": "2026-11-07T22:00:00.000Z",
+    "exhibitionStart": "2026-11-07",
+    "exhibitionEnd": "2026-11-07",
+    "eventType": "opening",
+    "source": "indexberlin",
+    "sourceUrl": "https://www.indexberlin.com/events/list/46513/stutzen-der-gesellschaft",
+    "imageUrl": "https://www.indexberlin.com/images/Alexandra_Tretter_Einladungsbild_Stutzen_der_Gesellschaft.jpg?w=300",
+    "lastUpdated": "2026-11-02T13:10:08.554Z",
+    "address": "Lützowstraße 32, 10785, Berlin"
   },
   {
     "id": "indexberlin-family-workshop-on-the-exhibition-kira-freije-between-sunlight-a8323d9719",
@@ -435,7 +703,7 @@
     "eventType": "exhibition",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46308/family-workshop-on-the-exhibition-kira-freije-between-sunlight",
-    "lastUpdated": "2026-10-26T10:47:22.494Z",
+    "lastUpdated": "2026-11-02T13:10:08.554Z",
     "address": "Rollbergstraße 59, 12053, Berlin"
   },
   {
@@ -451,8 +719,25 @@
     "eventType": "other",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/45966/projections-onto-the-east",
-    "lastUpdated": "2026-10-26T10:47:22.494Z",
+    "lastUpdated": "2026-11-02T13:10:08.555Z",
     "address": "Chausseestraße 128-129, 10115, Berlin"
+  },
+  {
+    "id": "indexberlin-editing-encounters-presented-by-the-invisible-archive-4299bb1524",
+    "title": "Editing Encounters. Presented by The Invisible Archive",
+    "artist": "Jakob Urban and Yon Natalie Mik",
+    "venue": "New Toni",
+    "latitude": 52.53142929,
+    "longitude": 13.42630959,
+    "openingStart": "2026-11-11T18:00:00.000Z",
+    "openingEnd": "2026-11-11T22:00:00.000Z",
+    "exhibitionStart": "2026-11-11",
+    "exhibitionEnd": "2026-11-11",
+    "eventType": "other",
+    "source": "indexberlin",
+    "sourceUrl": "https://www.indexberlin.com/events/list/46538/editing-encounters-presented-by-the-invisible-archive",
+    "lastUpdated": "2026-11-02T13:10:08.555Z",
+    "address": "Immanuelkirchstraße 15, 10405, Berlin"
   },
   {
     "id": "indexberlin-wave-weave-sono-obi-4ec777ee8a",
@@ -469,7 +754,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46191/wave-weave-sono-obi",
     "imageUrl": "https://www.indexberlin.com/images/CARSTEN_NICOLAI_WAVE_WEAVE_SONO_OBI_INVITATION_FRONT.png?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.495Z",
+    "lastUpdated": "2026-11-02T13:10:08.555Z",
     "address": "Auguststraße 26, 10117, Berlin"
   },
   {
@@ -486,12 +771,63 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46348/adefra-neid-queer-reads-library-queer-feministische-gruppen-ihre-magazine-und-archive",
     "imageUrl": "https://www.indexberlin.com/images/Magda_Korsinsky_Adefraroots_2.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.495Z",
+    "lastUpdated": "2026-11-02T13:10:08.555Z",
     "address": "Turmstraße 75, 10551, Berlin"
   },
   {
-    "id": "indexberlin-gruppenausstellung-41a777678f",
-    "title": "Gruppenausstellung",
+    "id": "indexberlin-super-super-odd-dolls-gmbh-fcdb91a5d2",
+    "title": "Super Super Odd Dolls GmbH",
+    "artist": "Omari Douglin",
+    "venue": "Super Super Markt",
+    "latitude": 52.5331928,
+    "longitude": 13.3990591,
+    "openingStart": "2026-11-12T18:00:00.000Z",
+    "openingEnd": "2026-11-12T20:00:00.000Z",
+    "exhibitionStart": "2026-11-12",
+    "exhibitionEnd": "2026-11-12",
+    "eventType": "opening",
+    "source": "indexberlin",
+    "sourceUrl": "https://www.indexberlin.com/events/list/45220/super-super-odd-dolls-gmbh",
+    "lastUpdated": "2026-11-02T13:10:08.556Z",
+    "address": "Brunnenstraße 22, 10119, Berlin"
+  },
+  {
+    "id": "indexberlin-editing-encounters-by-jakob-urban-2b2fbbf154",
+    "title": "Editing Encounters. By Jakob Urban",
+    "artist": "The Invisible Archive and Jakob Urban",
+    "venue": "New Toni",
+    "latitude": 52.53142929,
+    "longitude": 13.42630959,
+    "openingStart": "2026-11-12T19:00:00.000Z",
+    "exhibitionStart": "2026-11-12",
+    "exhibitionEnd": "2026-11-12",
+    "eventType": "talk",
+    "source": "indexberlin",
+    "sourceUrl": "https://www.indexberlin.com/events/list/46540/editing-encounters-by-jakob-urban",
+    "lastUpdated": "2026-11-02T13:10:08.556Z",
+    "address": "Immanuelkirchstraße 15, 10405, Berlin"
+  },
+  {
+    "id": "berlin_de-sophie-calle-is-it-better-cb9340af39",
+    "title": "Sophie Calle: Is It Better?",
+    "venue": "Hamburger Bahnhof - Museum für Gegenwart",
+    "address": "Invalidenstraße 51, 10557, Berlin",
+    "openingStart": "2026-11-12T23:00:00.000Z",
+    "openingEnd": "2027-04-04T21:59:59.000Z",
+    "exhibitionStart": "2026-11-12",
+    "exhibitionEnd": "2027-04-04",
+    "eventType": "other",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/sophie-calle-is-it-better-560ff8a2-8f28-46af-8a1a-66b2fc5edac6/",
+    "description": "Six body of work from the past three decades—comprising photography, text, installation, and video—offer a glimpse into the French conceptual artist’s diverse use of media.",
+    "imageUrl": "https://imgproxy.berlinonline.net/k7gf2Jb6NBdNBpsFNb-Q7ufJHQRlPEUfxDKg8U4jntM/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzY5Lzc2MDZkNjAyLTMyY2EtMjVjOC1mYTQ1LWExMGQxNzA4NDJhZi5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.135Z",
+    "latitude": 52.5275532,
+    "longitude": 13.3723203
+  },
+  {
+    "id": "indexberlin-for-further-information-please-contact-the-gallery-a89e847af5",
+    "title": "For further information, please contact the gallery.",
     "venue": "Soy Capitán",
     "latitude": 52.5062275,
     "longitude": 13.3980673,
@@ -501,8 +837,8 @@
     "exhibitionEnd": "2026-11-13",
     "eventType": "opening",
     "source": "indexberlin",
-    "sourceUrl": "https://www.indexberlin.com/events/list/46227/gruppenausstellung",
-    "lastUpdated": "2026-10-26T10:47:22.498Z",
+    "sourceUrl": "https://www.indexberlin.com/events/list/46227/for-further-information-please-contact-the-gallery",
+    "lastUpdated": "2026-11-02T13:10:08.557Z",
     "address": "Lindenstraße 34-35, 10969, Berlin"
   },
   {
@@ -518,7 +854,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46208/k-t-z-15-years",
-    "lastUpdated": "2026-10-26T10:47:22.497Z",
+    "lastUpdated": "2026-11-02T13:10:08.557Z",
     "address": "Regina-Jonas-Straße 41/43, 10999, Berlin"
   },
   {
@@ -534,7 +870,8 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46478/lucid-rhapsody-ballad-of-a-schizophrenic",
-    "lastUpdated": "2026-10-26T10:47:22.498Z",
+    "imageUrl": "https://www.indexberlin.com/images/Bildschirmfoto_2026_10_30_um_14.41.20.png?w=300",
+    "lastUpdated": "2026-11-02T13:10:08.557Z",
     "address": "Pappelallee 15, 10437, Berlin"
   },
   {
@@ -551,7 +888,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46201/men-in-shades",
     "imageUrl": "https://www.indexberlin.com/images/AntonJanizewski_JonasHoschl_MeninShades.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.496Z",
+    "lastUpdated": "2026-11-02T13:10:08.556Z",
     "address": "Weydingerstraße 10, 10178, Berlin"
   },
   {
@@ -568,7 +905,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46225/opaque-waters",
-    "lastUpdated": "2026-10-26T10:47:22.497Z",
+    "lastUpdated": "2026-11-02T13:10:08.557Z",
     "address": "Joachimsthaler Straße 24a, 10719, Berlin"
   },
   {
@@ -585,7 +922,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46271/the-little-things-that-run-the-world",
-    "lastUpdated": "2026-10-26T10:47:22.496Z",
+    "lastUpdated": "2026-11-02T13:10:08.556Z",
     "address": "Corneliusstraße 3, 10787, Berlin"
   },
   {
@@ -603,7 +940,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46433/tu-i-tam-hier-und-dort-hybride-strukturen-in-transnationalen-kontexten",
     "imageUrl": "https://www.indexberlin.com/images/TuiTam_Hier_und_Dort_Index_1920x1280_RZ.gif?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.497Z",
+    "lastUpdated": "2026-11-02T13:10:08.556Z",
     "address": "Müllerstraße, 13353, Berlin"
   },
   {
@@ -620,7 +957,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/45997/was-zwischen-uns-wachst",
-    "lastUpdated": "2026-10-26T10:47:22.498Z",
+    "lastUpdated": "2026-11-02T13:10:08.557Z",
     "address": "Pasedagplatz 4, 13088, Berlin"
   },
   {
@@ -637,7 +974,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46384/fluxus-all-music-is-the-same",
-    "lastUpdated": "2026-10-26T10:47:22.499Z",
+    "lastUpdated": "2026-11-02T13:10:08.558Z",
     "address": "Schaperstraße 11, 10719, Berlin"
   },
   {
@@ -654,7 +991,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46382/fluxus-art-is-easy",
-    "lastUpdated": "2026-10-26T10:47:22.499Z",
+    "lastUpdated": "2026-11-02T13:10:08.558Z",
     "address": "Prager Straße 3, 10779, Berlin"
   },
   {
@@ -671,7 +1008,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46183/home-archive-s",
-    "lastUpdated": "2026-10-26T10:47:22.502Z",
+    "lastUpdated": "2026-11-02T13:10:08.558Z",
     "address": "Hauptstraße 18, 10827, Berlin"
   },
   {
@@ -689,7 +1026,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46387/it-was-never-really-that-good",
     "imageUrl": "https://www.indexberlin.com/images/Basma_a_Sharif_Capital_Detail_Print_03.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.503Z",
+    "lastUpdated": "2026-11-02T13:10:08.559Z",
     "address": "Fürbringerstraße 11, 10961, Berlin"
   },
   {
@@ -705,7 +1042,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46171/orphan-parade",
-    "lastUpdated": "2026-10-26T10:47:22.502Z",
+    "lastUpdated": "2026-11-02T13:10:08.559Z",
     "address": "Schöneberger Ufer 61, 10785, Berlin"
   },
   {
@@ -722,7 +1059,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46180/verbena",
-    "lastUpdated": "2026-10-26T10:47:22.502Z",
+    "lastUpdated": "2026-11-02T13:10:08.558Z",
     "address": "Hauptstraße 18, 10827, Berlin"
   },
   {
@@ -738,7 +1075,7 @@
     "eventType": "performance",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46072/harlem-renaissance-intervention-by-langston-uibel",
-    "lastUpdated": "2026-10-26T10:47:22.503Z",
+    "lastUpdated": "2026-11-02T13:10:08.559Z",
     "address": "Hardenbergstraße 22-24, 10623, Berlin"
   },
   {
@@ -753,7 +1090,7 @@
     "eventType": "other",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46338/artists-in-residence",
-    "lastUpdated": "2026-10-26T10:47:22.503Z",
+    "lastUpdated": "2026-11-02T13:10:08.560Z",
     "address": "Regina-Jonas-Straße 43, 10999, Berlin"
   },
   {
@@ -768,7 +1105,7 @@
     "eventType": "other",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46337/the-flag-bearers-becoming-b-chapter-7",
-    "lastUpdated": "2026-10-26T10:47:22.503Z",
+    "lastUpdated": "2026-11-02T13:10:08.559Z",
     "address": "Regina-Jonas-Straße 43, 10999, Berlin"
   },
   {
@@ -784,7 +1121,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46148/artist-science-talk-zeitlichkeit-als-trost-clemens-krauss-im-gesprach-mit-dem-palaontologen-andreas-rassuly",
     "imageUrl": "https://www.indexberlin.com/images/CK_M_25_003.001.O.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.504Z",
+    "lastUpdated": "2026-11-02T13:10:08.560Z",
     "address": "Uhland-Fasanen-Passage, 10719, Berlin"
   },
   {
@@ -802,7 +1139,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46415/monstros",
     "imageUrl": "https://www.indexberlin.com/images/Galerie_im_Turm_Caroline_Douville_Primogeniture_II.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.504Z",
+    "lastUpdated": "2026-11-02T13:10:08.560Z",
     "address": "10243, Berlin"
   },
   {
@@ -817,7 +1154,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46051/memory-of-currency",
-    "lastUpdated": "2026-10-26T10:47:22.505Z",
+    "lastUpdated": "2026-11-02T13:10:08.561Z",
     "address": "Markgrafenstraße 67, 10969, Berlin"
   },
   {
@@ -834,7 +1171,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46065/collage",
-    "lastUpdated": "2026-10-26T10:47:22.505Z",
+    "lastUpdated": "2026-11-02T13:10:08.561Z",
     "address": "Pohlstraße 65, 10785, Berlin"
   },
   {
@@ -852,7 +1189,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/45351/plan-9-from-outer-space-3-1-twin-turbo",
     "imageUrl": "https://www.indexberlin.com/images/image_6.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.505Z",
+    "lastUpdated": "2026-11-02T13:10:08.564Z",
     "address": "Kluckstraße 23, 10785, Berlin"
   },
   {
@@ -869,7 +1206,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46319/arcade",
-    "lastUpdated": "2026-10-26T10:47:22.509Z",
+    "lastUpdated": "2026-11-02T13:10:08.566Z",
     "address": "Potsdamer Straße 81A, 10785, Berlin"
   },
   {
@@ -887,7 +1224,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46197/block",
     "imageUrl": "https://www.indexberlin.com/images/Fundacio_Catalunya_La_Pedrera._Photos_by_Pau_Fabregat.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.506Z",
+    "lastUpdated": "2026-11-02T13:10:08.564Z",
     "address": "Lützowstraße, 10785, Berlin"
   },
   {
@@ -905,7 +1242,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46297/carry-me-carry-on",
     "imageUrl": "https://www.indexberlin.com/images/GALERIE_TANJA_WAGNER_KAPWANI_KIWANGA_Carry_Capacity_Blue_Plaid.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.507Z",
+    "lastUpdated": "2026-11-02T13:10:08.565Z",
     "address": "Pohlstraße, 10785, Berlin"
   },
   {
@@ -922,7 +1259,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46263/kollaaaps",
-    "lastUpdated": "2026-10-26T10:47:22.506Z",
+    "lastUpdated": "2026-11-02T13:10:08.564Z",
     "address": "Rosa-Luxemburg-Straße 30, 10178, Berlin"
   },
   {
@@ -939,7 +1276,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46265/leeward",
-    "lastUpdated": "2026-10-26T10:47:22.508Z",
+    "lastUpdated": "2026-11-02T13:10:08.565Z",
     "address": "Rosa-Luxemburg-Straße 31, 10178, Berlin"
   },
   {
@@ -955,7 +1292,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46067/not-unique-selected-editions",
-    "lastUpdated": "2026-10-26T10:47:22.508Z",
+    "lastUpdated": "2026-11-02T13:10:08.565Z",
     "address": "Waldenserstraße 2-4, 10551, Berlin"
   },
   {
@@ -971,7 +1308,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46284/raff-raff-raff",
-    "lastUpdated": "2026-10-26T10:47:22.508Z",
+    "lastUpdated": "2026-11-02T13:10:08.566Z",
     "address": "Streustraße 91, 13086, Berlin"
   },
   {
@@ -990,7 +1327,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46281/shelter",
     "imageUrl": "https://www.indexberlin.com/images/Galerie_Thomas_Schulte_Angela_de_la_Cruz_Shelter_L_Pale_Olive_.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.507Z"
+    "lastUpdated": "2026-11-02T13:10:08.565Z"
   },
   {
     "id": "indexberlin-stranger-by-the-wall-d67bd1edcb",
@@ -1005,7 +1342,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46317/stranger-by-the-wall",
-    "lastUpdated": "2026-10-26T10:47:22.508Z",
+    "lastUpdated": "2026-11-02T13:10:08.565Z",
     "address": "Potsdamer Straße 81B, 10785, Berlin"
   },
   {
@@ -1021,7 +1358,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46316/the-decay-of-the-angel",
-    "lastUpdated": "2026-10-26T10:47:22.507Z",
+    "lastUpdated": "2026-11-02T13:10:08.565Z",
     "address": "Potsdamer Straße 81B, 10785, Berlin"
   },
   {
@@ -1038,7 +1375,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46206/the-unclean-slate",
-    "lastUpdated": "2026-10-26T10:47:22.506Z",
+    "lastUpdated": "2026-11-02T13:10:08.564Z",
     "address": "Bülowstraße, 10783, Berlin"
   },
   {
@@ -1055,7 +1392,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46204/weightlessness",
-    "lastUpdated": "2026-10-26T10:47:22.505Z",
+    "lastUpdated": "2026-11-02T13:10:08.564Z",
     "address": "Potsdamer Straße 81e, 10785, Berlin"
   },
   {
@@ -1070,7 +1407,7 @@
     "eventType": "exhibition",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/45961/stop-the-destruction-now-panel-discussion-featuring-climate-activists-petra-nielsen-parents-for-future-nicholas-omonuk-end-fossil-occupy-uganda-and-beate-gutschow-an-artist-featured-in-the-exhibition-whose-work-addresses-the-climate-crisis",
-    "lastUpdated": "2026-10-26T10:47:22.509Z",
+    "lastUpdated": "2026-11-02T13:10:08.566Z",
     "address": "Lützowplatz, 10785, Berlin"
   },
   {
@@ -1088,13 +1425,13 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46278/zig-zag-city",
-    "imageUrl": "https://www.indexberlin.com/images/IMG_5226.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.509Z"
+    "imageUrl": "https://www.indexberlin.com/images/Galerie_Thomas_Schulte_Mark_Handforth_Zig_Zag_City_Key_Visual.jpg?w=300",
+    "lastUpdated": "2026-11-02T13:10:08.566Z"
   },
   {
     "id": "indexberlin-zweite-natur-second-nature-2e9e2c21fd",
     "title": "Zweite Natur | Second Nature",
-    "artist": "Slawomir Elsner, Ernst Fuhrmann, Karin Kneffel, August Kotzsch, Melanie Loureiro, Cornelius Völker",
+    "artist": "Jaana Caspary, Slawomir Elsner, Ernst Fuhrmann, Karin Kneffel, August Kotzsch, Melanie Loureiro, Cornelius Völker",
     "venue": "Galerie Friese",
     "latitude": 52.497889104701,
     "longitude": 13.327883086294,
@@ -1106,7 +1443,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46135/zweite-natur-second-nature",
     "imageUrl": "https://www.indexberlin.com/images/2025_P3_Motiv_90x90cm_Blatt_100x110cm.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.509Z",
+    "lastUpdated": "2026-11-02T13:10:08.566Z",
     "address": "Meierottostraße 2, 10719, Berlin"
   },
   {
@@ -1122,7 +1459,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46309/group-exhibition",
-    "lastUpdated": "2026-10-26T10:47:22.510Z",
+    "lastUpdated": "2026-11-02T13:10:08.567Z",
     "address": "Linienstraße 155, 10115, Berlin"
   },
   {
@@ -1137,7 +1474,7 @@
     "eventType": "screening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/45969/gudehus-an-autofictional-film-collage-on-the-german-german-disruption",
-    "lastUpdated": "2026-10-26T10:47:22.510Z",
+    "lastUpdated": "2026-11-02T13:10:08.567Z",
     "address": "Alt-Biesdorf 55, 12683, Berlin"
   },
   {
@@ -1155,7 +1492,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46455/in-between",
     "imageUrl": "https://www.indexberlin.com/images/Teststrecke_Planterworld.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.510Z",
+    "lastUpdated": "2026-11-02T13:10:08.567Z",
     "address": "Kiehnwerderallee, 12437, Berlin"
   },
   {
@@ -1171,7 +1508,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46405/mnemosyne-atlas-lab-35-atmosphere-panel-70-and-group-show",
-    "lastUpdated": "2026-10-26T10:47:22.510Z",
+    "lastUpdated": "2026-11-02T13:10:08.567Z",
     "address": "Immanuelkirchstraße 15, 10405, Berlin"
   },
   {
@@ -1186,7 +1523,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46188/das-werk-das-bin-nicht-ich",
-    "lastUpdated": "2026-10-26T10:47:22.511Z",
+    "lastUpdated": "2026-11-02T13:10:08.567Z",
     "address": "Niebuhrstraße 2, 10629, Berlin"
   },
   {
@@ -1202,7 +1539,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46273/a-future-held-in-common-fundraiser-for-savvy-contemporary",
-    "lastUpdated": "2026-10-26T10:47:22.511Z",
+    "lastUpdated": "2026-11-02T13:10:08.568Z",
     "address": "Schöneberger Ufer, 10785, Berlin"
   },
   {
@@ -1219,8 +1556,25 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46304/a-partial-view",
-    "lastUpdated": "2026-10-26T10:47:22.512Z",
+    "lastUpdated": "2026-11-02T13:10:08.568Z",
     "address": "Goethestraße 82, 10623, Berlin"
+  },
+  {
+    "id": "indexberlin-cryptochrome-48820ad131",
+    "title": "Cryptochrome",
+    "artist": "Alex Schweder & Norbert Wuerz",
+    "venue": "Kunstverein am Rosa–Luxemburg–Platz",
+    "latitude": 52.5272273,
+    "longitude": 13.4103406,
+    "openingStart": "2026-11-26T18:00:00.000Z",
+    "openingEnd": "2026-11-26T21:00:00.000Z",
+    "exhibitionStart": "2026-11-26",
+    "exhibitionEnd": "2026-11-26",
+    "eventType": "opening",
+    "source": "indexberlin",
+    "sourceUrl": "https://www.indexberlin.com/events/list/46542/cryptochrome",
+    "lastUpdated": "2026-11-02T13:10:08.568Z",
+    "address": "Almstadtstraße 52, 10119, Berlin"
   },
   {
     "id": "indexberlin-tracing-action-aktivierung-nach-einem-skript-von-silvi-na-i-e3f1cfb41b",
@@ -1234,7 +1588,7 @@
     "eventType": "other",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46419/tracing-action-aktivierung-nach-einem-skript-von-silvi-naci",
-    "lastUpdated": "2026-10-26T10:47:22.511Z",
+    "lastUpdated": "2026-11-02T13:10:08.567Z",
     "address": "Linienstraße 139, 10115, Berlin"
   },
   {
@@ -1250,7 +1604,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46336/laba-berlin-name",
-    "lastUpdated": "2026-10-26T10:47:22.512Z",
+    "lastUpdated": "2026-11-02T13:10:08.568Z",
     "address": "Regina-Jonas-Straße 43, 10999, Berlin"
   },
   {
@@ -1266,7 +1620,7 @@
     "eventType": "other",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/42973/openhaus-residency-open-studios",
-    "lastUpdated": "2026-10-26T10:47:22.512Z",
+    "lastUpdated": "2026-11-02T13:10:08.568Z",
     "address": "Siemensstraße 27, 10551, Berlin"
   },
   {
@@ -1281,7 +1635,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46237/heinz-butz",
     "imageUrl": "https://www.indexberlin.com/images/Butz_Ohne_Titel_1961_P89_resized.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.512Z",
+    "lastUpdated": "2026-11-02T13:10:08.568Z",
     "address": "Niebuhrstraße, 10629, Berlin"
   },
   {
@@ -1299,7 +1653,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46159/24-12",
     "imageUrl": "https://www.indexberlin.com/images/RVo_M_26_001.001.O.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.513Z",
+    "lastUpdated": "2026-11-02T13:10:08.569Z",
     "address": "Uhland-Fasanen-Passage, 10719, Berlin"
   },
   {
@@ -1316,7 +1670,8 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46248/erinnerung-an-eine-bildhauerin",
-    "lastUpdated": "2026-10-26T10:47:22.513Z",
+    "imageUrl": "https://www.indexberlin.com/images/kajetan_Gisela_von_Bruchhausen_Double_Fall.jpg?w=300",
+    "lastUpdated": "2026-11-02T13:10:08.569Z",
     "address": "Grolmanstraße 58, 10623, Berlin"
   },
   {
@@ -1333,7 +1688,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46021/paintpusher",
-    "lastUpdated": "2026-10-26T10:47:22.513Z",
+    "lastUpdated": "2026-11-02T13:10:08.569Z",
     "address": "Strausberger Platz 1, 10243, Berlin"
   },
   {
@@ -1351,7 +1706,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46176/plastic-expressions",
     "imageUrl": "https://www.indexberlin.com/images/Unknown_2_2.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.513Z",
+    "lastUpdated": "2026-11-02T13:10:08.569Z",
     "address": "Fasanenstraße 30, 10719, Berlin"
   },
   {
@@ -1367,7 +1722,7 @@
     "eventType": "other",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46416/projecting-bestiality",
-    "lastUpdated": "2026-10-26T10:47:22.513Z",
+    "lastUpdated": "2026-11-02T13:10:08.569Z",
     "address": "10243, Berlin"
   },
   {
@@ -1384,7 +1739,7 @@
     "eventType": "opening",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46306/schule-von-lublin",
-    "lastUpdated": "2026-10-26T10:47:22.514Z",
+    "lastUpdated": "2026-11-02T13:10:08.569Z",
     "address": "Mansteinstraße 5, 10783, Berlin"
   },
   {
@@ -1402,7 +1757,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46425/ulay-ulay-abramovic",
     "imageUrl": "https://www.indexberlin.com/images/Ulay_IRRITATION_THERE_IS_A_CRIMINAL_TOUCH_TO_ART_Detail_1976_Filmstill_C_Ulay._Courtesy_ULAY_Foundation_VG_Bild_Kunst_Bonn_2026.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.514Z",
+    "lastUpdated": "2026-11-02T13:10:08.569Z",
     "address": "Potsdamer Straße 50, 10785, Berlin"
   },
   {
@@ -1420,7 +1775,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46169/sea-change-the-rugen-cycle",
     "imageUrl": "https://www.indexberlin.com/images/Galerie_Bastian_Emma_Stibbon_Tree_Roots.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.514Z",
+    "lastUpdated": "2026-11-02T13:10:08.570Z",
     "address": "Taylorstraße 1, 14195, Berlin"
   },
   {
@@ -1436,7 +1791,7 @@
     "eventType": "other",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46238/charlottenwalk",
-    "lastUpdated": "2026-10-26T10:47:22.515Z",
+    "lastUpdated": "2026-11-02T13:10:08.570Z",
     "address": "Niebuhrstraße, 10629, Berlin"
   },
   {
@@ -1452,7 +1807,7 @@
     "eventType": "other",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46349/workshop-mit-beatrix-pang",
-    "lastUpdated": "2026-10-26T10:47:22.515Z",
+    "lastUpdated": "2026-11-02T13:10:08.570Z",
     "address": "Turmstraße 75, 10551, Berlin"
   },
   {
@@ -1467,8 +1822,26 @@
     "eventType": "talk",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46350/kunstlerinnengesprach-mit-beatrix-pang-und-ina-wudtke",
-    "lastUpdated": "2026-10-26T10:47:22.516Z",
+    "lastUpdated": "2026-11-02T13:10:08.570Z",
     "address": "Turmstraße 75, 10551, Berlin"
+  },
+  {
+    "id": "berlin_de-helmut-newton-s-early-books-a41c5e0efc",
+    "title": "Helmut Newton’s Early Books",
+    "venue": "Museum für Fotografie - Helmut Newton Stiftung",
+    "address": "Jebensstraße 2, 10623, Berlin",
+    "openingStart": "2026-12-02T23:00:00.000Z",
+    "openingEnd": "2027-05-16T21:59:59.000Z",
+    "exhibitionStart": "2026-12-02",
+    "exhibitionEnd": "2027-05-16",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/helmut-newton-s-early-books-b641c634-e81b-43ba-81b0-f2c319a8db06/",
+    "description": "The exhibition \"Helmut Newton’s Early Books\" is devoted to three early, iconic books by Helmut Newton.",
+    "imageUrl": "https://imgproxy.berlinonline.net/0Cg592SSVvgkro_-1HIzA1LiyrJ_VOcn1VXeQup9P6Q/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzE3NC9iODYxNWEzNi03NDM4LTQ5NzgtMGFhZS02YjU5YzM0Zjk1NjQuanBn.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.135Z",
+    "latitude": 52.5081567,
+    "longitude": 13.3320921
   },
   {
     "id": "indexberlin-das-papier-spricht-der-k-rper-zeichnet-die-hand-denkt-zur-rolle-der-werkzeichnungen-von-franz-erhard-walther-e62322ece9",
@@ -1483,7 +1856,7 @@
     "eventType": "talk",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46421/das-papier-spricht-der-korper-zeichnet-die-hand-denkt-zur-rolle-der-werkzeichnungen-von-franz-erhard-walther",
-    "lastUpdated": "2026-10-26T10:47:22.516Z",
+    "lastUpdated": "2026-11-02T13:10:08.570Z",
     "address": "Linienstraße 139, 10115, Berlin"
   },
   {
@@ -1498,7 +1871,7 @@
     "eventType": "talk",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/45962/die-befreiung-der-landschaft-aus-den-fesseln-der-gattung-von-prof-dr-werner-busch",
-    "lastUpdated": "2026-10-26T10:47:22.516Z",
+    "lastUpdated": "2026-11-02T13:10:08.571Z",
     "address": "Lützowplatz, 10785, Berlin"
   },
   {
@@ -1515,7 +1888,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/44151/total-loss-ghost",
     "imageUrl": "https://www.indexberlin.com/images/Gala_Porras_Kim_Photo_by_Emman_Montalvan.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.517Z",
+    "lastUpdated": "2026-11-02T13:10:08.571Z",
     "address": "Chausseestraße 128-129, 10115, Berlin"
   },
   {
@@ -1532,7 +1905,7 @@
     "eventType": "talk",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46369/metaxy-zwischen-zerstorung-und-wiederaufbau-zeiten",
-    "lastUpdated": "2026-10-26T10:47:22.517Z"
+    "lastUpdated": "2026-11-02T13:10:08.571Z"
   },
   {
     "id": "indexberlin-waschb-ren-wildschweine-windhunde-arbeiten-auf-papier-im-georg-kolbe-museum-09360ba513",
@@ -1548,7 +1921,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46062/waschbaren-wildschweine-windhunde-arbeiten-auf-papier-im-georg-kolbe-museum",
     "imageUrl": "https://www.indexberlin.com/images/Pierre_Auguste_Renoir_Landschaft_undatiert_Georg_Kolbe_Museum_Berlin_1000x573.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.517Z",
+    "lastUpdated": "2026-11-02T13:10:08.572Z",
     "address": "Sensburger Allee 25, 14055, Berlin"
   },
   {
@@ -1563,8 +1936,26 @@
     "eventType": "talk",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46351/kunstlerinnengesprach-mit-jasmin-eding-magda-korsinsky-elija-sydney-tourkazi-und-barbara-walker-moderiert-von-der-kunsthistorikerin-jeanne-ange-wagne",
-    "lastUpdated": "2026-10-26T10:47:22.518Z",
+    "lastUpdated": "2026-11-02T13:10:08.572Z",
     "address": "Turmstraße 75, 10551, Berlin"
+  },
+  {
+    "id": "berlin_de-hr-giger-beksi-ski-ruppert-lynch-in-the-shadow-of-surrealism-824365503b",
+    "title": "HR Giger, Beksiński, Ruppert, Lynch: In the Shadow of Surrealism",
+    "venue": "Sammlung Scharf-Gerstenberg",
+    "address": "Schloßstraße 70, 14059, Berlin",
+    "openingStart": "2026-12-17T23:00:00.000Z",
+    "openingEnd": "2027-05-02T21:59:59.000Z",
+    "exhibitionStart": "2026-12-17",
+    "exhibitionEnd": "2027-05-02",
+    "eventType": "exhibition",
+    "source": "berlin_de",
+    "sourceUrl": "https://www.berlin.de/en/tickets/exhibitions/hr-giger-beksiski-ruppert-lynch-in-the-shadow-of-surrealism-37b78f12-b3ed-4257-8f26-a808039ed4b5/",
+    "description": "For the first time the exhibition brings together the fantastic realism of Zdzisław Beksiński, the biomechanical style of H.R. Giger - famed for his creation of the Alien monster - and the recently rediscovered erotic art of Sibylle Ruppert.",
+    "imageUrl": "https://imgproxy.berlinonline.net/UpqCo3UibwtO_LQG7BCpbz-DiT8GiP9G8voZUQJbAnE/resizing_type:fit/width:1200/height:1200/gravity:ce/enlarge:0/q:70/cb:2026110214/aHR0cHM6Ly9wb3B1bGEtbWlkZGxld2FyZS5zMy5hbWF6b25hd3MuY29tL2JvLW1pZGRsZXdhcmUvYm8uYmRlX2NoYW5uZWwuZXZlbnQvaW1hZ2VzLzYxLzI1M2VkYjIyLTQ2YzUtMGY1ZS02MTNkLWEyMGI0NjY3YzNiMC5qcGc.jpg",
+    "lastUpdated": "2026-11-02T13:10:13.135Z",
+    "latitude": 52.5191183,
+    "longitude": 13.2967062
   },
   {
     "id": "indexberlin-bach-und-mozart-sind-immer-f-r-mich-da-a-performance-at-the-grand-piano-ec2c1600a8",
@@ -1578,7 +1969,7 @@
     "eventType": "performance",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/45970/bach-und-mozart-sind-immer-fur-mich-da-a-performance-at-the-grand-piano",
-    "lastUpdated": "2026-10-26T10:47:22.518Z",
+    "lastUpdated": "2026-11-02T13:10:08.572Z",
     "address": "Alt-Biesdorf 55, 12683, Berlin"
   },
   {
@@ -1593,7 +1984,7 @@
     "eventType": "other",
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46352/gedenkfeier-fur-afrekete-und-die-beiden-grunderinnen-elke-jank-jael-und-eva-von-pirch-auf-dem-alten-st-matthaus-kirchhof-in-schoneberg",
-    "lastUpdated": "2026-10-26T10:47:22.518Z",
+    "lastUpdated": "2026-11-02T13:10:08.572Z",
     "address": "Turmstraße 75, 10551, Berlin"
   },
   {
@@ -1610,7 +2001,7 @@
     "source": "indexberlin",
     "sourceUrl": "https://www.indexberlin.com/events/list/46353/adefra-neid-queer-reads-library-queer-feministische-gruppen-ihre-magazine-und-archive",
     "imageUrl": "https://www.indexberlin.com/images/Magda_Korsinsky_Adefraroots_2.jpg?w=300",
-    "lastUpdated": "2026-10-26T10:47:22.518Z",
+    "lastUpdated": "2026-11-02T13:10:08.572Z",
     "address": "Turmstraße 75, 10551, Berlin"
   }
 ]

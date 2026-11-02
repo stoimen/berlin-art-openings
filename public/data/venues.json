@@ -1545,5 +1545,12 @@
     "address": "Bülowstraße, 10783, Berlin",
     "displayName": "ZEIT Café, Bülowstraße, Winterfeldtkiez, Nollendorfkiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10783, Germany",
     "updatedAt": "2026-10-19T10:32:55.114Z"
+  },
+  "coords:52.54569,13.36640": {
+    "latitude": 52.5456939,
+    "longitude": 13.3663962,
+    "address": "Gerichtstraße 35, 13347, Berlin",
+    "displayName": "Musicboard Berlin, 35, Gerichtstraße, Antonkiez, Wedding, Mitte, Berlin, 13347, Germany",
+    "updatedAt": "2026-11-02T13:10:18.942Z"
   }
 }
